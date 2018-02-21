@@ -1,20 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-02-20T19:48:45-05:00</updated><id>http://localhost:4000/</id><title type="html">chad.downey [shoreviewanalytics] | Blog</title><subtitle>Ubuntu, Data Analysis, Data Visualization and Data Science</subtitle><author><name>chad.e.downey</name></author><entry><title type="html">Blog using Jekyll with Minimal-Mistakes Ubuntu 16.04</title><link href="http://localhost:4000/Blog-using-Jekyll-with-the-Minimal-Mistakes-theme-Ubuntu-16.04/" rel="alternate" type="text/html" title="Blog using Jekyll with Minimal-Mistakes Ubuntu 16.04" /><published>2018-02-19T00:00:00-05:00</published><updated>2018-02-19T00:00:00-05:00</updated><id>http://localhost:4000/Blog-using-Jekyll-with-the-Minimal-Mistakes-theme-Ubuntu-16.04</id><content type="html" xml:base="http://localhost:4000/Blog-using-Jekyll-with-the-Minimal-Mistakes-theme-Ubuntu-16.04/">&lt;p&gt;A few years ago, I had a wordpress site hosted on one of the more well known hosting sites.  I decided that I wanted to update it or possibly look at one of my posts, so I open up a browser and navigated to my site and to my surprise it was not there.  I logged into the hosting admin area and looked around and there was nothing there either.  I called support and asked if they had any backup of it and again the there was nothing. Apparently there was a mix up with my site, which led to it being decommissioned, otherwise known as deleted. This was a uh oh moment.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-02-21T15:14:03-05:00</updated><id>http://localhost:4000/</id><title type="html">chad.downey [shoreviewanalytics] | Blog</title><subtitle>Ubuntu, Data Analysis, Data Visualization and Data Science</subtitle><author><name>chad.downey</name></author><entry><title type="html">Blog using Jekyll with Minimal-Mistakes Ubuntu 16.04</title><link href="http://localhost:4000/Blog-using-Jekyll-with-the-Minimal-Mistakes-theme-Ubuntu-16.04/" rel="alternate" type="text/html" title="Blog using Jekyll with Minimal-Mistakes Ubuntu 16.04" /><published>2018-02-19T00:00:00-05:00</published><updated>2018-02-19T00:00:00-05:00</updated><id>http://localhost:4000/Blog-using-Jekyll-with-the-Minimal-Mistakes-theme-Ubuntu-16.04</id><content type="html" xml:base="http://localhost:4000/Blog-using-Jekyll-with-the-Minimal-Mistakes-theme-Ubuntu-16.04/">&lt;p&gt;A few years ago, I had a wordpress site hosted on one of the more well known hosting sites.  I decided that I wanted to update it or possibly look at one of my posts, so I open up a browser and navigated to my site and to my surprise it was not there.  I logged into the hosting admin area and looked around and there was nothing there either.  I called support and asked if they had any backup of it and again the there was nothing. Apparently there was a mix up with my site, which led to it being removed.&lt;/p&gt;
 
-&lt;p&gt;Recently, I discovered that I can use &lt;a href=&quot;https://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; on &lt;a href=&quot;https://github.com/&quot; title=&quot;Github&quot;&gt;Github&lt;/a&gt; to publish a blog.  Having a Jekyll blog or deploying a blog to Github is nothing new, but for me the control that I have over my the content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not lose it if a hosting company decides to delete it.&lt;/p&gt;
+&lt;p&gt;Recently, I discovered that I can use &lt;a href=&quot;https://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; on &lt;a href=&quot;https://github.com/&quot; title=&quot;Github&quot;&gt;Github&lt;/a&gt; to publish a blog.  Creating a Jekyll blog or deploying a blog to Github is nothing new, but for me the control that I have over my the content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not lose it if a hosting company decides to delete it.&lt;/p&gt;
 
 &lt;p&gt;Here are the requirements I had in mind for my new blog.&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;My blog should be portable and not completely dependent on any specific web hosting company, especially the content.&lt;/li&gt;
-  &lt;li&gt;The theme used for the blog should (hopefully), be actively maintained.&lt;/li&gt;
-  &lt;li&gt;My blog should be relatively easy to maintain, have advanced features and customizable.&lt;/li&gt;
-  &lt;li&gt;The theme and software used for the blog should be able to be updated.&lt;/li&gt;
-  &lt;li&gt;It should not cost me much to deploy.&lt;/li&gt;
+  &lt;li&gt;It should be portable and not dependent on a specific web hosting company platform, especially the content.&lt;/li&gt;
+  &lt;li&gt;The theme used should (hopefully), be actively maintained.&lt;/li&gt;
+  &lt;li&gt;It should be relatively easy to maintain, have advanced features and customizable.&lt;/li&gt;
+  &lt;li&gt;The theme and software should be able to be updated.&lt;/li&gt;
+  &lt;li&gt;It should be low to no cost to deploy.&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Note: If you host your blog using Github and abide by their guidelines you can deploy your blog for no cost. So that helps me meet one of my requirements.&lt;/p&gt;
+&lt;p&gt;Note: If you host your blog using Github and abide by their guidelines you can deploy your blog for no cost.&lt;/p&gt;
 
-&lt;p&gt;Note: There are lots of great tutorials on how to use Jekyll to create a blog. I started with the following tutorial.&lt;/p&gt;
+&lt;p&gt;There are numerous tutorials on how to use Jekyll to create a blog. I started with the following tutorial.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.taniarascia.com/make-a-static-website-with-jekyll/&quot; title=&quot;Tania's Tutorial&quot;&gt;Tania’s tutorial&lt;/a&gt;&lt;/p&gt;
 
@@ -22,15 +22,17 @@
 
 &lt;p&gt;The following steps are how I created a Jekyll powered blog using the &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/&quot; title=&quot;minimal-mistakes&quot;&gt;minimal-mistakes&lt;/a&gt; theme hosting it using &lt;a href=&quot;https://pages.github.com/&quot; title=&quot;github pages&quot;&gt;github pages&lt;/a&gt;. If you review the quick start guide for the minimal-mistakes theme, it provides three different methods to install. This post uses the fork method. For QA, I have gone through the steps below to build the mininmalmistakesdemo site using these steps at least two times to be sure they are accurate and lead to success.&lt;/p&gt;
 
-&lt;p&gt;I have not used these steps to build a githubusername.github.io site, because I already have my blog published at that location.  My assumption is you can create an empty repository at the master level and then demo various Jekyll themes as sub sites as described in this tutorial.&lt;/p&gt;
+&lt;p&gt;I have not used these steps to build a githubusername.github.io site, because I already have my blog published at that location. From my experience with github you do not have to have a working site at githubusername.github.io to deploy to githubusername.github.io/subsite, but you do need to use this nomenclature to publish a subsite.&lt;/p&gt;
 
-&lt;p&gt;After the initial deployment of my blog using the fork method, I switched gears to the gem method so I could take advantage of major changes to the theme and have a more tidy repository for my blog. One of my requirements (item 3) above was to have a blog and theme that I could easily maintain. In a future post I will describe the initial setup of a jekyll site using the minimal-mistakes with the gem method, or you can just fork my repository.&lt;/p&gt;
+&lt;p&gt;After my initial deployment of my blog using the fork method, I switched gears to the gem method, so I could take advantage of major changes to the theme and have a more tidy repository for my blog. One of my requirements (item 3) above was to have a blog and theme that I could easily maintain. In a future post, I will describe the initial setup of a jekyll site using the minimal-mistakes with the gem method, or you can  &lt;a href=&quot;https://github.com/shoreviewanalytics/shoreviewanalytics.github.io&quot; title=&quot;fork&quot;&gt;fork&lt;/a&gt; my repository.&lt;/p&gt;
 
 &lt;p&gt;Please Note: It will be necessary to move slowly and do all the tasks in each step.  As a general warning, some things like the creation of a gh-pages layer on Github (Step 10), if you are not an expert with Github, can be a bit confusing.&lt;/p&gt;
 
 &lt;p&gt;When you complete this tutorial you should have a fully functional Jekyll blog using the minimal-mistakes theme as displayed at the following web address.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://shoreviewanalytics.github.io/minimalmistakesjekylldemo/&quot; title=&quot;minimal-mistakes theme demo&quot;&gt;https://shoreviewanalytics.github.io/minimalmistakesjekylldemo/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The initial version of the site is pretty basic looking, so you will need to make adjustments and add your own content to make it more interesting.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-1&quot;&gt;Step 1&lt;/h2&gt;
 
@@ -45,7 +47,7 @@
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Please note: If you currently do not have a Github account you will need to create one to complete this tutorial.&lt;/p&gt;
+&lt;p&gt;Please note: If you currently do not have a Github account, you will need to create one, to complete this tutorial.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-2&quot;&gt;Step 2&lt;/h2&gt;
 
@@ -63,7 +65,7 @@
 
 &lt;h2 id=&quot;step-3&quot;&gt;Step 3&lt;/h2&gt;
 
-&lt;p&gt;Create a new folder in your home directory to use as a sandbox for your Jekyll efforts.  I called mine websites but you can call it whatever suites your needs.&lt;/p&gt;
+&lt;p&gt;Create a new folder in your home directory to use as a sandbox for your Jekyll efforts.  I called mine websites, but you can call it whatever suites your needs.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-4&quot;&gt;Step 4&lt;/h2&gt;
 
@@ -117,13 +119,13 @@
 &lt;p&gt;If using Ubuntu you can either copy the server address and paste it into a browser or right click on the link and choose
 “open link”.&lt;/p&gt;
 
-&lt;p&gt;You should now see Jekyll site using the minimal-mistakes theme.&lt;/p&gt;
+&lt;p&gt;You should now see a very basic looking Jekyll blog, that uses the minimal-mistakes theme.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-8&quot;&gt;Step 8&lt;/h2&gt;
 
-&lt;p&gt;While in the minimal-mistakes directory, copy the current _config.yml to _config_dev.yml&lt;/p&gt;
+&lt;p&gt;While in the minimal-mistakes directory, copy configuration file named &lt;em&gt;_config.yml&lt;/em&gt; to &lt;em&gt;_config_dev.yml&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;Make the following edits to the _config_dev.yml file.&lt;/p&gt;
+&lt;p&gt;Make the following edits to the &lt;em&gt;_config_dev.yml&lt;/em&gt; file.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;url     : &quot;http://localhost:4000/&quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -139,7 +141,7 @@
 
 &lt;h2 id=&quot;step-10&quot;&gt;Step 10&lt;/h2&gt;
 
-&lt;p&gt;Make the appropriate edits to the _config.yml and _config_dev.yml.&lt;br /&gt;
+&lt;p&gt;Make the appropriate edits to the &lt;em&gt;_config.yml&lt;/em&gt; and &lt;em&gt;_config_dev.yml&lt;/em&gt;.&lt;br /&gt;
 For the purposes of this tutorial I will not discuss all of the options in this file. They are described well in the minimal-mistakes documentation.
 After making edits run the following command to be sure all is well&lt;/p&gt;
 
@@ -147,7 +149,7 @@ After making edits run the following command to be sure all is well&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h2 id=&quot;step-11&quot;&gt;Step 11&lt;/h2&gt;
 
-&lt;p&gt;Make the appropriate edits to _config.yml based on your github account and the repository you created.&lt;/p&gt;
+&lt;p&gt;Make the appropriate edits to &lt;em&gt;_config.yml&lt;/em&gt; based on your github account and the repository you created.&lt;/p&gt;
 
 &lt;p&gt;The following settings are used if you are creating a sub site or gh-pages site.&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;url     : &quot;https://shoreviewanalytics.github.io&quot;
@@ -158,26 +160,24 @@ baseurl : &quot;/minimalmistakesjekylldemo&quot;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle exec jekyll --config _config.yml serve
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Publishing your blog&lt;/p&gt;
-
-&lt;p&gt;Now that you have a basic blog minus any customizations that you will want you can publish it to github.&lt;/p&gt;
+&lt;p&gt;Now that you have a basic blog minus any customizations that you will want, you can publish it to github.&lt;/p&gt;
 
 &lt;p&gt;There are two different locations where you can publish your blog on github.&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;The root of your github account also known as the master.  This is when you want to serve your blog to an address like I am doing at shoreviewanalytics.github.io&lt;/p&gt;
+    &lt;p&gt;The root of your github account also known as the master.  This is when you want to view your blog at a web address like I am doing at shoreviewanalytics.github.io&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;You can also serve up your blog using a project site also known as gh-pages.  This is when you already have a blog located at an address like shoreviewanalytics.github.io but your trying to share something with others as I am in writing this post to demo how to create a jekyll using the minimal-mistakes theme.&lt;/p&gt;
+    &lt;p&gt;You can also serve up your blog using a project site also known as gh-pages.  This is when you want to view your blog at an address like shoreviewanalytics.github.io/minimalmistakesjekylldemo.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Note: You can only have one site published at the master level.  You might be able to have multiple repositories at the master level, but github will not recognize multiple jekyll blogs at the root level.  This makes sense if you think about the way websites work.&lt;/p&gt;
+&lt;p&gt;Note: You can only have one site published at the master level.  You might be able to have multiple repositories at the master level, but github will not recognize multiple jekyll blogs at the root level.&lt;/p&gt;
 
 &lt;p&gt;If you want to setup your blog so it is served at githubusername.github.io just don’t change the default branch as described below.&lt;/p&gt;
 
-&lt;p&gt;If you are following along and want to demo the minimal-mistakes theme go ahead and create a new repository on github called minimalmistakesjekylldemo.  After creating the repository make sure you place it in a branch adjacent to master by creating a new branch called ‘gh-pages’. To do this you will need to create the branch gh-pages by clicking on branch drop down of the minimalmistakesjekylldemo repository and then typing in the name gh-pages.  Once you have done this click on settings and go to branches and set this repository to the default branch of gh-pages. Make sure you do not have anything in the directory before making this change otherwise it will all be gone after this change.  :)&lt;/p&gt;
+&lt;p&gt;If you are following along and only want to demo the minimal-mistakes theme you can create a new repository on github called minimalmistakesjekylldemo.  After creating the repository make sure you place it in a branch adjacent to master by creating a new branch called ‘gh-pages’. To do this you will need to create the branch gh-pages by clicking on branch drop down of the minimalmistakesjekylldemo repository and then typing in the name gh-pages.  Once you have done this click on settings and go to branches and set this repository to the default branch of gh-pages. Make sure you do not have anything in the directory before making this change, otherwise it will all be gone after this change.  :)&lt;/p&gt;
 
 &lt;p&gt;Next, on your local computer open a terminal session in your sandbox root folder to clone the new gh-pages repository by issuing the following command.&lt;/p&gt;
 
@@ -214,10 +214,10 @@ git push -u origin gh-pages
 &lt;p&gt;Issue the following commands if have a repository named githubusername.github.io.&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
 git commit -m &quot;first githubusername.github.io&quot;
-git push -u origin master
+git push -u origin masteryou write them
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;You should now have a working jekyll blog using the minimal-mistakes theme that is served up at the root or master level or the gh-pages level.
+&lt;p&gt;You should now have a working jekyll blog using the minimal-mistakes theme that is served up at the root or master level or the gh-pages level of your github account.
 Of course this is just the beginning to all the fun.  As you can see there are many options and features to explore.&lt;/p&gt;
 
 &lt;p&gt;Congratulations! If you made it to this point in the tutorial successfully, you should consider yourself  AWESOME!&lt;/p&gt;
@@ -234,4 +234,6 @@ sudo apt update; sudo apt install atom
 
 &lt;h2 id=&quot;markdown-reference&quot;&gt;Markdown Reference:&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&amp;quot;Markdown-Cheatsheet&quot;&gt;Markdown-Cheatsheet&lt;/a&gt;&lt;/p&gt;</content><author><name>chad.e.downey</name></author><summary type="html">A few years ago, I had a wordpress site hosted on one of the more well known hosting sites. I decided that I wanted to update it or possibly look at one of my posts, so I open up a browser and navigated to my site and to my surprise it was not there. I logged into the hosting admin area and looked around and there was nothing there either. I called support and asked if they had any backup of it and again the there was nothing. Apparently there was a mix up with my site, which led to it being decommissioned, otherwise known as deleted. This was a uh oh moment.</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&amp;quot;Markdown-Cheatsheet&quot;&gt;Markdown-Cheatsheet&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.cirosantilli.com/markdown-style-guide/&amp;quot;Markdown Style Guide&amp;quot;&quot;&gt;Markdown Style Guide&lt;/a&gt;&lt;/p&gt;</content><author><name>chad.downey</name></author><summary type="html">A few years ago, I had a wordpress site hosted on one of the more well known hosting sites. I decided that I wanted to update it or possibly look at one of my posts, so I open up a browser and navigated to my site and to my surprise it was not there. I logged into the hosting admin area and looked around and there was nothing there either. I called support and asked if they had any backup of it and again the there was nothing. Apparently there was a mix up with my site, which led to it being removed.</summary></entry></feed>
