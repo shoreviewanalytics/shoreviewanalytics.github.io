@@ -241,7 +241,7 @@ Congratulations! If you made it to this point in the tutorial successfully, you 
 
 ## Tip:
 
-To assist with creating posts, I highly recommend installing Atom, a powerful text editor that is markdown aware.  Atom let's you preview your posts as write them.  
+To assist with creating posts, I highly recommend installing Atom, a powerful text editor that is markdown aware.  Atom let's you preview your posts as your write them.  
 
 To install Atom on Ubuntu 16.04, use the following commands:
 
