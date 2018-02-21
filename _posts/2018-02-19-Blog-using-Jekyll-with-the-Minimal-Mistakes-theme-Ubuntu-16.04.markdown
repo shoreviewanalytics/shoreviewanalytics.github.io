@@ -10,10 +10,10 @@ Recently, I discovered that I can use [Jekyll](https://jekyllrb.com/ "Jekyll") o
 
 Here are the requirements I had in mind for my new blog.  
 
-1. My blog should be portable and not completely dependent on any specific web hosting company, especially the content.   
-2. The theme used for the blog should (hopefully), be actively maintained.
-3. My blog should be relatively easy to maintain, have advanced features and customizable.
-4. The theme and software used for the blog should be able to be updated.
+1. It should be portable and not dependent on a specific web hosting company platform, especially the content.   
+2. The theme used should (hopefully), be actively maintained.
+3. It should be relatively easy to maintain, have advanced features and customizable.
+4. The theme and software should be able to be updated.
 5. It should not cost me much to deploy.
 
 Note: If you host your blog using Github and abide by their guidelines you can deploy your blog for no cost. So that helps me meet one of my requirements.     
