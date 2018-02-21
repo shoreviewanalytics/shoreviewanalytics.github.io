@@ -62,11 +62,11 @@ After you have a setup your github account, create a new repository on github, u
 
 Create a repository with a name of githubusername.github.io if you want a web address like:
 
-https://githubusername.github.io.
+https://githubusername.github.io
 
 Create a repository with a name minimaljekylldemo if you want a web address like:
 
-https://githubusername.github.io/minimaljekylldemo.
+https://githubusername.github.io/minimaljekylldemo
 
 Note: Creating a repository defaults to the root or master level and you can only have one Jekyll site at this level.  All other sites must be placed at the gh-pages level. For example, if you are reading this post and you already have a blog like I do at http://shoreviewanalytics.github.io you would create a new repository called minimaljekylldemo and would navigate to it with the following url.  https://shoreviewanalytics.github.io/minimaljekylldemo.  I will get into the details of how this is done and why below.  The main point of this step is to make sure you create an account on github.com and also create the desired repository.  
 
@@ -108,7 +108,7 @@ Clean up the minimal-mistakes directory, by removing the following folders and f
 
 ## Step 7
 
-Using the command line from the root of the minimal-mistakes directory issue the following commands
+Using the command line from the root of the minimal-mistakes directory issue the following commands.
 
 --Initialize as git
 ```
@@ -156,7 +156,7 @@ This error appears to be harmless and doesn't impact the use of the site or caus
 
 Make the appropriate edits to the *_config.yml* and *_config_dev.yml*.  
 For the purposes of this tutorial I will not discuss all of the options in this file. They are described well in the minimal-mistakes documentation.
-After making edits run the following command to be sure all is well
+After making edits run the following command to be sure all is well.
 
 ```
 bundle exec jekyll serve --config _config_dev.yml
@@ -196,7 +196,7 @@ Next, on your local computer open a terminal session in your sandbox root folder
 git clone https://github.com/yourgithubusername/minimalmistakesjekylldemo.git
 cd minimalmistakesjekylldemo
 ```
-If you want to access your blog at githubusername.github.io, then you would create a new repository called githubusername.github.io. Next
+If you want to access your blog at githubusername.github.io, then you would create a new repository called githubusername.github.io.
 ```
 git clone https://github.com/yourgithubusername/yourgithubusername.github.io.git
 cd yourgithubusername.github.io
@@ -231,7 +231,7 @@ Issue the following commands if have a repository named githubusername.github.io
 ```
 git add .
 git commit -m "first githubusername.github.io"
-git push -u origin masteryou write them
+git push -u origin master
 ```
 
 You should now have a working jekyll blog using the minimal-mistakes theme that is served up at the root or master level or the gh-pages level of your github account.
@@ -252,6 +252,6 @@ sudo apt update; sudo apt install atom
 
 ## Markdown Reference:
 
-[Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet"Markdown-Cheatsheet)
+[Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet "Markdown-Cheatsheet")
 
-[Markdown Style Guide](http://www.cirosantilli.com/markdown-style-guide/"Markdown Style Guide")
+[Markdown Style Guide](http://www.cirosantilli.com/markdown-style-guide/ "Markdown Style Guide")

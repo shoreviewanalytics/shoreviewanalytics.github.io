@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-02-21T15:17:48-05:00</updated><id>http://localhost:4000/</id><title type="html">chad.downey [shoreviewanalytics] | Blog</title><subtitle>Ubuntu, Data Analysis, Data Visualization and Data Science</subtitle><author><name>chad.downey</name></author><entry><title type="html">Blog using Jekyll with Minimal-Mistakes Ubuntu 16.04</title><link href="http://localhost:4000/Blog-using-Jekyll-with-the-Minimal-Mistakes-theme-Ubuntu-16.04/" rel="alternate" type="text/html" title="Blog using Jekyll with Minimal-Mistakes Ubuntu 16.04" /><published>2018-02-19T00:00:00-05:00</published><updated>2018-02-19T00:00:00-05:00</updated><id>http://localhost:4000/Blog-using-Jekyll-with-the-Minimal-Mistakes-theme-Ubuntu-16.04</id><content type="html" xml:base="http://localhost:4000/Blog-using-Jekyll-with-the-Minimal-Mistakes-theme-Ubuntu-16.04/">&lt;p&gt;A few years ago, I had a wordpress site hosted on one of the more well known hosting sites.  I decided that I wanted to update it or possibly look at one of my posts, so I opened up a browser and navigated to my site and to my surprise it was not there.  I logged into the hosting admin area and looked around and there was nothing there either.  I called support and asked if they had any backup of it and again the there was nothing. Apparently there was a mix up with my site, which led to it being removed.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-02-21T16:57:27-05:00</updated><id>http://localhost:4000/</id><title type="html">Shore View Analytics | Blog</title><subtitle>Ubuntu, Data Analysis, Data Visualization and Data Science</subtitle><author><name>chad.downey</name></author><entry><title type="html">Blog using Jekyll with Minimal-Mistakes Ubuntu 16.04</title><link href="http://localhost:4000/Blog-using-Jekyll-with-the-Minimal-Mistakes-theme-Ubuntu-16.04/" rel="alternate" type="text/html" title="Blog using Jekyll with Minimal-Mistakes Ubuntu 16.04" /><published>2018-02-19T00:00:00-05:00</published><updated>2018-02-19T00:00:00-05:00</updated><id>http://localhost:4000/Blog-using-Jekyll-with-the-Minimal-Mistakes-theme-Ubuntu-16.04</id><content type="html" xml:base="http://localhost:4000/Blog-using-Jekyll-with-the-Minimal-Mistakes-theme-Ubuntu-16.04/">&lt;p&gt;A few years ago, I had a wordpress site hosted on one of the more well known hosting sites.  I decided that I wanted to update it or possibly look at one of my posts, so I opened up a browser and navigated to my site and to my surprise it was not there.  I logged into the hosting admin area and looked around and there was nothing there either.  I called support and asked if they had any backup of it and again the there was nothing. Apparently there was a mix up with my site, which led to it being removed.&lt;/p&gt;
 
 &lt;p&gt;Recently, I discovered that I can use &lt;a href=&quot;https://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; on &lt;a href=&quot;https://github.com/&quot; title=&quot;Github&quot;&gt;Github&lt;/a&gt; to publish a blog.  Creating a Jekyll blog or deploying a blog to Github is nothing new, but for me the control that I have over my the content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not lose it if a hosting company decides to delete it.&lt;/p&gt;
 
@@ -55,11 +55,11 @@
 
 &lt;p&gt;Create a repository with a name of githubusername.github.io if you want a web address like:&lt;/p&gt;
 
-&lt;p&gt;https://githubusername.github.io.&lt;/p&gt;
+&lt;p&gt;https://githubusername.github.io&lt;/p&gt;
 
 &lt;p&gt;Create a repository with a name minimaljekylldemo if you want a web address like:&lt;/p&gt;
 
-&lt;p&gt;https://githubusername.github.io/minimaljekylldemo.&lt;/p&gt;
+&lt;p&gt;https://githubusername.github.io/minimaljekylldemo&lt;/p&gt;
 
 &lt;p&gt;Note: Creating a repository defaults to the root or master level and you can only have one Jekyll site at this level.  All other sites must be placed at the gh-pages level. For example, if you are reading this post and you already have a blog like I do at http://shoreviewanalytics.github.io you would create a new repository called minimaljekylldemo and would navigate to it with the following url.  https://shoreviewanalytics.github.io/minimaljekylldemo.  I will get into the details of how this is done and why below.  The main point of this step is to make sure you create an account on github.com and also create the desired repository.&lt;/p&gt;
 
@@ -102,7 +102,7 @@
 
 &lt;h2 id=&quot;step-7&quot;&gt;Step 7&lt;/h2&gt;
 
-&lt;p&gt;Using the command line from the root of the minimal-mistakes directory issue the following commands&lt;/p&gt;
+&lt;p&gt;Using the command line from the root of the minimal-mistakes directory issue the following commands.&lt;/p&gt;
 
 &lt;p&gt;–Initialize as git&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init
@@ -143,7 +143,7 @@
 
 &lt;p&gt;Make the appropriate edits to the &lt;em&gt;_config.yml&lt;/em&gt; and &lt;em&gt;_config_dev.yml&lt;/em&gt;.&lt;br /&gt;
 For the purposes of this tutorial I will not discuss all of the options in this file. They are described well in the minimal-mistakes documentation.
-After making edits run the following command to be sure all is well&lt;/p&gt;
+After making edits run the following command to be sure all is well.&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle exec jekyll serve --config _config_dev.yml
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -184,7 +184,7 @@ baseurl : &quot;/minimalmistakesjekylldemo&quot;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/yourgithubusername/minimalmistakesjekylldemo.git
 cd minimalmistakesjekylldemo
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;If you want to access your blog at githubusername.github.io, then you would create a new repository called githubusername.github.io. Next&lt;/p&gt;
+&lt;p&gt;If you want to access your blog at githubusername.github.io, then you would create a new repository called githubusername.github.io.&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/yourgithubusername/yourgithubusername.github.io.git
 cd yourgithubusername.github.io
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -214,7 +214,7 @@ git push -u origin gh-pages
 &lt;p&gt;Issue the following commands if have a repository named githubusername.github.io.&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
 git commit -m &quot;first githubusername.github.io&quot;
-git push -u origin masteryou write them
+git push -u origin master
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You should now have a working jekyll blog using the minimal-mistakes theme that is served up at the root or master level or the gh-pages level of your github account.
@@ -234,6 +234,6 @@ sudo apt update; sudo apt install atom
 
 &lt;h2 id=&quot;markdown-reference&quot;&gt;Markdown Reference:&lt;/h2&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&amp;quot;Markdown-Cheatsheet&quot;&gt;Markdown-Cheatsheet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot; title=&quot;Markdown-Cheatsheet&quot;&gt;Markdown-Cheatsheet&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.cirosantilli.com/markdown-style-guide/&amp;quot;Markdown Style Guide&amp;quot;&quot;&gt;Markdown Style Guide&lt;/a&gt;&lt;/p&gt;</content><author><name>chad.downey</name></author><summary type="html">A few years ago, I had a wordpress site hosted on one of the more well known hosting sites. I decided that I wanted to update it or possibly look at one of my posts, so I opened up a browser and navigated to my site and to my surprise it was not there. I logged into the hosting admin area and looked around and there was nothing there either. I called support and asked if they had any backup of it and again the there was nothing. Apparently there was a mix up with my site, which led to it being removed.</summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://www.cirosantilli.com/markdown-style-guide/&quot; title=&quot;Markdown Style Guide&quot;&gt;Markdown Style Guide&lt;/a&gt;&lt;/p&gt;</content><author><name>chad.downey</name></author><summary type="html">A few years ago, I had a wordpress site hosted on one of the more well known hosting sites. I decided that I wanted to update it or possibly look at one of my posts, so I opened up a browser and navigated to my site and to my surprise it was not there. I logged into the hosting admin area and looked around and there was nothing there either. I called support and asked if they had any backup of it and again the there was nothing. Apparently there was a mix up with my site, which led to it being removed.</summary></entry></feed>
