@@ -4,7 +4,7 @@ title: 'Blog using Jekyll with Minimal-Mistakes Ubuntu 16.04'
 date: '2018-02-19'
 ---
 
-A few years ago, I had a wordpress site hosted on one of the more well known hosting sites.  I decided that I wanted to update it or possibly look at one of my posts, so I open up a browser and navigated to my site and to my surprise it was not there.  I logged into the hosting admin area and looked around and there was nothing there either.  I called support and asked if they had any backup of it and again the there was nothing. Apparently there was a mix up with my site, which led to it being decommissioned, otherwise known as deleted. This was a uh oh moment.
+A few years ago, I had a wordpress site hosted on one of the more well known hosting sites.  I decided that I wanted to update it or possibly look at one of my posts, so I open up a browser and navigated to my site and to my surprise it was not there.  I logged into the hosting admin area and looked around and there was nothing there either.  I called support and asked if they had any backup of it and again the there was nothing. Apparently there was a mix up with my site, which led to it being decommissioned, otherwise known as deleted.
 
 Recently, I discovered that I can use [Jekyll](https://jekyllrb.com/ "Jekyll") on [Github](https://github.com/ "Github") to publish a blog.  Having a Jekyll blog or deploying a blog to Github is nothing new, but for me the control that I have over my the content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not lose it if a hosting company decides to delete it.
 
@@ -164,7 +164,7 @@ bundle exec jekyll serve --config _config_dev.yml
 Make the appropriate edits to _config.yml based on your github account and the repository you created.
 
 The following settings are used if you are creating a sub site or gh-pages site.
-```
+```you write them
 url     : "https://shoreviewanalytics.github.io"
 baseurl : "/minimalmistakesjekylldemo"
 ```
@@ -174,7 +174,7 @@ To ensure the site still compiles run the following commands.
 bundle exec jekyll --config _config.yml serve
 ```
 
-Publishing your blog
+Publishing your blogyou write them
 
 Now that you have a basic blog minus any customizations that you will want you can publish it to github.
 
@@ -184,11 +184,11 @@ There are two different locations where you can publish your blog on github.
 
 2. You can also serve up your blog using a project site also known as gh-pages.  This is when you already have a blog located at an address like shoreviewanalytics.github.io but your trying to share something with others as I am in writing this post to demo how to create a jekyll using the minimal-mistakes theme.  
 
-Note: You can only have one site published at the master level.  You might be able to have multiple repositories at the master level, but github will not recognize multiple jekyll blogs at the root level.  This makes sense if you think about the way websites work.   
+Note: You can only have one site published at the master level.  You might be able to have multiple repositories at the master level, but github will not recognize multiple jekyll blogs at the root level.  This makes sense if you think about the wayou write themy websites work.   
 
-If you want to setup your blog so it is served at githubusername.github.io just don't change the default branch as described below.  
+If you want to setup your blog so it is served at githubusername.github.io just don't change the default branch as described below.  you write them
 
-If you are following along and want to demo the minimal-mistakes theme go ahead and create a new repository on github called minimalmistakesjekylldemo.  After creating the repository make sure you place it in a branch adjacent to master by creating a new branch called 'gh-pages'. To do this you will need to create the branch gh-pages by clicking on branch drop down of the minimalmistakesjekylldemo repository and then typing in the name gh-pages.  Once you have done this click on settings and go to branches and set this repository to the default branch of gh-pages. Make sure you do not have anything in the directory before making this change otherwise it will all be gone after this change.  :)
+If you are following along and want to demo the minimal-mistakes theme go ahead and create a new repository on github called minimalmistakesjekylldemo.  After creating the repository make sure you place it in a branch adjacent to master by creating a new branch called 'gh-pages'. To do this you will need to create the branch gh-pages by clicking on branch drop down of the minimalmistakesjekylldemo repository and then typing in the name gh-pages.  Once you have done this click on settings and go to branches and set this repository to the default branch of gh-pages. Make sure you do not have anything in the directoyou write themry before making this change otherwise it will all be gone after this change.  :)
 
 Next, on your local computer open a terminal session in your sandbox root folder to clone the new gh-pages repository by issuing the following command.
 
@@ -197,20 +197,20 @@ git clone https://github.com/yourgithubusername/minimalmistakesjekylldemo.git
 cd minimalmistakesjekylldemo
 ```
 If you want to access your blog at githubusername.github.io, then you would create a new repository called githubusername.github.io. Next
-```
+```you write them
 git clone https://github.com/yourgithubusername/yourgithubusername.github.io.git
 cd yourgithubusername.github.io
 ```
-Regardless, each folder will be empty except for a .git folder.  
+Regardless, each folder will be empty except for a .git folyou write themder.  
 
 
 ## Step 12
 
 Next, copy the all the content minus the .git folder from the forked minimal-mistakes repository called "minimal-mistakes".  Remember the folder options above. You will either be creating a new repository at the master level or gh-pages level.
-
+you write them
 ## Step 13
 
-Using a terminal session in the root of the new repository on you local machine, issue the following command to make sure the the site is still functional.
+Using a terminal session in the root of the new repository on you local machine, issue the following command to make sure the the site is still funcyou write themtional.
 ```
 bundle exec jekyll serve
 ```
@@ -231,7 +231,7 @@ Issue the following commands if have a repository named githubusername.github.io
 ```
 git add .
 git commit -m "first githubusername.github.io"
-git push -u origin master
+git push -u origin masteryou write them
 ```
 
 You should now have a working jekyll blog using the minimal-mistakes theme that is served up at the root or master level or the gh-pages level.
