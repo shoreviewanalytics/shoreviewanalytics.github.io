@@ -1,10 +1,8 @@
 ---
 layout: single
-title: 'Blog using Jekyll with Minimal-Mistakes Ubuntu 16.04'
+title: 'Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04'
 date: '2018-02-19'
 ---
-
-A few years ago, I had a wordpress site hosted on one of the more well known hosting sites.  I decided that I wanted to update it or possibly look at one of my posts, so I opened up a browser and navigated to my site and to my surprise it was not there.  I logged into the hosting admin area and looked around and there was nothing there either.  I called support and asked if they had any backup of it and again the there was nothing. Apparently there was a mix up with my site, which led to it being removed.
 
 Recently, I discovered that I can use [Jekyll](https://jekyllrb.com/ "Jekyll") on [Github](https://github.com/ "Github") to publish a blog.  Creating a Jekyll blog or deploying a blog to Github is nothing new, but for me the control that I have over my the content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not lose it if a hosting company decides to delete it.
 

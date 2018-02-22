@@ -1,6 +1,6 @@
 var store = [{
-        "title": "Blog using Jekyll with Minimal-Mistakes Ubuntu 16.04",
-        "excerpt":"A few years ago, I had a wordpress site hosted on one of the more well known hosting sites. I decided that I wanted to update it or possibly look at one of my posts, so I opened up a browser and navigated to my site and to my surprise...","categories": [],
+        "title": "Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04",
+        "excerpt":"Recently, I discovered that I can use Jekyll on Github to publish a blog. Creating a Jekyll blog or deploying a blog to Github is nothing new, but for me the control that I have over my the content and hosting is real value. As long as I work on...","categories": [],
         "tags": [],
-        "url": "http://localhost:4000/Blog-using-Jekyll-with-the-Minimal-Mistakes-theme-Ubuntu-16.04/",
+        "url": "http://localhost:4000/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/",
         "teaser":null}]
