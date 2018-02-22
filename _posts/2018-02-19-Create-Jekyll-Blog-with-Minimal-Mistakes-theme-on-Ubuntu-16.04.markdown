@@ -4,29 +4,28 @@ title: 'Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04'
 date: '2018-02-19'
 ---
 
-Recently, I discovered that I can use [Jekyll](https://jekyllrb.com/ "Jekyll") on [Github](https://github.com/ "Github") to publish a blog.  Creating a Jekyll blog or deploying a blog to Github is nothing new, but for me the control that I have over my the content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not lose it if a hosting company decides to delete it.
+Recently, I discovered that I can use [Jekyll](https://jekyllrb.com/ "Jekyll") on [Github](https://github.com/ "Github") to publish a blog.  Creating a Jekyll blog and deploying to Github is nothing new, but for me the control that I have over my content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not have to worry about the complexities of a hosting company.  
 
-Here are the requirements I had in mind for my new blog.  
+Here are the requirements I had in mind for my blog.  
 
 1. It should be portable and not dependent on a specific web hosting company platform, especially the content.   
-2. The theme used should (hopefully), be actively maintained.
-3. It should be relatively easy to maintain, have advanced features and customizable.
-4. The theme and software should be able to be updated.
-5. It should be low to no cost to deploy.
+2. The theme used for it should be easy to maintain and have advanced features.
+3. The theme and blog software should be able to be updated.
+4. It should be low to no cost to deploy.
 
-Note: If you host your blog using Github and abide by their guidelines you can deploy your blog for no cost.      
+Note: If you host your blog using Github and abide by their guidelines you can deploy your blog for no cost.     
 
-There are numerous tutorials on how to use Jekyll to create a blog. I started with the following tutorial.   
+There are numerous tutorials that provide the basics on how to use Jekyll to create a blog.
 
 [Tania's tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/ "Tania's Tutorial")
 
-The good news is that I encountered very few issues installing the software that is used to build a Jekyll site on Ubuntu 16.04. However, when it comes to deploying a Jekyll blog using a more advanced theme I had to go through some trial and error and did a fair amount of research.  
+The good news is that I encountered very few issues installing the software that is used to build a Jekyll site on Ubuntu 16.04. However, when it comes to deploying a Jekyll blog using a more advanced theme, I had to go through some trial and error and did a fair amount of research.  
 
 The following steps are how I created a Jekyll powered blog using the [minimal-mistakes](https://mmistakes.github.io/minimal-mistakes/ "minimal-mistakes") theme hosting it using [github pages](https://pages.github.com/ "github pages"). If you review the quick start guide for the minimal-mistakes theme, it provides three different methods to install. This post uses the fork method. For QA, I have gone through the steps below to build the mininmalmistakesdemo site using these steps at least two times to be sure they are accurate and lead to success.
 
-I have not used these steps to build a githubusername.github.io site, because I already have my blog published at that location. From my experience with github you do not have to have a working site at githubusername.github.io to deploy to githubusername.github.io/subsite, but you do need to use this nomenclature to publish a subsite.  
+I have not used these steps to build a githubusername.github.io site, because I already have my blog published at that location. From my experience with Github you do not have to have a working site at githubusername.github.io to deploy to githubusername.github.io/subsite, but you do need to use this nomenclature to publish a subsite.  
 
-After my initial deployment of my blog using the fork method, I switched gears to the gem method, so I could take advantage of major changes to the theme and have a more tidy repository for my blog. One of my requirements (item 3) above was to have a blog and theme that I could easily maintain. In a future post, I will describe the initial setup of a jekyll site using the minimal-mistakes with the gem method, or you can  [fork](https://github.com/shoreviewanalytics/shoreviewanalytics.github.io "fork") my repository.
+After my initial deployment of my blog using the fork method, I switched gears to the gem method, so I could take advantage of major changes to the theme and have a more tidy repository for my blog. One of my requirements  above was to have a blog that I could easily maintain. If you are in a hurry and want to just get started with the gem method to use the minimal mistakes theme, you can  [fork](https://github.com/shoreviewanalytics/shoreviewanalytics.github.io "fork") my repository.  
 
 Please Note: It will be necessary to move slowly and do all the tasks in each step.  As a general warning, some things like the creation of a gh-pages layer on Github (Step 10), if you are not an expert with Github, can be a bit confusing.
 
@@ -50,6 +49,15 @@ gem install bundler
 Install Git using the following command:
 ```
 sudo apt-get install git
+```
+
+Troubleshooting: If you run into an issue installing or running bundler, you may need to install gcc, make and and a few other packages.  
+```
+sudo apt-get install gcc make zlib1g-dev sqlite3
+
+bundle install
+
+sudo gem install ffi -v '1.9.21'
 ```
 
 Please note: If you currently do not have a Github account, you will need to create one, to complete this tutorial.  

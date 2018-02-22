@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>            Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04 - Shore View Analytics      Blog      </title>
-<meta name="description" content="Recently, I discovered that I can use Jekyll on Github to publish a blog.  Creating a Jekyll blog or deploying a blog to Github is nothing new, but for me the control that I have over my the content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not lose it if a hosting company decides to delete it.">
+<meta name="description" content="Recently, I discovered that I can use Jekyll on Github to publish a blog.  Creating a Jekyll blog and deploying to Github is nothing new, but for me the control that I have over my content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not have to worry about the complexities of a hosting company.">
 
 
 
@@ -21,7 +21,7 @@
 <meta property="og:url" content="http://localhost:4000/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/">
 
 
-  <meta property="og:description" content="Recently, I discovered that I can use Jekyll on Github to publish a blog.  Creating a Jekyll blog or deploying a blog to Github is nothing new, but for me the control that I have over my the content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not lose it if a hosting company decides to delete it.">
+  <meta property="og:description" content="Recently, I discovered that I can use Jekyll on Github to publish a blog.  Creating a Jekyll blog and deploying to Github is nothing new, but for me the control that I have over my content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not have to worry about the complexities of a hosting company.">
 
 
 
@@ -250,7 +250,7 @@
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04">
-    <meta itemprop="description" content="Recently, I discovered that I can use Jekyll on Github to publish a blog.  Creating a Jekyll blog or deploying a blog to Github is nothing new, but for me the control that I have over my the content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not lose it if a hosting company decides to delete it.">
+    <meta itemprop="description" content="Recently, I discovered that I can use Jekyll on Github to publish a blog.  Creating a Jekyll blog and deploying to Github is nothing new, but for me the control that I have over my content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not have to worry about the complexities of a hosting company.">
     <meta itemprop="datePublished" content="February 19, 2018">
     
 
@@ -273,31 +273,30 @@
 
       <section class="page__content" itemprop="text">
         
-        <p>Recently, I discovered that I can use <a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a> on <a href="https://github.com/" title="Github">Github</a> to publish a blog.  Creating a Jekyll blog or deploying a blog to Github is nothing new, but for me the control that I have over my the content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not lose it if a hosting company decides to delete it.</p>
+        <p>Recently, I discovered that I can use <a href="https://jekyllrb.com/" title="Jekyll">Jekyll</a> on <a href="https://github.com/" title="Github">Github</a> to publish a blog.  Creating a Jekyll blog and deploying to Github is nothing new, but for me the control that I have over my content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not have to worry about the complexities of a hosting company.</p>
 
-<p>Here are the requirements I had in mind for my new blog.</p>
+<p>Here are the requirements I had in mind for my blog.</p>
 
 <ol>
   <li>It should be portable and not dependent on a specific web hosting company platform, especially the content.</li>
-  <li>The theme used should (hopefully), be actively maintained.</li>
-  <li>It should be relatively easy to maintain, have advanced features and customizable.</li>
-  <li>The theme and software should be able to be updated.</li>
+  <li>The theme used for it should be easy to maintain and have advanced features.</li>
+  <li>The theme and blog software should be able to be updated.</li>
   <li>It should be low to no cost to deploy.</li>
 </ol>
 
 <p>Note: If you host your blog using Github and abide by their guidelines you can deploy your blog for no cost.</p>
 
-<p>There are numerous tutorials on how to use Jekyll to create a blog. I started with the following tutorial.</p>
+<p>There are numerous tutorials that provide the basics on how to use Jekyll to create a blog.</p>
 
 <p><a href="https://www.taniarascia.com/make-a-static-website-with-jekyll/" title="Tania's Tutorial">Tania’s tutorial</a></p>
 
-<p>The good news is that I encountered very few issues installing the software that is used to build a Jekyll site on Ubuntu 16.04. However, when it comes to deploying a Jekyll blog using a more advanced theme I had to go through some trial and error and did a fair amount of research.</p>
+<p>The good news is that I encountered very few issues installing the software that is used to build a Jekyll site on Ubuntu 16.04. However, when it comes to deploying a Jekyll blog using a more advanced theme, I had to go through some trial and error and did a fair amount of research.</p>
 
 <p>The following steps are how I created a Jekyll powered blog using the <a href="https://mmistakes.github.io/minimal-mistakes/" title="minimal-mistakes">minimal-mistakes</a> theme hosting it using <a href="https://pages.github.com/" title="github pages">github pages</a>. If you review the quick start guide for the minimal-mistakes theme, it provides three different methods to install. This post uses the fork method. For QA, I have gone through the steps below to build the mininmalmistakesdemo site using these steps at least two times to be sure they are accurate and lead to success.</p>
 
-<p>I have not used these steps to build a githubusername.github.io site, because I already have my blog published at that location. From my experience with github you do not have to have a working site at githubusername.github.io to deploy to githubusername.github.io/subsite, but you do need to use this nomenclature to publish a subsite.</p>
+<p>I have not used these steps to build a githubusername.github.io site, because I already have my blog published at that location. From my experience with Github you do not have to have a working site at githubusername.github.io to deploy to githubusername.github.io/subsite, but you do need to use this nomenclature to publish a subsite.</p>
 
-<p>After my initial deployment of my blog using the fork method, I switched gears to the gem method, so I could take advantage of major changes to the theme and have a more tidy repository for my blog. One of my requirements (item 3) above was to have a blog and theme that I could easily maintain. In a future post, I will describe the initial setup of a jekyll site using the minimal-mistakes with the gem method, or you can  <a href="https://github.com/shoreviewanalytics/shoreviewanalytics.github.io" title="fork">fork</a> my repository.</p>
+<p>After my initial deployment of my blog using the fork method, I switched gears to the gem method, so I could take advantage of major changes to the theme and have a more tidy repository for my blog. One of my requirements  above was to have a blog that I could easily maintain. If you are in a hurry and want to just get started with the gem method to use the minimal mistakes theme, you can  <a href="https://github.com/shoreviewanalytics/shoreviewanalytics.github.io" title="fork">fork</a> my repository.</p>
 
 <p>Please Note: It will be necessary to move slowly and do all the tasks in each step.  As a general warning, some things like the creation of a gh-pages layer on Github (Step 10), if you are not an expert with Github, can be a bit confusing.</p>
 
@@ -318,6 +317,14 @@
 </code></pre></div></div>
 <p>Install Git using the following command:</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install git
+</code></pre></div></div>
+
+<p>Troubleshooting: If you run into an issue installing or running bundler, you may need to install gcc, make and and a few other packages.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt-get install gcc make zlib1g-dev sqlite3
+
+bundle install
+
+sudo gem install ffi -v '1.9.21'
 </code></pre></div></div>
 
 <p>Please note: If you currently do not have a Github account, you will need to create one, to complete this tutorial.</p>
@@ -571,7 +578,7 @@ sudo apt update; sudo apt install atom
   9 minute read
 </p>
     
-    <p class="archive__item-excerpt" itemprop="description">Recently, I discovered that I can use Jekyll on Github to publish a blog.  Creating a Jekyll blog or deploying a blog to Github is nothing new, but for me th...</p>
+    <p class="archive__item-excerpt" itemprop="description">Recently, I discovered that I can use Jekyll on Github to publish a blog.  Creating a Jekyll blog and deploying to Github is nothing new, but for me the cont...</p>
   </article>
 </div>
         
