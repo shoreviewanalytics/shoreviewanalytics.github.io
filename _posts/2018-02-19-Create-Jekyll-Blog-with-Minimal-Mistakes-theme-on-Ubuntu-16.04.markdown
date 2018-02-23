@@ -187,7 +187,7 @@ Now that you have a basic blog minus any customizations that you will want, you 
 
 There are two different locations where you can publish your blog on github.  
 
-1. The root of your github account also known as the master.  This is when you want to view your blog at a web address like I am doing at shoreviewanalytics.github.io
+1. The root of your github account also known as the master.  This is when you want to view your blog at a web address like I am doing at shoreviewanalytics.github.io.
 
 2. You can also serve up your blog using a project site also known as gh-pages.  This is when you want to view your blog at an address like shoreviewanalytics.github.io/minimalmistakesjekylldemo.
 
