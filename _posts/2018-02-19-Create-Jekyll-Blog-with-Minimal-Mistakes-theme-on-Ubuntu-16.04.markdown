@@ -4,7 +4,7 @@ title: 'Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04'
 date: '2018-02-19'
 ---
 
-Recently, I discovered that I can use [Jekyll](https://jekyllrb.com/ "Jekyll") on [Github](https://github.com/ "Github") to publish a blog.  Creating a Jekyll blog and deploying to Github is nothing new, but for me the control that I have over my content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not have to worry about the complexities of a hosting company.  
+Recently, I discovered that I can use [Jekyll](https://jekyllrb.com/ "Jekyll") on [Github](https://github.com/ "Github") to publish a blog.  Creating a Jekyll blog and deploying to Github is nothing new, but the control that I have over my content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not have to worry about the complexities of a hosting company.  
 
 Here are the requirements I had in mind for my blog.  
 
@@ -15,19 +15,15 @@ Here are the requirements I had in mind for my blog.
 
 Note: If you host your blog using Github and abide by their guidelines you can deploy your blog for no cost.     
 
-There are numerous tutorials that provide the basics on how to use Jekyll to create a blog.
+I found many web based tutorials on how to use Jekyll to create a blog and found the following tutorial to be one of the best to get started.        
 
 [Tania's tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/ "Tania's Tutorial")
 
-The good news is that I encountered very few issues installing the software that is used to build a Jekyll site on Ubuntu 16.04. However, when it comes to deploying a Jekyll blog using a more advanced theme, I had to go through some trial and error and did a fair amount of research.  
+The steps below outline how to create a Jekyll powered blog using the [minimal-mistakes](https://mmistakes.github.io/minimal-mistakes/ "minimal-mistakes") theme hosting it using [github pages](https://pages.github.com/ "github pages"). If you review the quick start guide for the minimal-mistakes theme, it provides three different methods to install. This post explains how to use the fork method. For QA, I have gone through the steps below to build the mininmalmistakesdemo site at least two times to be sure they are accurate and lead to success.
 
-The following steps are how I created a Jekyll powered blog using the [minimal-mistakes](https://mmistakes.github.io/minimal-mistakes/ "minimal-mistakes") theme hosting it using [github pages](https://pages.github.com/ "github pages"). If you review the quick start guide for the minimal-mistakes theme, it provides three different methods to install. This post uses the fork method. For QA, I have gone through the steps below to build the mininmalmistakesdemo site using these steps at least two times to be sure they are accurate and lead to success.
+Please Note: It will be necessary to move slowly and do all the tasks in each step.  As a general warning, some things like the creation of a gh-pages layer on Github (Step 10), if you are not an expert with Github, can be a bit confusing.  
 
 I have not used these steps to build a githubusername.github.io site, because I already have my blog published at that location. From my experience with Github you do not have to have a working site at githubusername.github.io to deploy to githubusername.github.io/subsite, but you do need to use this nomenclature to publish a subsite.  
-
-After my initial deployment of my blog using the fork method, I switched gears to the gem method, so I could take advantage of major changes to the theme and have a more tidy repository for my blog. One of my requirements  above was to have a blog that I could easily maintain. If you are in a hurry and want to just get started with the gem method to use the minimal mistakes theme, you can  [fork](https://github.com/shoreviewanalytics/shoreviewanalytics.github.io "fork") my repository.  
-
-Please Note: It will be necessary to move slowly and do all the tasks in each step.  As a general warning, some things like the creation of a gh-pages layer on Github (Step 10), if you are not an expert with Github, can be a bit confusing.
 
 When you complete this tutorial you should have a fully functional Jekyll blog using the minimal-mistakes theme as displayed at the following web address.
 
@@ -35,7 +31,7 @@ When you complete this tutorial you should have a fully functional Jekyll blog u
 
 The initial version of the site is pretty basic looking, so you will need to make adjustments and add your own content to make it more interesting.    
 
-## Step 1
+#https://githubusername.github.io# Step 1
 
 Install Ruby using the following command:
 ```
@@ -51,7 +47,7 @@ Install Git using the following command:
 sudo apt-get install git
 ```
 
-Troubleshooting: If you run into an issue installing or running bundler, you may need to install gcc, make and and a few other packages.  
+https://githubusername.github.ioTroubleshooting: If you run into an issue installing or running bundler, you may need to install gcc, make and and a few other packages.  
 ```
 sudo apt-get install gcc make zlib1g-dev sqlite3
 
@@ -60,7 +56,7 @@ bundle install
 sudo gem install ffi -v '1.9.21'
 ```
 
-Please note: If you currently do not have a Github account, you will need to create one, to complete this tutorial.  
+If you currently do not have a Github account, you will need to create one, to complete this tutorial.  
 
 ## Step 2
 
@@ -68,11 +64,11 @@ After you have a setup your github account, create a new repository on github, u
 
 Create a repository with a name of githubusername.github.io if you want a web address like:
 
-https://githubusername.github.io
+**https://githubusername.github.io**
 
 Create a repository with a name minimaljekylldemo if you want a web address like:
 
-https://githubusername.github.io/minimaljekylldemo
+**https://githubusername.github.io/minimaljekylldemo**
 
 Note: Creating a repository defaults to the root or master level and you can only have one Jekyll site at this level.  All other sites must be placed at the gh-pages level. For example, if you are reading this post and you already have a blog like I do at http://shoreviewanalytics.github.io you would create a new repository called minimaljekylldemo and would navigate to it with the following url.  https://shoreviewanalytics.github.io/minimaljekylldemo.  I will get into the details of how this is done and why below.  The main point of this step is to make sure you create an account on github.com and also create the desired repository.  
 
@@ -240,21 +236,13 @@ git commit -m "first githubusername.github.io"
 git push -u origin master
 ```
 
-You should now have a working jekyll blog using the minimal-mistakes theme that is served up at the root or master level or the gh-pages level of your github account.
+## Summary
+
+Congratulations! You should now have a working jekyll blog using the minimal-mistakes theme that is served up at the root or master level or the gh-pages level of your github account.
 Of course this is just the beginning to all the fun.  As you can see there are many options and features to explore.
 
-Congratulations! If you made it to this point in the tutorial successfully, you should consider yourself  AWESOME!
+After initial deployment of my blog using the fork method, I switched gears to the gem method, so I could take advantage of major changes to the theme and have a more tidy repository for my blog. One of my requirements above was to have a blog that I could easily maintain. If you are in a hurry and want to just get started with the gem method to use the minimal mistakes theme, you can  [fork](https://github.com/shoreviewanalytics/shoreviewanalytics.github.io "fork") my repository. 
 
-## Tip:
-
-To assist with creating posts, I highly recommend installing Atom, a powerful text editor that is markdown aware.  Atom let's you preview your posts as you write them.  
-
-To install Atom on Ubuntu 16.04, use the following commands:
-
-```
-sudo add-apt-repository ppa:webupd8team/atom
-sudo apt update; sudo apt install atom
-```
 
 ## Markdown Reference:
 
