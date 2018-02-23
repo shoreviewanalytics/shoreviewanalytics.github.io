@@ -16,7 +16,7 @@ locale                   : "en-US"
 title                    : "Shore View Analytics | Blog"
 title_separator          : "-"
 name                     : "chad.downey"
-description              : "Ubuntu, Data Analysis, Data Visualization and Data Science"
+description              : "shoreviewanalytics.github.io"
 url                      : "https://shoreviewanalytics.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "shoreviewanalytics/shoreviewanalytics.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -228,7 +228,7 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: # true
+      comments: true
       share: true
       related: true
 
