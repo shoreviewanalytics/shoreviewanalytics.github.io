@@ -75,7 +75,7 @@ Create a repository with a name minimaljekylldemo if you want a web address like
 
 **https://githubusername.github.io/minimaljekylldemo**
 
-Note: Creating a repository defaults to the root or master level and you can only have one Jekyll site at this level.  All other sites must be placed at the gh-pages level. For example, if you are reading this post and you already have a blog like I do at http://shoreviewanalytics.github.io you would create a new repository called minimaljekylldemo and would navigate to it with the following url.  https://shoreviewanalytics.github.io/minimaljekylldemo.  I will get into the details of how this is done and why below.  The main point of this step is to make sure you create an account on github.com and also create the desired repository.  
+Note: Creating a repository defaults to the root or master level and you can only have one Jekyll site at this level.  All other sites must be placed at the gh-pages level. For example, if you are reading this post and you already have a blog like I do at http://shoreviewanalytics.github.io you would create a new repository called minimalmistakesjekylldemo and would navigate to it with the following url.  https://shoreviewanalytics.github.io/minimalmistakesjekylldemo/.  I will get into the details of how this is done and why below.  The main point of this step is to make sure you create an account on github.com and also create the desired repository.  
 
 ## Step 3
 
