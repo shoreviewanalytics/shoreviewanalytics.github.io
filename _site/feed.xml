@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-02-23T14:06:23-05:00</updated><id>http://localhost:4000/</id><title type="html">shoreviewanalytics.github.io</title><subtitle>Ponderings on Analytics, Data Management, Data Analysis and Data Visualization.</subtitle><author><name>chad.downey</name></author><entry><title type="html">Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04</title><link href="http://localhost:4000/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/" rel="alternate" type="text/html" title="Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04" /><published>2018-02-19T00:00:00-05:00</published><updated>2018-02-19T00:00:00-05:00</updated><id>http://localhost:4000/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04</id><content type="html" xml:base="http://localhost:4000/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/">&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/jekyll-island-cropped.jpg&quot; alt=&quot;Jekyll Island&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2018-02-23T16:22:42-05:00</updated><id>https://shoreviewanalytics.github.io/</id><title type="html">shoreviewanalytics.github.io</title><subtitle>Ponderings on Analytics, Data Management, Data Analysis and Data Visualization.</subtitle><author><name>Chad Downey</name></author><entry><title type="html">Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04</title><link href="https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/" rel="alternate" type="text/html" title="Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04" /><published>2018-02-19T00:00:00-05:00</published><updated>2018-02-19T00:00:00-05:00</updated><id>https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/">&lt;p&gt;&lt;img src=&quot;https://shoreviewanalytics.github.io/assets/jekyll-island-cropped.jpg&quot; alt=&quot;Jekyll Island&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Recently, I discovered that I can use &lt;a href=&quot;https://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; on &lt;a href=&quot;https://github.com/&quot; title=&quot;Github&quot;&gt;Github&lt;/a&gt; to publish a blog.  Creating a Jekyll blog and deploying to Github is nothing new, but the control that I have over my content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not have to worry about the complexities of a hosting company.&lt;/p&gt;
 
@@ -29,7 +29,7 @@
 
 &lt;p&gt;The initial version of the site is pretty basic looking, so you will need to make adjustments and add your own content to make it more interesting.&lt;/p&gt;
 
-&lt;p&gt;#https://githubusername.github.io# Step 1&lt;/p&gt;
+&lt;h2 id=&quot;step-1&quot;&gt;Step 1&lt;/h2&gt;
 
 &lt;p&gt;Install Ruby using the following command:&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install ruby
@@ -42,7 +42,8 @@
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;https://githubusername.github.ioTroubleshooting: If you run into an issue installing or running bundler, you may need to install gcc, make and and a few other packages.&lt;/p&gt;
+&lt;p&gt;If you run into an issue installing or running bundler, you may need to install gcc, make and and a few other packages.&lt;/p&gt;
+
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install gcc make zlib1g-dev sqlite3
 
 bundle install
@@ -64,7 +65,7 @@ sudo gem install ffi -v '1.9.21'
 
 &lt;p&gt;&lt;strong&gt;https://githubusername.github.io/minimaljekylldemo&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Note: Creating a repository defaults to the root or master level and you can only have one Jekyll site at this level.  All other sites must be placed at the gh-pages level. For example, if you are reading this post and you already have a blog like I do at http://shoreviewanalytics.github.io you would create a new repository called minimaljekylldemo and would navigate to it with the following url.  https://shoreviewanalytics.github.io/minimaljekylldemo.  I will get into the details of how this is done and why below.  The main point of this step is to make sure you create an account on github.com and also create the desired repository.&lt;/p&gt;
+&lt;p&gt;Note: Creating a repository defaults to the root or master level and you can only have one Jekyll site at this level.  All other sites must be placed at the gh-pages level. For example, if you are reading this post and you already have a blog like I do at http://shoreviewanalytics.github.io you would create a new repository called minimalmistakesjekylldemo and would navigate to it with the following url.  https://shoreviewanalytics.github.io/minimalmistakesjekylldemo/.  I will get into the details of how this is done and why below.  The main point of this step is to make sure you create an account on github.com and also create the desired repository.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-3&quot;&gt;Step 3&lt;/h2&gt;
 
@@ -169,7 +170,7 @@ baseurl : &quot;/minimalmistakesjekylldemo&quot;
 
 &lt;ol&gt;
   &lt;li&gt;
-    &lt;p&gt;The root of your github account also known as the master.  This is when you want to view your blog at a web address like I am doing at shoreviewanalytics.github.io&lt;/p&gt;
+    &lt;p&gt;The root of your github account also known as the master.  This is when you want to view your blog at a web address like I am doing at shoreviewanalytics.github.io.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;You can also serve up your blog using a project site also known as gh-pages.  This is when you want to view your blog at an address like shoreviewanalytics.github.io/minimalmistakesjekylldemo.&lt;/p&gt;
@@ -231,4 +232,4 @@ Of course this is just the beginning to all the fun.  As you can see there are m
 
 &lt;p&gt;&lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot; title=&quot;Markdown-Cheatsheet&quot;&gt;Markdown-Cheatsheet&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://www.cirosantilli.com/markdown-style-guide/&quot; title=&quot;Markdown Style Guide&quot;&gt;Markdown Style Guide&lt;/a&gt;&lt;/p&gt;</content><author><name>chad.downey</name></author><summary type="html"></summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://www.cirosantilli.com/markdown-style-guide/&quot; title=&quot;Markdown Style Guide&quot;&gt;Markdown Style Guide&lt;/a&gt;&lt;/p&gt;</content><author><name>Chad Downey</name></author><summary type="html"></summary></entry></feed>
