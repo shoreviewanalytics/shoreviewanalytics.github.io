@@ -35,7 +35,7 @@ When you complete this tutorial you should have a fully functional Jekyll blog u
 
 The initial version of the site is pretty basic looking, so you will need to make adjustments and add your own content to make it more interesting.    
 
-#https://githubusername.github.io# Step 1
+## Step 1
 
 Install Ruby using the following command:
 ```
@@ -51,7 +51,8 @@ Install Git using the following command:
 sudo apt-get install git
 ```
 
-https://githubusername.github.ioTroubleshooting: If you run into an issue installing or running bundler, you may need to install gcc, make and and a few other packages.  
+If you run into an issue installing or running bundler, you may need to install gcc, make and and a few other packages.  
+
 ```
 sudo apt-get install gcc make zlib1g-dev sqlite3
 
