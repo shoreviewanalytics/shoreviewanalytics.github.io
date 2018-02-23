@@ -2,7 +2,11 @@
 layout: single
 title: 'Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04'
 date: '2018-02-19'
+classes: wide
+
 ---
+
+<img src="{{ site.url }}{{ site.baseurl }}/assets/jekyll-island-cropped.jpg" alt="Jekyll Island">
 
 Recently, I discovered that I can use [Jekyll](https://jekyllrb.com/ "Jekyll") on [Github](https://github.com/ "Github") to publish a blog.  Creating a Jekyll blog and deploying to Github is nothing new, but the control that I have over my content and hosting is real value. As long as I work on my blog locally, and back it up periodically, I should always be in the drivers seat for my blog content and not have to worry about the complexities of a hosting company.  
 

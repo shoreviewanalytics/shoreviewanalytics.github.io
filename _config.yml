@@ -13,10 +13,10 @@ minimal_mistakes_skin    : "default" #"default" , "air", "aqua", "contrast", "da
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Shore View Analytics | Blog"
+title                    : "shoreviewanalytics.github.io"
 title_separator          : "-"
 name                     : "chad.downey"
-description              : "shoreviewanalytics.github.io"
+description              : "Ponderings on Analytics, Data Management, Data Analysis and Data Visualization."
 url                      : "https://shoreviewanalytics.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "shoreviewanalytics/shoreviewanalytics.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -24,9 +24,12 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-    appid                :
-    num_posts            :  5 (default)
-    colorscheme          : "dark" #"light" (default), "dark"
+  appid                :
+  num_posts            :  5 (default)
+  colorscheme          : "dark" #"light" (default), "dark"
+  provider: "disqus"
+  disqus:
+    shortname: "shoreviewanalytics"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
   branch                 : # "master"
@@ -80,7 +83,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          : "UA-114576494-1"
 
@@ -89,7 +92,7 @@ analytics:
 author:
   name             : "chad.downey"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Information Technology professional specializing in data analysis, data visualization and data science and an avid Ubuntu user, in case you hadn't noticed." 
+  bio              : "Information Technology professional living in the United States, specializing in Analytics, Data Management, Data Analysis and Data Visualization." 
   location         : "United States"
   linkedin         : "chad-downey-cbip-48646812" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   github           : "shoreviewanalytics" 
