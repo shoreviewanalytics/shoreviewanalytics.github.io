@@ -8,13 +8,13 @@ classes: wide
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/jekyll-logo-black-red-transparent.png" alt="Jekyll Island">
 
-Recently, I discovered [Jekyll](https://jekyllrb.com/ "Jekyll") a static site generator that you can publish on [Github](https://github.com/ "Github").  
+Recently, I discovered [Jekyll](https://jekyllrb.com/ "Jekyll") a static website and blog generator that you can publish on [Github Pages](https://pages.github.com/ "Github Pages"). 
 
 ## Why Jekyll?
 
-- Creating a Jekyll blog and deploying to Github gives you complete control over your content.
+- Creating a Jekyll blog and deploying to Github Pages, gives you complete control over your content.
 - Hosting on Github is free. 
- 
+- Because, I give Jekyll a :+1:!
 
 ## Here are the requirements I had in mind for my blog.  
 
@@ -23,13 +23,13 @@ Recently, I discovered [Jekyll](https://jekyllrb.com/ "Jekyll") a static site ge
 3. The theme and blog software should be able to be updated.
 4. It should be low to no cost to deploy.
 
-Note: If you host your blog using Github and abide by their guidelines you can deploy your blog for no cost.     
+Note: If you host your blog using Github Pages and abide by their guidelines you can deploy your blog or website for no cost.     
 
 I found many web based tutorials on how to use Jekyll to create a blog and found the following tutorial to be one of the best to get started.        
 
 [Tania's tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/ "Tania's Tutorial")
 
-The steps below outline how to create a Jekyll powered blog using the [minimal-mistakes](https://mmistakes.github.io/minimal-mistakes/ "minimal-mistakes") theme hosting it using [github pages](https://pages.github.com/ "github pages"). If you review the quick start guide for the minimal-mistakes theme, it provides three different methods to install. This post explains how to use the fork method. For QA, I have gone through the steps below to build the mininmalmistakesdemo site at least two times to be sure they are accurate and lead to success.
+The steps below outline how to create a Jekyll powered blog using the [minimal-mistakes](https://mmistakes.github.io/minimal-mistakes/ "minimal-mistakes") theme hosting it using [github pages](https://pages.github.com/ "Github Pages"). If you review the quick start guide for the minimal-mistakes theme, it provides three different methods to install. This post explains how to use the fork method. For QA, I have gone through the steps below to build the mininmalmistakesdemo site at least two times to be sure they are accurate and lead to success.
 
 Please Note: It will be necessary to move slowly and do all the tasks in each step.  As a general warning, some things like the creation of a gh-pages layer on Github (Step 10), if you are not an expert with Github, can be a bit confusing.  
 
