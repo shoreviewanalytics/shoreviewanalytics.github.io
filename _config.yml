@@ -16,7 +16,7 @@ locale                   : "en-US"
 title                    : "shoreviewanalytics.github.io"
 title_separator          : "-"
 name                     : "Chad Downey"
-description              : "Ponderings on Analytics, Data Management, Data Analysis and Data Visualization."
+description              : "You might temporarily take away someones dignity, but you cannot take away their ability to grow and learn."
 url                      : "https://shoreviewanalytics.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "shoreviewanalytics/shoreviewanalytics.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -94,7 +94,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Information Technology professional living in the United States, specializing in Analytics, Data Management, Data Analysis and Data Visualization." 
   location         : "United States"
-  linkedin         : "chad-downey-cbip-48646812" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "chad-downey-48646812" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   github           : "shoreviewanalytics" 
 
 # Reading Files
