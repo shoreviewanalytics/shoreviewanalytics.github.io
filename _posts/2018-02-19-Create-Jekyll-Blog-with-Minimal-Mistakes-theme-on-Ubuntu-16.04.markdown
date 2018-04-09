@@ -43,31 +43,27 @@ The initial version of the site is pretty basic looking, so you will need to mak
 
 ## Step 1
 
+Install dependencies
+
+```
+sudo apt-get install gcc make zlib1g-dev sqlite3 automake autoconf libtool build-essential
+```
+
 Install Ruby using the following command:
 ```
-sudo apt-get install ruby
+sudo apt-get install ruby ruby-dev
 ```
 
 Install Bundler
 ```
-gem install bundler
+sudo apt-get install bundler
 ```
 Install Git using the following command:
 ```
 sudo apt-get install git
 ```
 
-If you run into an issue installing or running bundler, you may need to install gcc, make and and a few other packages.  
-
-```
-sudo apt-get install gcc make zlib1g-dev sqlite3
-
-bundle install
-
-sudo gem install ffi -v '1.9.21'
-```
-
-If you currently do not have a Github account, you will need to create one, to complete this tutorial.  
+Note: If you currently do not have a Github account, you will need to create one, to complete this tutorial.  
 
 ## Step 2
 
@@ -86,6 +82,7 @@ Note: Creating a repository defaults to the root or master level and you can onl
 ## Step 3
 
 Create a new folder in your home directory to use as a sandbox for your Jekyll efforts.  I called mine websites, but you can call it whatever suites your needs.    
+
 
 ## Step 4
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2018-04-06T08:29:50-04:00</updated><id>https://shoreviewanalytics.github.io/</id><title type="html">shoreviewanalytics.github.io</title><subtitle></subtitle><author><name>Chad Downey</name></author><entry><title type="html">Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04</title><link href="https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/" rel="alternate" type="text/html" title="Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04" /><published>2018-02-19T00:00:00-05:00</published><updated>2018-02-19T00:00:00-05:00</updated><id>https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/">&lt;p&gt;&lt;img src=&quot;https://shoreviewanalytics.github.io/assets/images/jekyll-logo-black-red-transparent.png&quot; alt=&quot;Jekyll Island&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2018-04-09T18:12:28-04:00</updated><id>https://shoreviewanalytics.github.io/</id><title type="html">shoreviewanalytics.github.io</title><subtitle></subtitle><author><name>Chad Downey</name></author><entry><title type="html">Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04</title><link href="https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/" rel="alternate" type="text/html" title="Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04" /><published>2018-02-19T00:00:00-05:00</published><updated>2018-02-19T00:00:00-05:00</updated><id>https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/">&lt;p&gt;&lt;img src=&quot;https://shoreviewanalytics.github.io/assets/images/jekyll-logo-black-red-transparent.png&quot; alt=&quot;Jekyll Island&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Recently, I discovered &lt;a href=&quot;https://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; a static website and blog generator that you can publish on &lt;a href=&quot;https://pages.github.com/&quot; title=&quot;Github Pages&quot;&gt;Github Pages&lt;/a&gt;.&lt;/p&gt;
 
@@ -39,27 +39,23 @@
 
 &lt;h2 id=&quot;step-1&quot;&gt;Step 1&lt;/h2&gt;
 
+&lt;p&gt;Install dependencies&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install gcc make zlib1g-dev sqlite3 automake autoconf libtool build-essential
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;p&gt;Install Ruby using the following command:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install ruby
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install ruby ruby-dev
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Install Bundler&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install bundler
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install bundler
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Install Git using the following command:&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;If you run into an issue installing or running bundler, you may need to install gcc, make and and a few other packages.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install gcc make zlib1g-dev sqlite3
-
-bundle install
-
-sudo gem install ffi -v '1.9.21'
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;If you currently do not have a Github account, you will need to create one, to complete this tutorial.&lt;/p&gt;
+&lt;p&gt;Note: If you currently do not have a Github account, you will need to create one, to complete this tutorial.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-2&quot;&gt;Step 2&lt;/h2&gt;
 
