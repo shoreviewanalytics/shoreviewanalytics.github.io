@@ -43,6 +43,8 @@ The initial version of the site is pretty basic looking, so you will need to mak
 
 ## Step 1
 
+In order to get going with Jekyll on Ubuntu 16.04 it is necessary to install several packages. If you already have some of the packages listed below installed that's okay as the these commands only install what is needed.   
+
 Install dependencies
 
 ```
