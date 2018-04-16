@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2018-04-16T14:07:16-04:00</updated><id>https://shoreviewanalytics.github.io/</id><title type="html">shoreviewanalytics.github.io</title><subtitle></subtitle><author><name>Chad Downey</name></author><entry><title type="html">How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer</title><link href="https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/" rel="alternate" type="text/html" title="How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer" /><published>2018-04-10T00:00:00-04:00</published><updated>2018-04-10T00:00:00-04:00</updated><id>https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer</id><content type="html" xml:base="https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/">&lt;h2 id=&quot;how-to-become-one-of-the-the-big-4&quot;&gt;How to become one of the (The Big 4)&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2018-04-16T15:23:39-04:00</updated><id>https://shoreviewanalytics.github.io/</id><title type="html">shoreviewanalytics.github.io</title><subtitle></subtitle><author><name>Chad Downey</name></author><entry><title type="html">How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer</title><link href="https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/" rel="alternate" type="text/html" title="How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer" /><published>2018-04-10T00:00:00-04:00</published><updated>2018-04-10T00:00:00-04:00</updated><id>https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer</id><content type="html" xml:base="https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/">&lt;h2 id=&quot;how-to-become-one-of-the-the-big-4&quot;&gt;How to become one of the (The Big 4)&lt;/h2&gt;
 
 &lt;p&gt;Hello everyone! For this post I want to discuss how to work towards becoming a
 Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer, which
@@ -6,14 +6,10 @@ for brevity I will refer to as “The Big 4”.  When I look at the number of jo
 postings for “The Big 4” on employment web sites as of writing this post it is
 astonishing. All you have to do is go to LinkedIn or another job site and do a
 search for “Data Analyst” in the United States and you will see several pages of
-openings and that’s just for one of “The Big 4”. Related to “The Big 4” are
-specialized roles in Natural Language Processing (NLP) and AI techniques, but I
-believe these are just variants of say a Machine Learning Engineer role or Data
-Scientist role, so I don’t mention NLP or AI as separate roles. As of writing
-this post when I do a search on Linkedin for NLP it returns Data Science
-positions. Well, the fact that there are many openings with the job title of
-“Data Analyst” or “Data Scientist” is great, but what if you haven’t held a job
-as a “Data Analyst” or “Data Scientist” or any of “The Big 4”?&lt;/p&gt;
+openings and that’s just for one of “The Big 4”.&lt;/p&gt;
+
+&lt;p&gt;Related to “The Big 4” are specialized roles in Natural Language Processing (NLP) and AI techniques, but I believe these are just variants of say a Machine Learning Engineer role or Data Scientist role, so I don’t mention NLP or AI as separate roles. As of writing this post when I do a search on Linkedin for NLP it returns Data Science positions. Well, the fact that there are many openings with the job title of
+“Data Analyst” or “Data Scientist” is great, but what if you haven’t held a job as a “Data Analyst” or “Data Scientist” or any of “The Big 4”?&lt;/p&gt;
 
 &lt;h2 id=&quot;ready-set-go&quot;&gt;Ready, Set, Go!&lt;/h2&gt;
 
@@ -28,7 +24,9 @@ Engineer. I am also considering an online Master’s degree in Data Science.&lt;
 
 &lt;p&gt;As you begin exploration into “The Big 4”, you will realize that there is some
 overlap and often you will see in job postings that suffer from I call the “bundle complex” where a given job posting bundles what could possibly be 1 or 2 FTE’s into a position description, but
-this is the subject of a future post. For now, to show how these roles overlap,
+this is the subject of a future post.&lt;/p&gt;
+
+&lt;p&gt;For now, to show how these roles overlap,
 consider the image below a data plotting exercise from my Data Analyst / Data
 Scientist track on Dataquest.io. The example, comes from a section on “Improving
 Plot Aesthetics” in the “Storytelling Through Data Visualization” course.&lt;/p&gt;
@@ -48,7 +46,7 @@ well as Big Data Platforms that integrate “The Big 4” tools.&lt;/p&gt;
 &lt;p&gt;One thing that has become clear early on in my Journey into “The Big 4” is the 
 need to brush up on statistics, linear algebra, vector mathematics and some calculus.  If you
 plan to become a Machine Learning Engineer or Data Scientist it is imporant to know how to solve basic equations, but you won’t need to compute partial derivatives necessarily.  However, if you are a mathematical wizard and can apply what you know to the formulas used within the field, it doesn’t hurt either. As I continue my journey with “The Big 4”, I am realizing that rather than solving equations manually it is more important to understand which model 
-to apply and the proper way to apply it, in order to product the best results.&lt;/p&gt;
+to apply and the proper way to apply it, in order to produce the best results.&lt;/p&gt;
 
 &lt;p&gt;The Machine Learning class that I am currently taking on Coursera does include a fair amount of mathematical formulas, but these formulas themselves are rarely used to manually produce a result.  Instead, the formulas are translated to a more practical format to be used in a programming language.    As an example, here is a formula used in my machine learning course in week 6 of the class.&lt;/p&gt;
 
