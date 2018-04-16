@@ -84,8 +84,8 @@ interviewed with that provides a Big Data platform stated that as an employee yo
 I’ve also seen programs that teach “The Big 4” require you to blog as you progress through the program. While you do not have
 to create a blog, for me it works, because I like blogging and can use Github Pages to host my blog and essentially, the same platform to post code samples worthy of sharing, helping me to stay organized.  
 
-If you haven’t created a blog yet, be sure to check out my tutorial on how to build a blog using Jeckyll and Github Pages. It will
-take some effort to get through it, but after completing it, you will have an easily maintainable blog for many years to come.
+If you haven’t created a blog yet, be sure to check out my [tutorial](https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/)  on how to build a blog using Jeckyll and Github Pages. It will 
+take some effort to get through it, but after completing it, you will have very nice professional looking blog, that is relatively easy to maintain.  
 
 Summary
 -------
