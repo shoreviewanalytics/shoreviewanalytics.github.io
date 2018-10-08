@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2018-10-08T14:12:59+00:00</updated><id>https://shoreviewanalytics.github.io/</id><title type="html">shoreviewanalytics.github.io</title><subtitle></subtitle><author><name>Chad Downey</name></author><entry><title type="html">How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer</title><link href="https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/" rel="alternate" type="text/html" title="How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer" /><published>2018-04-10T00:00:00+00:00</published><updated>2018-04-10T00:00:00+00:00</updated><id>https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer</id><content type="html" xml:base="https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/">&lt;h2 id=&quot;how-to-become-one-of-the-the-big-4&quot;&gt;How to become one of the (The Big 4)&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.6.2">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2018-10-08T15:01:15+00:00</updated><id>https://shoreviewanalytics.github.io/</id><title type="html">shoreviewanalytics.github.io</title><subtitle></subtitle><author><name>Chad Downey</name></author><entry><title type="html">How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer</title><link href="https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/" rel="alternate" type="text/html" title="How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer" /><published>2018-04-10T00:00:00+00:00</published><updated>2018-04-10T00:00:00+00:00</updated><id>https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer</id><content type="html" xml:base="https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/">&lt;h2 id=&quot;how-to-become-one-of-the-the-big-4&quot;&gt;How to become one of the (The Big 4)&lt;/h2&gt;
 
 &lt;p&gt;Hello everyone! For this post I want to discuss how to work towards becoming a
 Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer, which
@@ -82,46 +82,45 @@ an open source platform. Either way hopefully you are doing something that you e
 
 &lt;p&gt;If you are considering a career change, have a great deal of experience with data systems (DBA, Data Modeling, OO Programming, SQL etc.) and have done some data visualization or quantitative reporting, and want to take your skill set and use it to become one of “The Big 4”, you can get there a variety of ways and as it turns out it doesn’t have to necessarily be expensive either. You can probably get there without having a great deal of experience in data systems or programing, but the Journey may take a bit longer. For example, if you have not done any programming it may be pretty hard to pick up Python as used in my Data Analyst / Data Science track with Dataquest.io. The good is that they have a complete introduction to Python as a part of their Data Analyst or Data Scientist tracks and there are other online training sites such as &lt;a href=&quot;https://www.datacamp.com/&quot;&gt;DataCamp&lt;/a&gt; that provide similar training with some free tutorials for Python or R.&lt;/p&gt;</content><author><name>Chad Downey</name></author><summary type="html">How to become one of the (The Big 4)</summary></entry><entry><title type="html">Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04</title><link href="https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/" rel="alternate" type="text/html" title="Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04" /><published>2018-02-19T00:00:00+00:00</published><updated>2018-02-19T00:00:00+00:00</updated><id>https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/">&lt;p&gt;&lt;img src=&quot;https://shoreviewanalytics.github.io/assets/images/jekyll-logo-black-red-transparent.png&quot; alt=&quot;Jekyll Island&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;Recently, I discovered &lt;a href=&quot;https://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; a static website and blog generator that you can publish on &lt;a href=&quot;https://pages.github.com/&quot; title=&quot;Github Pages&quot;&gt;Github Pages&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Recently, I discovered &lt;a href=&quot;https://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; a static website and blog generator that let’s you create a feature rich, professional looking blog and then publish it on &lt;a href=&quot;https://pages.github.com/&quot; title=&quot;Github Pages&quot;&gt;Github Pages&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;why-jekyll&quot;&gt;Why Jekyll?&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Creating a Jekyll blog and deploying to Github Pages, gives you complete control over your content.&lt;/li&gt;
-  &lt;li&gt;Hosting on Github is free.&lt;/li&gt;
+  &lt;li&gt;A Jekyll blog hosted on Github Pages, gives you complete control over your content.&lt;/li&gt;
+  &lt;li&gt;Hosting on Github Pages is free (for now!).&lt;/li&gt;
+  &lt;li&gt;You desire a professional looking blog without the complexity and dependence on a hosting company.&lt;/li&gt;
   &lt;li&gt;Because, I give Jekyll a :+1:!&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;here-are-the-requirements-i-had-in-mind-for-my-blog&quot;&gt;Here are the requirements I had in mind for my blog.&lt;/h2&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;It should be portable and not dependent on a specific web hosting company platform, especially the content.&lt;/li&gt;
+&lt;ul&gt;
+  &lt;li&gt;Blog should portable and not dependent on a specific hosting company, especially the content.&lt;/li&gt;
   &lt;li&gt;The theme used for it should be easy to maintain and have advanced features.&lt;/li&gt;
   &lt;li&gt;The theme and blog software should be able to be updated.&lt;/li&gt;
   &lt;li&gt;It should be low to no cost to deploy.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;Note: If you host your blog using Github Pages and abide by their guidelines you can deploy your blog or website for no cost.&lt;/p&gt;
+&lt;p&gt;If you host your blog on Github Pages and abide by their guidelines you can deploy your blog or website for no cost.&lt;/p&gt;
 
-&lt;p&gt;I found many web based tutorials on how to use Jekyll to create a blog and found the following tutorial to be one of the best to get started.&lt;/p&gt;
+&lt;p&gt;By the way there are many web based tutorials that you can review to get started with Jekyll.  To get your feet wet check out the following tutorial.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.taniarascia.com/make-a-static-website-with-jekyll/&quot; title=&quot;Tania's Tutorial&quot;&gt;Tania’s tutorial&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The steps below outline how to create a Jekyll powered blog using the &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/&quot; title=&quot;minimal-mistakes&quot;&gt;minimal-mistakes&lt;/a&gt; theme hosting it using &lt;a href=&quot;https://pages.github.com/&quot; title=&quot;Github Pages&quot;&gt;github pages&lt;/a&gt;. If you review the quick start guide for the minimal-mistakes theme, it provides three different methods to install. This post explains how to use the fork method. For QA, I have gone through the steps below to build the mininmalmistakesdemo site at least two times to be sure they are accurate and lead to success.&lt;/p&gt;
 
-&lt;p&gt;Please Note: It will be necessary to move slowly and do all the tasks in each step.  As a general warning, some things like the creation of a gh-pages layer on Github (Step 10), if you are not an expert with Github, can be a bit confusing.&lt;/p&gt;
+&lt;p&gt;It will be necessary to move slowly and do all the tasks in each step. Some of the steps, like creating a gh-pages layer on Github (as described in Step 10 below), can be confusing if you haven’t used git.&lt;/p&gt;
 
 &lt;p&gt;I have not used these steps to build a githubusername.github.io site, because I already have my blog published at that location. From my experience with Github you do not have to have a working site at githubusername.github.io to deploy to githubusername.github.io/subsite, but you do need to use this nomenclature to publish a subsite.&lt;/p&gt;
 
-&lt;p&gt;When you complete this tutorial you should have a fully functional Jekyll blog using the minimal-mistakes theme as displayed at the following web address.&lt;/p&gt;
+&lt;p&gt;The cool thing is when you complete this tutorial you should have a fully functional Jekyll blog using the minimal-mistakes theme.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://shoreviewanalytics.github.io/minimalmistakesjekylldemo/&quot; title=&quot;minimal-mistakes theme demo&quot;&gt;https://shoreviewanalytics.github.io/minimalmistakesjekylldemo/&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;The initial version of the site is pretty basic looking, so you will need to make adjustments and add your own content to make it more interesting.&lt;/p&gt;
+&lt;p&gt;The initial version of the site is pretty basic looking, so you will need to make adjustments and add your own content to make it more interesting. What’s really cool about going this route for your blog is you will have a professional blog that looks fantastic on any browser including your mobile phone.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-1&quot;&gt;Step 1&lt;/h2&gt;
-
-&lt;p&gt;In order to get going with Jekyll on Ubuntu 16.04 it is necessary to install several packages. If you already have some of the packages listed below installed that’s okay as the these commands only install what is needed.&lt;/p&gt;
 
 &lt;p&gt;Install dependencies&lt;/p&gt;
 
@@ -135,15 +134,15 @@ an open source platform. Either way hopefully you are doing something that you e
 &lt;p&gt;Install Bundler&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo gem install bundler
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Usually git is installed buf in case it isn’t, use the following command to install it.&lt;/p&gt;
+&lt;p&gt;Usually git is installed on Ubuntu by default, but in case it isn’t, use the following command to install it.&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Note: If you currently do not have a Github account, you will need to create one, to complete this tutorial.&lt;/p&gt;
+&lt;p&gt;If you currently do not have a Github account, you will need to create one, to complete this tutorial.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-2&quot;&gt;Step 2&lt;/h2&gt;
 
-&lt;p&gt;After you have a setup your github account, create a new repository on github, using the following naming conventions.&lt;/p&gt;
+&lt;p&gt;After you have a setup your github account, create a new repository using the following naming conventions.&lt;/p&gt;
 
 &lt;p&gt;Create a repository with a name of githubusername.github.io if you want a web address like:&lt;/p&gt;
 
@@ -153,7 +152,9 @@ an open source platform. Either way hopefully you are doing something that you e
 
 &lt;p&gt;&lt;strong&gt;https://githubusername.github.io/minimaljekylldemo&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Note: Creating a repository defaults to the root or master level and you can only have one Jekyll site at this level.  All other sites must be placed at the gh-pages level. For example, if you are reading this post and you already have a blog like I do at http://shoreviewanalytics.github.io you would create a new repository called minimalmistakesjekylldemo and would navigate to it with the following url.  https://shoreviewanalytics.github.io/minimalmistakesjekylldemo/.  I will get into the details of how this is done and why below.  The main point of this step is to make sure you create an account on github.com and also create the desired repository.&lt;/p&gt;
+&lt;p&gt;Creating a repository defaults to the root or master level and you can only have one Jekyll site at this level.  All other sites must be placed at the gh-pages level. For example, if you are reading this post and you already have a blog like I do at http://shoreviewanalytics.github.io you would create a new repository called minimalmistakesjekylldemo and would navigate to it with the following url.  https://shoreviewanalytics.github.io/minimalmistakesjekylldemo/.&lt;/p&gt;
+
+&lt;p&gt;I will get into the details of how this is done and why below.  The main point of this step is to make sure you create an account on github.com and also create the desired repository.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-3&quot;&gt;Step 3&lt;/h2&gt;
 
@@ -172,7 +173,7 @@ an open source platform. Either way hopefully you are doing something that you e
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/shoreviewanalytics/minimal-mistakes.git  
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;You should now have the minimal-mistakes repository on your local machine.&lt;/p&gt;
+&lt;p&gt;You should now have the minimal-mistakes repository on your local machine in your sandbox / jekyll development directory created above in step 3.&lt;/p&gt;
 
 &lt;h2 id=&quot;step-6&quot;&gt;Step 6&lt;/h2&gt;
 

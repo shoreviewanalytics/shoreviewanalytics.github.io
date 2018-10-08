@@ -8,42 +8,41 @@ classes: wide
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/jekyll-logo-black-red-transparent.png" alt="Jekyll Island">
 
-Recently, I discovered [Jekyll](https://jekyllrb.com/ "Jekyll") a static website and blog generator that you can publish on [Github Pages](https://pages.github.com/ "Github Pages").
+Recently, I discovered [Jekyll](https://jekyllrb.com/ "Jekyll") a static website and blog generator that let's you create a feature rich, professional looking blog and then publish it on [Github Pages](https://pages.github.com/ "Github Pages").
 
 ## Why Jekyll?
 
-- Creating a Jekyll blog and deploying to Github Pages, gives you complete control over your content.
-- Hosting on Github is free.
+- A Jekyll blog hosted on Github Pages, gives you complete control over your content.
+- Hosting on Github Pages is free (for now!).
+- You desire a professional looking blog without the complexity and dependence on a hosting company.
 - Because, I give Jekyll a :+1:!
 
 ## Here are the requirements I had in mind for my blog.  
 
-1. It should be portable and not dependent on a specific web hosting company platform, especially the content.   
-2. The theme used for it should be easy to maintain and have advanced features.
-3. The theme and blog software should be able to be updated.
-4. It should be low to no cost to deploy.
+- Blog should portable and not dependent on a specific hosting company, especially the content.   
+- The theme used for it should be easy to maintain and have advanced features.
+- The theme and blog software should be able to be updated.
+- It should be low to no cost to deploy.
 
-Note: If you host your blog using Github Pages and abide by their guidelines you can deploy your blog or website for no cost.     
+If you host your blog on Github Pages and abide by their guidelines you can deploy your blog or website for no cost.     
 
-I found many web based tutorials on how to use Jekyll to create a blog and found the following tutorial to be one of the best to get started.        
+By the way there are many web based tutorials that you can review to get started with Jekyll.  To get your feet wet check out the following tutorial.  
 
 [Tania's tutorial](https://www.taniarascia.com/make-a-static-website-with-jekyll/ "Tania's Tutorial")
 
 The steps below outline how to create a Jekyll powered blog using the [minimal-mistakes](https://mmistakes.github.io/minimal-mistakes/ "minimal-mistakes") theme hosting it using [github pages](https://pages.github.com/ "Github Pages"). If you review the quick start guide for the minimal-mistakes theme, it provides three different methods to install. This post explains how to use the fork method. For QA, I have gone through the steps below to build the mininmalmistakesdemo site at least two times to be sure they are accurate and lead to success.
 
-Please Note: It will be necessary to move slowly and do all the tasks in each step.  As a general warning, some things like the creation of a gh-pages layer on Github (Step 10), if you are not an expert with Github, can be a bit confusing.  
+It will be necessary to move slowly and do all the tasks in each step. Some of the steps, like creating a gh-pages layer on Github (as described in Step 10 below), can be confusing if you haven't used git.  
 
 I have not used these steps to build a githubusername.github.io site, because I already have my blog published at that location. From my experience with Github you do not have to have a working site at githubusername.github.io to deploy to githubusername.github.io/subsite, but you do need to use this nomenclature to publish a subsite.  
 
-When you complete this tutorial you should have a fully functional Jekyll blog using the minimal-mistakes theme as displayed at the following web address.
+The cool thing is when you complete this tutorial you should have a fully functional Jekyll blog using the minimal-mistakes theme.
 
 [https://shoreviewanalytics.github.io/minimalmistakesjekylldemo/](https://shoreviewanalytics.github.io/minimalmistakesjekylldemo/ "minimal-mistakes theme demo")
 
-The initial version of the site is pretty basic looking, so you will need to make adjustments and add your own content to make it more interesting.    
+The initial version of the site is pretty basic looking, so you will need to make adjustments and add your own content to make it more interesting. What's really cool about going this route for your blog is you will have a professional blog that looks fantastic on any browser including your mobile phone.        
 
 ## Step 1
-
-In order to get going with Jekyll on Ubuntu 16.04 it is necessary to install several packages. If you already have some of the packages listed below installed that's okay as the these commands only install what is needed.   
 
 Install dependencies
 
@@ -60,16 +59,16 @@ Install Bundler
 ```
 sudo gem install bundler
 ```
-Usually git is installed buf in case it isn't, use the following command to install it.
+Usually git is installed on Ubuntu by default, but in case it isn't, use the following command to install it.
 ```
 sudo apt-get install git
 ```
 
-Note: If you currently do not have a Github account, you will need to create one, to complete this tutorial.  
+If you currently do not have a Github account, you will need to create one, to complete this tutorial.  
 
 ## Step 2
 
-After you have a setup your github account, create a new repository on github, using the following naming conventions.
+After you have a setup your github account, create a new repository using the following naming conventions.
 
 Create a repository with a name of githubusername.github.io if you want a web address like:
 
@@ -79,7 +78,9 @@ Create a repository with a name minimaljekylldemo if you want a web address like
 
 **https://githubusername.github.io/minimaljekylldemo**
 
-Note: Creating a repository defaults to the root or master level and you can only have one Jekyll site at this level.  All other sites must be placed at the gh-pages level. For example, if you are reading this post and you already have a blog like I do at http://shoreviewanalytics.github.io you would create a new repository called minimalmistakesjekylldemo and would navigate to it with the following url.  https://shoreviewanalytics.github.io/minimalmistakesjekylldemo/.  I will get into the details of how this is done and why below.  The main point of this step is to make sure you create an account on github.com and also create the desired repository.  
+Creating a repository defaults to the root or master level and you can only have one Jekyll site at this level.  All other sites must be placed at the gh-pages level. For example, if you are reading this post and you already have a blog like I do at http://shoreviewanalytics.github.io you would create a new repository called minimalmistakesjekylldemo and would navigate to it with the following url.  https://shoreviewanalytics.github.io/minimalmistakesjekylldemo/.  
+
+I will get into the details of how this is done and why below.  The main point of this step is to make sure you create an account on github.com and also create the desired repository.  
 
 ## Step 3
 
@@ -100,7 +101,7 @@ Click on the green button that says Clone or download and then click on the copy
 git clone https://github.com/shoreviewanalytics/minimal-mistakes.git  
 ```
 
-You should now have the minimal-mistakes repository on your local machine.
+You should now have the minimal-mistakes repository on your local machine in your sandbox / jekyll development directory created above in step 3.
 
 ## Step 6
 
