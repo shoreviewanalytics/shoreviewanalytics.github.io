@@ -1,4 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2018-10-08T16:03:29+00:00</updated><id>https://shoreviewanalytics.github.io/</id><title type="html">shoreviewanalytics.github.io</title><subtitle></subtitle><author><name>Chad Downey</name></author><entry><title type="html">How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer</title><link href="https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/" rel="alternate" type="text/html" title="How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer" /><published>2018-04-10T00:00:00+00:00</published><updated>2018-04-10T00:00:00+00:00</updated><id>https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer</id><content type="html" xml:base="https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/">&lt;h2 id=&quot;how-to-become-one-of-the-the-big-4&quot;&gt;How to become one of the (The Big 4)&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2018-10-08T19:46:39+00:00</updated><id>https://shoreviewanalytics.github.io/</id><title type="html">shoreviewanalytics.github.io</title><subtitle></subtitle><author><name>Chad Downey</name></author><entry><title type="html">Spark Job Specific Logging with Logback and DataStax Enterprise Analytics</title><link href="https://shoreviewanalytics.github.io/Spark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics/" rel="alternate" type="text/html" title="Spark Job Specific Logging with Logback and DataStax Enterprise Analytics" /><published>2018-10-08T00:00:00+00:00</published><updated>2018-10-08T00:00:00+00:00</updated><id>https://shoreviewanalytics.github.io/Spark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Spark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics/">&lt;h2 id=&quot;spark-job-specific-logging-with-logback-and-datastax-enterprise-analytics&quot;&gt;Spark Job Specific Logging with Logback and DataStax Enterprise Analytics&lt;/h2&gt;
+
+&lt;p&gt;This post takes a look at how use Logback, the successor to Log4j with your spark application to create application specific logging. If you have spent any amount of time with Apache Spark you will notice that there is a ton of logging that goes on, but that logging is usually limited to the master or worker processing that occurs on each node in your cluster.  While this information is important it doesn’t tell you a whole lot about how your specific application is doing.  Also if you have system wide settings for logging of your spark applications you may have to sift through one log for all your applications. The example code allows you to create a log file for each of your spark applications and allows you to control the level of logging.&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Spark development environment (This example uses Eclipse) or ability to compile source code to a .jar file with all necessary dependencies.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;An available distributed server cluster to run the example (This example uses DataStax Enterprise Analytics Cluster), but you tweak the example code to run on a standard Apache Spark cluster.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Step 1&lt;/p&gt;
+
+&lt;p&gt;Clone the following repository to your workstation using the following command.&lt;/p&gt;
+
+&lt;p&gt;git clone https://github.com/shoreviewanalytics/sparkjobspecificlogging.git&lt;/p&gt;
+
+&lt;p&gt;Step 2&lt;/p&gt;
+
+&lt;p&gt;Launch the project using Eclipse or your favorite IDE and make the necessary adjustments to the code (for example the path to the .csv), then compile and export it to a .jar file.&lt;/p&gt;
+
+&lt;p&gt;Step 3&lt;/p&gt;
+
+&lt;p&gt;This step is optional if you are not working on a distributed environment. If you are working on a distributed computing environment you can add the .csv to an accessible path to the user running the spark job to each node in your cluster.  Ex. home/username/data a the words.csv file would be place in this location for each node in the cluster.&lt;/p&gt;
+
+&lt;p&gt;Step 4&lt;/p&gt;
+
+&lt;p&gt;Run the example using a command similar to following command. The exact syntax of this command depends on the platform you are using, the location of your logback.xml file, the location of the .jar file (your spark job) and the configuration of your DataStax / cluster environment.&lt;/p&gt;
+
+&lt;p&gt;dse -u username -p password spark-submit –class com.java.spark.LoggingSample –master dse://? –driver-java-options “-Dlogback.configurationFile=/pathtoyour/logback.xml” /path to your jarfile/LoggingSample.jar&lt;/p&gt;
+
+&lt;p&gt;Summary&lt;/p&gt;
+
+&lt;p&gt;This example is done in Java, but could have just as easily been using Scala or Python, since the majority of the logging setup is done via spark-submit and the logback.xml file and the code is just a revamp of the word count application. As you review the code you will see there are logging statements for transformations and RDDs. The most important part of this example is Step 4 where you can explicitly reference a logback.xml file in the spark-submit.  What this does is allow you to configure logging for the job you are running, by explicitly setting the log file directory and the level of logging for the log file.  There’s also an experimental class (SysStreamsLogger) included in this example (which I did not write, but did amend for the purpose of the example).  The SysStreamsLogger.java class allows you to capture additional information from the console to add to the log file as the spark job is running.  Entries in the log file will have the logger name of SysStreamLogger.java when information is captured from the console and redirected by this class to the log file. Another important part of this example is the ability to change the various logging levels (see the end of the logback.xml file included in this example).  These settings allow you to have more granular control of logging, so you can have a very concise log possibly for production or a very verbose log possibly for development or troubleshooting.&lt;/p&gt;
+
+&lt;p&gt;In closing there are tons of features available with logback and this example is just scratches the surface. You can find detailed information on the logback features on the project’s &lt;a href=&quot;&amp;quot;https://logback.qos.ch/&amp;quot;&quot;&gt;website&lt;/a&gt;.  You can find more information about DataStax Enterprise Analytics &lt;a href=&quot;&amp;quot;https://www.datastax.com/products/datastax-enterprise-analytics&amp;quot;&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>Chad Downey</name></author><summary type="html">Spark Job Specific Logging with Logback and DataStax Enterprise Analytics</summary></entry><entry><title type="html">How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer</title><link href="https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/" rel="alternate" type="text/html" title="How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer" /><published>2018-04-10T00:00:00+00:00</published><updated>2018-04-10T00:00:00+00:00</updated><id>https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer</id><content type="html" xml:base="https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/">&lt;h2 id=&quot;how-to-become-one-of-the-the-big-4&quot;&gt;How to become one of the (The Big 4)&lt;/h2&gt;
 
 &lt;p&gt;Hello everyone! For this post I want to discuss how to work towards becoming a
 Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer, which
