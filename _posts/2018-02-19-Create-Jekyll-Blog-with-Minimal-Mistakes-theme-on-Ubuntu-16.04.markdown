@@ -24,7 +24,7 @@ Recently, I discovered [Jekyll](https://jekyllrb.com/ "Jekyll") a static website
 - The theme and blog software should be able to be updated.
 - It should be low to no cost to deploy.
 
-If you host your blog on Github Pages and abide by their guidelines you can deploy your blog or website for no cost.     
+If you host your blog on Github Pages and abide by their [guidelines](https://help.github.com/articles/what-is-github-pages/#usage-limits) you can deploy your blog or website for no cost.     
 
 By the way there are many web based tutorials that you can review to get started with Jekyll.  To get your feet wet check out the following tutorial.  
 
