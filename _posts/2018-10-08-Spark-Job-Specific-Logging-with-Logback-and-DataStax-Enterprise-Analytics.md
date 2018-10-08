@@ -9,7 +9,7 @@ classes: wide
 Spark Job Specific Logging with Logback and DataStax Enterprise Analytics
 ------------------------------------
 
-This post takes a look at how use Logback, the successor to Log4j with your spark application to create application specific logging. If you have spent any amount of time with Apache Spark you will notice that there is a ton of logging that goes on, but that logging is usually limited to the master or worker processing that occurs on each node in your cluster.  While this information is important it doesn't tell you a whole lot about how your specific application is doing.  Also if you have system wide settings for logging of your spark applications you may have to sift through one log for all your applications. The code for this post can be found [here]("https://github.com/shoreviewanalytics/sparkjobspecificlogging").
+This post takes a look at how use Logback, the successor to Log4j with your spark application to create application specific logging. If you have spent any amount of time with Apache Spark you will notice that there is a ton of logging that goes on, but that logging is usually limited to the master or worker processing that occurs on each node in your cluster.  While this information is important it doesn't tell you a whole lot about how your specific application is doing.  Also if you have system wide settings for logging of your spark applications you may have to sift through one log for all your applications. The code for this post can be found [here]("https://github.com/shoreviewanalytics/sparkjobspecificlogging/").
 
 Prerequisites:
 ---------------
