@@ -8,12 +8,12 @@ classes: wide
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/jekyll-logo-black-red-transparent.png" alt="Jekyll Island">
 
-Recently, I discovered [Jekyll](https://jekyllrb.com/ "Jekyll") a static website and blog generator that you can publish on [Github Pages](https://pages.github.com/ "Github Pages"). 
+Recently, I discovered [Jekyll](https://jekyllrb.com/ "Jekyll") a static website and blog generator that you can publish on [Github Pages](https://pages.github.com/ "Github Pages").
 
 ## Why Jekyll?
 
 - Creating a Jekyll blog and deploying to Github Pages, gives you complete control over your content.
-- Hosting on Github is free. 
+- Hosting on Github is free.
 - Because, I give Jekyll a :+1:!
 
 ## Here are the requirements I had in mind for my blog.  
@@ -58,9 +58,9 @@ sudo apt-get install ruby ruby-dev
 
 Install Bundler
 ```
-sudo apt-get install bundler
+sudo gem install bundler
 ```
-Install Git using the following command:
+Usually git is installed buf in case it isn't, use the following command to install it.
 ```
 sudo apt-get install git
 ```
@@ -251,7 +251,7 @@ git push -u origin master
 Congratulations! You should now have a working jekyll blog using the minimal-mistakes theme that is served up at the root or master level or the gh-pages level of your github account.
 Of course this is just the beginning to all the fun.  As you can see there are many options and features to explore.
 
-After initial deployment of my blog using the fork method, I switched gears to the gem method, so I could take advantage of major changes to the theme and have a more tidy repository for my blog. One of my requirements above was to have a blog that I could easily maintain. If you are in a hurry and want to just get started with the gem method to use the minimal mistakes theme, you can  [fork](https://github.com/shoreviewanalytics/shoreviewanalytics.github.io "fork") my repository. 
+After initial deployment of my blog using the fork method, I switched gears to the gem method, so I could take advantage of major changes to the theme and have a more tidy repository for my blog. One of my requirements above was to have a blog that I could easily maintain. If you are in a hurry and want to just get started with the gem method to use the minimal mistakes theme, you can  [fork](https://github.com/shoreviewanalytics/shoreviewanalytics.github.io "fork") my repository.
 
 
 ## Markdown Reference:
