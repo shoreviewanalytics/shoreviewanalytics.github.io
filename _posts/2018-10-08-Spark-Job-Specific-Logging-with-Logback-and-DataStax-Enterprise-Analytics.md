@@ -9,14 +9,14 @@ classes: wide
 Spark Job Specific Logging with Logback and DataStax Enterprise Analytics
 ------------------------------------
 
-This post takes a look at how use Logback, the successor to Log4j with your spark application to create application specific logging. If you have spent any amount of time with Apache Spark you will notice that there is a ton of logging that goes on, but that logging is usually limited to the master or worker processing that occurs on each node in your cluster.  While this information is important it doesn't tell you a whole lot about how your specific application is doing.  Also if you have system wide settings for logging of your spark applications you may have to sift through one log for all your applications. 
+This post takes a look at how use Logback, the successor to Log4j with your spark application to create application specific logging. If you have spent any amount of time with Apache Spark you will notice that there is a ton of logging that goes on, but that logging is usually limited to the master or worker processing that occurs on each node in your cluster.  While this information is important it doesn't tell you a whole lot about how your specific application is doing.  Also if you have system wide settings for logging of your spark applications you may have to sift through one log for all your applications.
 
 Prerequisites:
 ---------------
 
-- Spark development environment (This example uses Eclipse) or ability to compile source code to a .jar file with all necessary dependencies.  
+- Spark development environment (This example uses Eclipse) or have ability to compile source code to a .jar file with all the necessary dependencies.  
 
-- An available distributed server cluster to run the example (This example uses DataStax Enterprise Analytics Cluster), but you tweak the example code to run on a standard Apache Spark cluster.
+- An available distributed server cluster to run the example on if you want to test it out on a cluster. This example uses a DataStax Enterprise Analytics.  
 
 Step 1
 
