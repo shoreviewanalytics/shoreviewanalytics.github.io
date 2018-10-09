@@ -27,11 +27,11 @@ git clone https://github.com/shoreviewanalytics/sparkjobspecificlogging.git
 
 Step 2
 
-Launch the project using Eclipse or your favorite IDE and make the necessary adjustments to the code (for example the path to the .csv), then compile and export it to a .jar file.
+Compile the code to a .jar file using your favorite IDE or compiler after making necessary adjustments. Ex. You will need to change the path to the words.csv.  
 
 Step 3
 
-This step is optional if you are not working on a distributed environment. If you are working on a distributed computing environment you can add the .csv to an accessible path to the user running the spark job to each node in your cluster.  Ex. home/username/data a the words.csv file would be place in this location for each node in the cluster.    
+This step is optional if you are not working on a distributed environment. If you do have a cluster environment, you can add the words.csv to an accessible path to the user running the spark job on each node in your cluster.  Ex. home/username/data     
 
 Step 4
 
