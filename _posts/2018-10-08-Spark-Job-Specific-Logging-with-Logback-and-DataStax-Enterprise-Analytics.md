@@ -35,7 +35,7 @@ This step is optional if you are not working on a distributed environment. If yo
 
 Step 4
 
-Run the example using a command similar to following command. The exact syntax of this command depends on the platform you are using, whether you have security enabled or not, the location of your logback.xml file, the location of the .jar file (your spark job) and the configuration of your cluster environment.  Note the this command is also separated into multiple lines for formatting purposes only and should be run using a single line.    
+Run the example using a command similar to following command. The exact syntax of this command depends on the platform you are using, whether you have security enabled or not, the location of your logback.xml file, the location of the .jar file (your spark job) and the configuration of your cluster environment.  Also the following command is separated into multiple lines just for this blog post and and should be run as a single line in a terminal window.    
 
 ```
 dse -u username -p password spark-submit
@@ -44,6 +44,7 @@ dse -u username -p password spark-submit
 --driver-java-options "-Dlogback.configurationFile=/pathtoyour/logback.xml"
 /path to your jarfile/LoggingSample.jar
 ```
+
 
 Summary
 
