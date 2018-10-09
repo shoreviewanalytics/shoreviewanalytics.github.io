@@ -9,7 +9,7 @@ classes: wide
 Spark Job Specific Logging with Logback and DataStax Enterprise Analytics
 ------------------------------------
 
-This post takes a look at how use Logback, the successor to Log4j with your spark application to create application specific logging. If you have spent any amount of time with Apache Spark you will notice that there is a ton of logging that goes on, but that logging is usually limited to the master or worker processing that occurs on each node in your cluster.  While this information is important it doesn't tell you a whole lot about how your specific application is doing across your cluster. With logging you can obtain granular information about the spark cluster and detailed  [DAG]("https://stackoverflow.com/questions/25836316/how-dag-works-under-the-covers-in-rdd") information for your spark job.  Also if you have system wide settings for logging of your spark applications you may have to sift through one log for all your applications.
+This post takes a look at how use Logback, the successor to Log4j with your spark application to create application specific logging. If you have spent any amount of time with Apache Spark you will notice that there is a ton of logging that goes on, but that logging is usually limited to the master or worker processing that occurs on each node in your cluster.  While this information is important it doesn't tell you a whole lot about how your specific application is doing across your cluster. With logging you can obtain granular information about the spark cluster and detailed  [DAG]("https://stackoverflow.com/questions/25836316/how-dag-works-under-the-covers-in-rdd") information for your spark job.  Also if you have system wide settings for logging of your spark applications you may have to sift through one log for all your applications.  With this code you can use verbose logging for development and then turn it down for production to only log what you really need to log like errors and basic feedback during job processing.    
 
 Prerequisites:
 ---------------
@@ -35,10 +35,14 @@ This step is optional if you are not working on a distributed environment. If yo
 
 Step 4
 
-Run the example using a command similar to following command. The exact syntax of this command depends on the platform you are using, whether you have security enabled or not, the location of your logback.xml file, the location of the .jar file (your spark job) and the configuration of your cluster environment.    
+Run the example using a command similar to following command. The exact syntax of this command depends on the platform you are using, whether you have security enabled or not, the location of your logback.xml file, the location of the .jar file (your spark job) and the configuration of your cluster environment.  Note the this command is also separated into multiple lines for formatting purposes only and should be run using a single line.    
 
 ```
-dse -u username -p password spark-submit --class com.java.spark.LoggingSample --master dse://? --driver-java-options "-Dlogback.configurationFile=/pathtoyour/logback.xml" /path to your jarfile/LoggingSample.jar
+dse -u username -p password spark-submit
+--class com.java.spark.LoggingSample
+--master dse://?
+--driver-java-options "-Dlogback.configurationFile=/pathtoyour/logback.xml"
+/path to your jarfile/LoggingSample.jar
 ```
 
 Summary
