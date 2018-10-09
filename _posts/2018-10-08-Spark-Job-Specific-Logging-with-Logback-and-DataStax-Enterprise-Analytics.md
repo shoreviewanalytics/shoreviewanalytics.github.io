@@ -16,7 +16,7 @@ Prerequisites:
 
 - Spark development environment (This example uses Eclipse) or have ability to compile source code to a .jar file with all the necessary dependencies.  
 
-- An available distributed server cluster to run the example on if you want to test it out on a cluster. This example uses a DataStax Enterprise Analytics.  
+- An available Spark development environment.  Access to an Apache Spark cluster is ideal if you want to run this example and collect information related to the job running on the cluster.     
 
 Step 1
 
@@ -31,7 +31,7 @@ Compile the code to a .jar file using your favorite IDE or compiler after making
 
 Step 3
 
-This step is optional if you are not working on a distributed environment. If you do have a cluster environment, you can add the words.csv to an accessible path to the user running the spark job on each node in your cluster.  Ex. home/username/data     
+This step is optional if you are not working on a distributed environment. If have access to a cluster environment, you can add the words.csv to an accessible path to the user running the spark job on each node in your cluster.  Ex. home/username/data/words.csv     
 
 Step 4
 
@@ -45,10 +45,22 @@ dse -u username -p password spark-submit
 /path to your jarfile/LoggingSample.jar
 ```
 
+Step 5
+
+Look for the following property in the logback.xml file.  
+
+ <logger name="org.apache.spark" level="INFO"/>
+
+ When this property is set to INFO the log will contain DAG information and more details about the job running.   
+
+If you set the level to OFF, the output is reduced significantly.  
+
+ <logger name="org.apache.spark" level="OFF"/>
+
 
 Summary
 
-This example is done in Java, but could have just as easily been done using Scala or Python. The majority of the logging setup is done via spark-submit and the logback.xml file and the code itself is just a revamp of the word count application. As you review the code you will see there are logging statements for transformations and RDDs. The most important part of this example is Step 4 where you can explicitly reference a logback.xml file in the spark-submit.  What this does is allow you to configure logging specifically for the job you are running, by explicitly setting the log file directory and the level of logging for the log file.  
+This example shows you how to control the amount of logging in your spark application and how to create a log per application. The logging setup is done via spark-submit and the logback.xml file and the code itself is just a revamp of the word count application. As you review the code you will see there are logging statements for transformations and RDDs. The most important part of this example is Step 4 where you can explicitly reference a logback.xml file in the spark-submit.  What this does is allow you to configure logging specifically for the job you are running, by explicitly setting the log file directory and the level of logging for the log file.  
 
 There's also a class called SysStreamsLogger included in this example (which I did not write, but did amend for the purpose of this example).  The SysStreamsLogger.java class redirects the output normally only available through the console to the specified log file set in logback.xml as the spark job is running.  Entries in the log file will have the logger name of SysStreamLogger.java when information is captured from the console and redirected by this class to the log file. Another important part of this example is the ability to change the various logging levels (see the end of the logback.xml file included in this example).  These settings allow you to have more granular control of logging, so you can have a very concise log possibly for production or a very verbose log possibly for development or troubleshooting.  
 
