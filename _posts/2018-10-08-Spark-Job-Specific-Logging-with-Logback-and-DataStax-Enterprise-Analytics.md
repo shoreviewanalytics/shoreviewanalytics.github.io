@@ -49,14 +49,16 @@ Step 5
 
 Look for the following property in the logback.xml file.  
 
+```
  <logger name="org.apache.spark" level="INFO"/>
-
+```
  When this property is set to INFO the log will contain DAG information and more details about the job running.   
 
-If you set the level to OFF, the output is reduced significantly.  
+If you set the level to OFF, the output to the log file is significantly reduced.  
 
+```
  <logger name="org.apache.spark" level="OFF"/>
-
+```
 
 Summary
 
