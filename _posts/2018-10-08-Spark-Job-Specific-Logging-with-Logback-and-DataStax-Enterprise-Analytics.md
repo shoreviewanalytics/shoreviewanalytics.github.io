@@ -35,9 +35,11 @@ This step is optional if you are not working on a distributed environment. If yo
 
 Step 4
 
-Run the example using a command similar to following command. The exact syntax of this command depends on the platform you are using, the location of your logback.xml file, the location of the .jar file (your spark job) and the configuration of your DataStax / cluster environment.    
+Run the example using a command similar to following command. The exact syntax of this command depends on the platform you are using, whether you have security enabled or not, the location of your logback.xml file, the location of the .jar file (your spark job) and the configuration of your cluster environment.    
 
+```
 dse -u username -p password spark-submit --class com.java.spark.LoggingSample --master dse://? --driver-java-options "-Dlogback.configurationFile=/pathtoyour/logback.xml" /path to your jarfile/LoggingSample.jar
+```
 
 Summary
 
