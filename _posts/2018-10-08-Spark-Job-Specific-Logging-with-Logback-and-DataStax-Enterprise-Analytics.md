@@ -12,7 +12,7 @@ Spark Job Specific Logging with Logback and DataStax Enterprise Analytics
 This post takes a look at how use Logback, the successor to Log4j with your spark application to create application specific logging. If you have spent any amount of time with Apache Spark you will notice that there is a ton of logging that goes on, but that logging is usually limited to the master or worker processing that occurs on each node in your cluster.  While this information is important it doesn't tell you a whole lot about how your specific application is doing across your cluster. With logging setup specifically for the spark job running, you can obtain granular information about how it is running on the spark cluster and detailed  [DAG](https://stackoverflow.com/questions/25836316/how-dag-works-under-the-covers-in-rdd) information as well.  In addition, if there are system wide settings for logging of spark applications you may have just one log for all your applications.  This example shows how to create a log file for each spark job and how to use verbose logging for development and then turn it down for production to only log what you really need to log, like errors and basic feedback.    
 
 Prerequisites:
----------------
+--------------
 
 - Spark development environment (This example uses Eclipse) or have ability to compile source code to a .jar file with all the necessary dependencies.  
 
@@ -54,7 +54,7 @@ Look for the following property in the logback.xml file.
 ```
  When this property is set to INFO the log will contain DAG information and more details about the job running.   
 
-If you set the level to OFF, the output to the log file is significantly reduced.  
+If you set the level to OFF, the output to the log file is significantly reduced, but the explicit logging messages you have added to your code will still be logged.    
 
 ```
  <logger name="org.apache.spark" level="OFF"/>
@@ -62,8 +62,6 @@ If you set the level to OFF, the output to the log file is significantly reduced
 
 Summary
 
-This example shows you how to control the amount of logging in your spark application and how to create a log per application. The logging setup is done via spark-submit and the logback.xml file and the code itself is just a revamp of the word count application. As you review the code you will see there are logging statements for transformations and RDDs. The most important part of this example is Step 4 where you can explicitly reference a logback.xml file in the spark-submit.  What this does is allow you to configure logging specifically for the job you are running, by explicitly setting the log file directory and the level of logging for the log file.  
+You can experiment with the various ways to configure a logback.xml file to add or reduce the verbosity of your logging. To learn more about Logback and all of its features check out the project's [website](https://logback.qos.ch/). Also, as you review the code, notice that I added a class called SysStreamsLogger, which I did not write, but did amend for the purpose of this example.  The SysStreamsLogger.java class redirects the output normally only available through the console to the specified log file set in logback.xml as the spark job is running.  Entries in the log file will have the logger name of SysStreamLogger.java when information is captured from the console and redirected by this class to the log file.
 
-There's also a class called SysStreamsLogger included in this example (which I did not write, but did amend for the purpose of this example).  The SysStreamsLogger.java class redirects the output normally only available through the console to the specified log file set in logback.xml as the spark job is running.  Entries in the log file will have the logger name of SysStreamLogger.java when information is captured from the console and redirected by this class to the log file. Another important part of this example is the ability to change the various logging levels (see the end of the logback.xml file included in this example).  These settings allow you to have more granular control of logging, so you can have a very concise log possibly for production or a very verbose log possibly for development or troubleshooting.  
-
-Logback is a very flexible and powerful logging mechanism with numerous features.  To learn more about Logback check out the project's [website](https://logback.qos.ch/).  For more information about DataStax Enterprise Analytics check out the [DataStax Enterprise Analytics  ](https://www.datastax.com/products/datastax-enterprise-analytics) web page on the DataStax website.
+Finally, to test out this logging example on a distributed computing environment, I used a three node cluster with DataStax Enterprise Analytics enabled. For more information about DataStax Enterprise Analytics check out the [DataStax Enterprise Analytics  ](https://www.datastax.com/products/datastax-enterprise-analytics) page on the DataStax website.

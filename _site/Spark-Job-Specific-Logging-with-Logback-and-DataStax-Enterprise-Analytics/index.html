@@ -347,18 +347,16 @@
 </code></pre></div></div>
 <p>When this property is set to INFO the log will contain DAG information and more details about the job running.</p>
 
-<p>If you set the level to OFF, the output to the log file is significantly reduced.</p>
+<p>If you set the level to OFF, the output to the log file is significantly reduced, but the explicit logging messages you have added to your code will still be logged.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;logger name="org.apache.spark" level="OFF"/&gt;
 </code></pre></div></div>
 
 <p>Summary</p>
 
-<p>This example shows you how to control the amount of logging in your spark application and how to create a log per application. The logging setup is done via spark-submit and the logback.xml file and the code itself is just a revamp of the word count application. As you review the code you will see there are logging statements for transformations and RDDs. The most important part of this example is Step 4 where you can explicitly reference a logback.xml file in the spark-submit.  What this does is allow you to configure logging specifically for the job you are running, by explicitly setting the log file directory and the level of logging for the log file.</p>
+<p>You can experiment with the various ways to configure a logback.xml file to add or reduce the verbosity of your logging. To learn more about Logback and all of its features check out the project’s <a href="https://logback.qos.ch/">website</a>. Also, as you review the code, notice that I added a class called SysStreamsLogger, which I did not write, but did amend for the purpose of this example.  The SysStreamsLogger.java class redirects the output normally only available through the console to the specified log file set in logback.xml as the spark job is running.  Entries in the log file will have the logger name of SysStreamLogger.java when information is captured from the console and redirected by this class to the log file.</p>
 
-<p>There’s also a class called SysStreamsLogger included in this example (which I did not write, but did amend for the purpose of this example).  The SysStreamsLogger.java class redirects the output normally only available through the console to the specified log file set in logback.xml as the spark job is running.  Entries in the log file will have the logger name of SysStreamLogger.java when information is captured from the console and redirected by this class to the log file. Another important part of this example is the ability to change the various logging levels (see the end of the logback.xml file included in this example).  These settings allow you to have more granular control of logging, so you can have a very concise log possibly for production or a very verbose log possibly for development or troubleshooting.</p>
-
-<p>Logback is a very flexible and powerful logging mechanism with numerous features.  To learn more about Logback check out the project’s <a href="https://logback.qos.ch/">website</a>.  For more information about DataStax Enterprise Analytics check out the <a href="https://www.datastax.com/products/datastax-enterprise-analytics">DataStax Enterprise Analytics  </a> web page on the DataStax website.</p>
+<p>Finally, to test out this logging example on a distributed computing environment, I used a three node cluster with DataStax Enterprise Analytics enabled. For more information about DataStax Enterprise Analytics check out the <a href="https://www.datastax.com/products/datastax-enterprise-analytics">DataStax Enterprise Analytics  </a> page on the DataStax website.</p>
 
         
       </section>
