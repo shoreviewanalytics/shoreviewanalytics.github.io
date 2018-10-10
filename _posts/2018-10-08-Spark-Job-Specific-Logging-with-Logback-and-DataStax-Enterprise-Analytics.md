@@ -18,22 +18,22 @@ Prerequisites:
 
 - An available Spark development environment.  Access to an Apache Spark cluster is ideal if you want to run this example and collect information related to the job running on the cluster.     
 
-Step 1
+**Step 1**
 
 Clone the following repository to your workstation using the following command.
 ```
 git clone https://github.com/shoreviewanalytics/sparkjobspecificlogging.git
 ```
 
-Step 2
+**Step 2**
 
 Compile the code to a .jar file using your favorite IDE or compiler after making necessary adjustments. Ex. You will need to change the path to the words.csv.  
 
-Step 3
+**Step 3**
 
 This step is optional if you are not working on a distributed environment. If have access to a cluster environment, you can add the words.csv to an accessible path to the user running the spark job on each node in your cluster.  Ex. home/username/data/words.csv     
 
-Step 4
+**Step 4**
 
 Run the example using a command similar to following command. The exact syntax of this command depends on the platform you are using, whether you have security enabled or not, the location of your logback.xml file, the location of the .jar file (your spark job) and the configuration of your cluster environment.  Also the following command is separated into multiple lines just for this blog post and should be run as a single line in a terminal window.    
 
@@ -45,7 +45,7 @@ dse -u username -p password spark-submit
 /path to your jarfile/LoggingSample.jar
 ```
 
-Step 5
+**Step 5**
 
 Look for the following property in the logback.xml file.  
 
@@ -60,7 +60,7 @@ If you set the level to OFF, the output to the log file is significantly reduced
  <logger name="org.apache.spark" level="OFF"/>
 ```
 
-Summary
+**Summary**
 
 You can experiment with the various ways to configure a logback.xml file to add or reduce the verbosity of your logging. To learn more about Logback and all of its features check out the project's [website](https://logback.qos.ch/). Also, as you review the code, notice that I added a class called SysStreamsLogger, which I did not write, but did amend for the purpose of this example.  The SysStreamsLogger.java class redirects the output normally only available through the console to the specified log file set in logback.xml as the spark job is running.  Entries in the log file will have the logger name of SysStreamLogger.java when information is captured from the console and redirected by this class to the log file.
 

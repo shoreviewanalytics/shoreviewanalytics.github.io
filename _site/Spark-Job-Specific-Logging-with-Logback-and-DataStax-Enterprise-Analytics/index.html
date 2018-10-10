@@ -314,21 +314,21 @@
   </li>
 </ul>
 
-<p>Step 1</p>
+<p><strong>Step 1</strong></p>
 
 <p>Clone the following repository to your workstation using the following command.</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/shoreviewanalytics/sparkjobspecificlogging.git
 </code></pre></div></div>
 
-<p>Step 2</p>
+<p><strong>Step 2</strong></p>
 
 <p>Compile the code to a .jar file using your favorite IDE or compiler after making necessary adjustments. Ex. You will need to change the path to the words.csv.</p>
 
-<p>Step 3</p>
+<p><strong>Step 3</strong></p>
 
 <p>This step is optional if you are not working on a distributed environment. If have access to a cluster environment, you can add the words.csv to an accessible path to the user running the spark job on each node in your cluster.  Ex. home/username/data/words.csv</p>
 
-<p>Step 4</p>
+<p><strong>Step 4</strong></p>
 
 <p>Run the example using a command similar to following command. The exact syntax of this command depends on the platform you are using, whether you have security enabled or not, the location of your logback.xml file, the location of the .jar file (your spark job) and the configuration of your cluster environment.  Also the following command is separated into multiple lines just for this blog post and should be run as a single line in a terminal window.</p>
 
@@ -339,7 +339,7 @@
 /path to your jarfile/LoggingSample.jar
 </code></pre></div></div>
 
-<p>Step 5</p>
+<p><strong>Step 5</strong></p>
 
 <p>Look for the following property in the logback.xml file.</p>
 
@@ -352,7 +352,7 @@
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;logger name="org.apache.spark" level="OFF"/&gt;
 </code></pre></div></div>
 
-<p>Summary</p>
+<p><strong>Summary</strong></p>
 
 <p>You can experiment with the various ways to configure a logback.xml file to add or reduce the verbosity of your logging. To learn more about Logback and all of its features check out the project’s <a href="https://logback.qos.ch/">website</a>. Also, as you review the code, notice that I added a class called SysStreamsLogger, which I did not write, but did amend for the purpose of this example.  The SysStreamsLogger.java class redirects the output normally only available through the console to the specified log file set in logback.xml as the spark job is running.  Entries in the log file will have the logger name of SysStreamLogger.java when information is captured from the console and redirected by this class to the log file.</p>
 
