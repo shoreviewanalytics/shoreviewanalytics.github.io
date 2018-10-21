@@ -9,19 +9,19 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Spark Job Specific Logging with Logback and DataStax Enterprise Analytics - shoreviewanalytics.github.io</title>
-<meta name="description" content="Spark Job Specific Logging with Logback and DataStax Enterprise Analytics">
+<!-- begin _includes/seo.html --><title>Spark Logback Example Two - shoreviewanalytics.github.io</title>
+<meta name="description" content="Spark Logback Example Two">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="shoreviewanalytics.github.io">
-<meta property="og:title" content="Spark Job Specific Logging with Logback and DataStax Enterprise Analytics">
-<meta property="og:url" content="https://shoreviewanalytics.github.io/Spark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics/">
+<meta property="og:title" content="Spark Logback Example Two">
+<meta property="og:url" content="https://shoreviewanalytics.github.io/Spark-Logback-Example-Two/">
 
 
-  <meta property="og:description" content="Spark Job Specific Logging with Logback and DataStax Enterprise Analytics">
+  <meta property="og:description" content="Spark Logback Example Two">
 
 
 
@@ -40,7 +40,7 @@
   
 
 
-<link rel="canonical" href="https://shoreviewanalytics.github.io/Spark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics/">
+<link rel="canonical" href="https://shoreviewanalytics.github.io/Spark-Logback-Example-Two/">
 
 
 
@@ -158,7 +158,7 @@
         <span class="sep">/</span>
       
       
-        <li class="current">Spark Job Specific Logging with Logback and DataStax Enterprise Analytics</li>
+        <li class="current">Spark Logback Example Two</li>
       
     
   </ol>
@@ -275,15 +275,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Spark Job Specific Logging with Logback and DataStax Enterprise Analytics">
-    <meta itemprop="description" content="Spark Job Specific Logging with Logback and DataStax Enterprise Analytics">
+    <meta itemprop="headline" content="Spark Logback Example Two">
+    <meta itemprop="description" content="Spark Logback Example Two">
     <meta itemprop="datePublished" content="October 08, 2018">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">Spark Job Specific Logging with Logback and DataStax Enterprise Analytics
+          <h1 class="page__title" itemprop="headline">Spark Logback Example Two
 </h1>
           
             <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
@@ -291,7 +291,7 @@
 
 
 
-  3 minute read
+  2 minute read
 </p>
           
         </header>
@@ -299,9 +299,9 @@
 
       <section class="page__content" itemprop="text">
         
-        <h2 id="spark-job-specific-logging-with-logback-and-datastax-enterprise-analytics">Spark Job Specific Logging with Logback and DataStax Enterprise Analytics</h2>
+        <h2 id="spark-logback-example-two">Spark Logback Example Two</h2>
 
-<p>This post takes a look at how use Logback, the successor to Log4j with your spark application to create application specific logging. If you have spent any amount of time with Apache Spark you will notice that there is a ton of logging that goes on, but that logging is usually limited to what spark as an application is doing so there’s lot’s of logging about spark master or worker processing and what the executors are doing. While this information is important it doesn’t tell you a whole lot about how your specific application is doing across your cluster. With logging setup specifically for the spark job running, you can obtain granular information about how it is running on the spark cluster and detailed  <a href="https://stackoverflow.com/questions/25836316/how-dag-works-under-the-covers-in-rdd">DAG</a> information as well.  In addition, if there are system wide settings for logging of spark applications you can have just one log for all your applications.  This example shows how to create a log file for each spark job and how to use verbose logging for development and then turn it down for production to only log what you really need to log, like errors and basic feedback.</p>
+<p>This post is relates to my other <a href="https://shoreviewanalytics.github.io/Spark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics/">post</a> on how use Logback, the successor to Log4j with your spark application to create application specific logging. Essentially everything is the same for this example except you don’t need to pass the location of the logback.xml file in the spark-submit and this example also let’s you pass the application name to the logback.xml file as well as let’s you reference the logback.xml file in the job / application.</p>
 
 <h2 id="prerequisites">Prerequisites:</h2>
 
@@ -317,7 +317,7 @@
 <p><strong>Step 1</strong></p>
 
 <p>Clone the following repository to your workstation using the following command.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/shoreviewanalytics/spark-logback-example-one.git
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/shoreviewanalytics/spark-logback-example-two.git
 </code></pre></div></div>
 
 <p><strong>Step 2</strong></p>
@@ -330,12 +330,11 @@
 
 <p><strong>Step 4</strong></p>
 
-<p>Run the example using spark-submit.  The exact syntax of this command depends on the platform you are using, whether you have security enabled or not, the location of your logback.xml file, the location of the .jar file (your spark job) and the configuration of your cluster environment.  Also the following command is separated into multiple lines just for this blog post and should be run as a single line in a terminal window.</p>
+<p>Run the example using spark-submit.  Notice that the option –driver-java-options “-Dlogback.configurationFile=/pathtoyour/logback.xml” is no longer in the spark-submit command.  This command is separated into multiple lines for formatting in this post and should be run as a single line in a terminal window.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dse -u username -p password spark-submit
 --class com.java.spark.LoggingSample
 --master dse://?
---driver-java-options "-Dlogback.configurationFile=/pathtoyour/logback.xml"
 /path to your jarfile/LoggingSample.jar
 </code></pre></div></div>
 
@@ -373,25 +372,24 @@ This is where the fun happens.  Look for the following property in the logback.x
       <section class="page__share">
   
 
-  <a href="https://twitter.com/intent/tweet?text=Spark+Job+Specific+Logging+with+Logback+and+DataStax+Enterprise+Analytics%20https%3A%2F%2Fshoreviewanalytics.github.io%2FSpark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=Spark+Logback+Example+Two%20https%3A%2F%2Fshoreviewanalytics.github.io%2FSpark-Logback-Example-Two%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fshoreviewanalytics.github.io%2FSpark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fshoreviewanalytics.github.io%2FSpark-Logback-Example-Two%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=https%3A%2F%2Fshoreviewanalytics.github.io%2FSpark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=https%3A%2F%2Fshoreviewanalytics.github.io%2FSpark-Logback-Example-Two%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fshoreviewanalytics.github.io%2FSpark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fshoreviewanalytics.github.io%2FSpark-Logback-Example-Two%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/" class="pagination--pager" title="How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer
+      <a href="https://shoreviewanalytics.github.io/Spark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics/" class="pagination--pager" title="Spark Job Specific Logging with Logback and DataStax Enterprise Analytics
 ">Previous</a>
     
     
-      <a href="https://shoreviewanalytics.github.io/Spark-Logback-Example-Two/" class="pagination--pager" title="Spark Logback Example Two
-">Next</a>
+      <a href="#" class="pagination--pager disabled">Next</a>
     
   </nav>
 
@@ -415,7 +413,7 @@ This is where the fun happens.  Look for the following property in the logback.x
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://shoreviewanalytics.github.io/Spark-Logback-Example-Two/" rel="permalink">Spark Logback Example Two
+        <a href="https://shoreviewanalytics.github.io/Spark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics/" rel="permalink">Spark Job Specific Logging with Logback and DataStax Enterprise Analytics
 </a>
       
     </h2>
@@ -425,10 +423,10 @@ This is where the fun happens.  Look for the following property in the logback.x
 
 
 
-  2 minute read
+  3 minute read
 </p>
     
-    <p class="archive__item-excerpt" itemprop="description">Spark Logback Example Two
+    <p class="archive__item-excerpt" itemprop="description">Spark Job Specific Logging with Logback and DataStax Enterprise Analytics
 
 </p>
   </article>
