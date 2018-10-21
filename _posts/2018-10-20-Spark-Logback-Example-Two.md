@@ -45,6 +45,7 @@ dse -u username -p password spark-submit
 ```
 
 **Step 5**
+
 This is where the fun happens.  Look for the following property in the logback.xml file.  
 
 ```
