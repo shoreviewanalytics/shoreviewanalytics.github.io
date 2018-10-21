@@ -9,7 +9,7 @@ classes: wide
 Spark Logback Example Two
 ------------------------------------
 
-This post is relates to my other [post](https://shoreviewanalytics.github.io/Spark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics/) on how use Logback, the successor to Log4j with your spark application to create application specific logging. Essentially everything is the same for this example except you don't need to pass the location of the logback.xml file in the spark-submit and this example also let's you pass the application name to the logback.xml file as well as let's you reference the logback.xml file in the job / application.  
+This post is relates to my other [post](https://shoreviewanalytics.github.io/Spark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics/) on how to use Logback, the successor to Log4j with your spark application to create application specific logging. Essentially everything is the same for this example except you don't need to pass the location of the logback.xml file in the spark-submit and this example also let's you pass the application name to the logback.xml file as well as let's you reference the logback.xml file in the job / application.  
 
 Prerequisites:
 --------------
