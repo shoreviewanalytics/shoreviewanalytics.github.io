@@ -24,12 +24,9 @@ teaser                   : # path of fallback teaser image, e.g. "/assets/images
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  appid                  :
-  num_posts              :  5 (default)
-  colorscheme            : "dark" #"light" (default), "dark"
-  provider	         : "staticman_v2"
-  disqus                 :
-    shortname            : ""
+  provider  : "staticman_v2"
+  staticman:
+    branch    : "master"
 
 
 # SEO Related
