@@ -15,7 +15,7 @@ var store = [{
         "url": "https://shoreviewanalytics.github.io/Spark-Logback-Example-One/",
         "teaser":null},{
         "title": "Spark Logback Example Two",
-        "excerpt":"Spark Logback Example TwoThis post is relates to my other post on how to use Logback, the successor to Log4j with your spark application to create application specific logging. Essentially everything is the same for this example except you don’t need to pass the location of the logback.xml file in...","categories": [],
+        "excerpt":"Spark Logback Example TwoThis post is relates to my other post on how to use Logback, the successor to Log4j with your spark application to create job specific logging when using the DataStax Enterprise (DSE) Analytics platform. Essentially everything is the same for this example, except you don’t need to...","categories": [],
         "tags": [],
         "url": "https://shoreviewanalytics.github.io/Spark-Logback-Example-Two/",
         "teaser":null}]

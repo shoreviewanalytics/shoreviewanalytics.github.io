@@ -9,14 +9,14 @@ classes: wide
 Spark Logback Example Two
 ------------------------------------
 
-This post is relates to my other [post](https://shoreviewanalytics.github.io/Spark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics/) on how to use Logback, the successor to Log4j with your spark application to create application specific logging. Essentially everything is the same for this example except you don't need to pass the location of the logback.xml file in the spark-submit and this example also let's you pass the application name to the logback.xml file as well as let's you reference the logback.xml file in the job / application.  
+This post is relates to my other [post](https://shoreviewanalytics.github.io/Spark-Logback-Example-One/) on how to use Logback, the successor to Log4j with your spark application to create job specific logging when using the DataStax Enterprise (DSE) Analytics platform. Essentially everything is the same for this example, except you don't need to pass the location of the logback.xml file in the spark-submit and this example also let's you pass the job name to the logback.xml file, so the name of the log file is the same as the name of the job.   
 
 Prerequisites:
 --------------
 
-- Spark development environment (This example uses Eclipse) or have ability to compile source code to a .jar file with all the necessary dependencies.  
+- A Java development environment (This example uses Eclipse).  
 
-- An available Spark development environment.  Access to an Apache Spark cluster is ideal if you want to run this example and collect information related to the job running on the cluster.     
+- An available DSE Analytics development environment.       
 
 **Step 1**
 
@@ -31,11 +31,11 @@ Compile the code to a .jar file and adjust the path to the .csv file. For exampl
 
 **Step 3**
 
-Step 3 is optional if you are not working on a distributed environment. If have access to a local or cloud based cluster, you can add the words.csv to an accessible path to the user running the spark job on each node in your cluster.  For example,  home/username/data/words.csv.  It is not necessary to have this file as you can just create your own file.csv and then just create a list of words with a random number of duplicates.      
+This step is optional if you are not working on a distributed environment. If have access to a local or cloud based DSE cluster, you can add the words.csv to an accessible path to the user running the job on each node in your cluster.  For example,  home/username/data/words.csv.  It is not necessary to have this file as you can just create your own file.csv and then just create a list of words with a random number of duplicates.      
 
 **Step 4**
 
-Run the example using spark-submit.  Notice that the option --driver-java-options "-Dlogback.configurationFile=/pathtoyour/logback.xml" is no longer in the spark-submit command.  This command is separated into multiple lines for formatting in this post and should be run as a single line in a terminal window.    
+Run the example using dse spark-submit.  Notice that the option --driver-java-options "-Dlogback.configurationFile=/pathtoyour/logback.xml" is no longer in the spark-submit command.  This command is separated into multiple lines for formatting in this post and should be run as a single line in a terminal window.    
 
 ```
 dse -u username -p password spark-submit
@@ -63,4 +63,4 @@ If you set the level to OFF, the output to the log file is significantly reduced
 
 You can experiment with the various ways to configure a logback.xml file to add or reduce the verbosity of your logging. To learn more about Logback and all of its features check out the project's [website](https://logback.qos.ch/). Also note that this example includes a class called SysStreamsLogger, which I did not write, but did amend for the purpose of this example.  The SysStreamsLogger.java class redirects the output normally only available through the console to the specified log file set in logback.xml as the spark job is running.  Entries in the log file will have the logger name of SysStreamLogger.java when information is captured from the console and redirected by this class to the log file.
 
-Finally, to test out this logging example on a distributed computing environment, I used a three node cluster with DataStax Enterprise Analytics enabled. For more information about DataStax Enterprise Analytics check out the [DataStax Enterprise Analytics  ](https://www.datastax.com/products/datastax-enterprise-analytics) page on the DataStax website.
+To test out this logging example on a distributed computing environment, I used a three node cluster with DataStax Enterprise Analytics enabled. For more information about DataStax Enterprise Analytics check out the [DataStax Enterprise Analytics  ](https://www.datastax.com/products/datastax-enterprise-analytics) page on the DataStax website. If you have questions or feedback regarding this post, you can contact me using the comments form below.  
