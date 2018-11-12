@@ -9,8 +9,8 @@ var store = [{
         "tags": [],
         "url": "https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/",
         "teaser":null},{
-        "title": "Spark Job Specific Logging with Logback and DataStax Enterprise Analytics",
-        "excerpt":"Spark Job Specific Logging with Logback and DataStax Enterprise AnalyticsThis post takes a look at how use Logback, the successor to Log4j with your spark application to create application specific logging. If you have spent any amount of time with Apache Spark you will notice that there is a ton...","categories": [],
+        "title": "Spark Logback Example One",
+        "excerpt":"Spark Logback Example OneThis post takes a look at how use Logback, the successor to Log4j with your spark application to create application specific logging. If you have spent any amount of time with Apache Spark you will notice that there is a ton of logging that goes on, but...","categories": [],
         "tags": [],
         "url": "https://shoreviewanalytics.github.io/Spark-Logback-Example-One/",
         "teaser":null},{
