@@ -20,7 +20,7 @@ var store = [{
         "url": "https://shoreviewanalytics.github.io/Spark-Logback-Example-Two/",
         "teaser":null},{
         "title": "Staticman API Dokku Deployment",
-        "excerpt":"Using Dokku to deploy the Staticman APIIf your reading this post, you have a desire to deploy the Staticman API as a stand alone application on premise or on a cloud based infrastructure. Over the past several months using the public Staticman API has become more and more difficult due...","categories": [],
+        "excerpt":"Using Dokku to deploy the Staticman APIIf your reading this post, you have a desire to deploy the Staticman API as a stand alone application on premise or on a cloud based infrastructure. Over the past several months using the public Staticman API has become more and more difficult to...","categories": [],
         "tags": [],
         "url": "https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment/",
         "teaser":null}]

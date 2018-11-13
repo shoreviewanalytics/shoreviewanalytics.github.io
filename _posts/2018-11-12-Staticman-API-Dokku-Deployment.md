@@ -9,9 +9,9 @@ classes: wide
 Using Dokku to deploy the Staticman API
 ------------------------------------
 
-If your reading this post, you have a desire to deploy the Staticman API as a stand alone application on premise or on a cloud based infrastructure. Over the past several months using the public Staticman API has become more and more difficult due to usage policies on github. This post relates to how to get Staticman API up and running using the digitalocean infrastructure using an Ubuntu based droplet with Dokku pre-configured. Setting up my own instance of Staticman API means it will only service my blog, so hopefully since I don't generate a whole lot of traffic, it will stay well within the usage levels set by github.    
+If your reading this post, you have a desire to deploy the Staticman API as a stand alone application on premise or on a cloud based infrastructure. Over the past several months using the public Staticman API has become more and more difficult to use with a Jekyll blog on github pages, most likely due to usage policies on github.  
 
-To be clear, this post is not meant to be a step by step tutorial at this time, although it might turn into one as most likely will add more detail.  Frankly, a step by step could turn into a book, since there are so many different areas of technology used to deploy a standalone version of Staticman API.  For now, this post is more of a brain dump on the overall steps that I had to do in order to get the Staticman API working on the digitalocean platform.  I do hope that this post helps someone and possibly creates a dialog.  Hopefully, this write up can serve as a starting point or a resource for those brave enough to venture down this path. If your like me, you can't stand not being able to figure something out, so your all in until you have success.  I know advice is cheap, but using the digitalocean platform with Dokku made this entire process doable for me. It really helped when I was faced with questions like how to enable HTTPS after deployment.     
+This post relates to how to get Staticman API up and running using the digitalocean infrastructure using an Ubuntu based droplet with Dokku pre-configured. Setting up my own instance of Staticman API means it will only service my blog, so hopefully because I don't generate a whole lot of traffic, it will stay well within the usage levels set by github.    
 
 Setup Needs:
 --------------
@@ -36,7 +36,7 @@ After you complete this step you should be able to ssh to your droplet using at 
 
 **Step 2**
 
-Fork the Staticman API repository.  I actually forked a repository that had already been forked from the original Staticman API.  I did this because after doing some recon, I found that there was only one example of someone who had successfully deployed a standalone version of Staticman API using Dokku.  After trying to deploy a few times using the vanilla repository and failing, I wanted to start from a version of the code that had been successfully deployed.  You probably don't have to do that as I believe the main thing to do if headed down this path is to fork the original repository and then remove all the Docker related files.  
+Fork the Staticman API repository.  I actually forked a repository that had already been forked from the original Staticman API.  I did this because after doing some recon, I found that there was only one example of someone who had successfully deployed a standalone version of Staticman API using Dokku.  After trying to deploy a few times using the vanilla repository and failing, I wanted to start from a version of the code that had been successfully deployed.  You probably don't have to do that as I believe the main to do is to fork the original repository and then remove all the Docker related files.  
 
 **Step 3**
 
@@ -44,7 +44,7 @@ Clone your forked version of Staticman API located under your main github accoun
 
 **Step 4**
 
-Create a new local branch for the cloned repository that you forked on your workstation.  If you didn't fork a repository that had the docker files removed, then go ahead and remove them now and then update your local branch repository.  This step is really important since to deploy Staticman you will need to have a github token and a ssh key to add to the code. The goal here, at least based on my understanding is that you don't want to push any secrets out to github.  If you do, you will get a nice little message from them saying you have sensitive information like a github token and they will disable it so you will have to create another one.  
+Create a new local branch for the cloned repository that you forked on your workstation.  Don't forget to checkout your new branch for your edits. Also, if you didn't fork a repository that had the docker files removed, then go ahead and remove them now and then update your local branch repository.  This step is really important since to deploy Staticman you will need to have a github token and a ssh key to add to the code. The goal here, at least based on my understanding is that you don't want to push any secrets out to github.  If you do, you will get a nice little message from them saying you have sensitive information like a github token and they will disable it so you will have to create another one.  
 
 **Step 5**
 
@@ -133,7 +133,15 @@ set up auto-renewal:
 	dokku letsencrypt:cron-job --add
 ```
 
-So as I said at the beginning, this isn't a step by step post, because it would take days to write up a full step by step tutorial.  However, if you do your research by reviewing the references below and complete the above are able to complete these steps, you should be able to get a working deployment of the Staticman API on a digitalocean Dokku droplet.  If you decided to try this and get stuck and want some clarification, please let me know by using the comments form on this page.
-
+Well, this post doesn't include all the details you will need, but if you do your research by reviewing the references below and are able to complete the above steps, you should be able to get a working deployment of the Staticman API on a digitalocean Dokku droplet.  If you to try this out and get stuck and want some clarification, guess what, you can use the comments form included on this page.  
 
 References:
+------------
+
+[Effortlessly add HTTPS to Dokku, with Let’s Encrypt](https://medium.com/@pimterry/effortlessly-add-https-to-dokku-with-lets-encrypt-900696366890 "Effortlessly add HTTPS to Dokku, with Let’s Encrypt")
+
+[Setting up Staticman for comments on a Jekyll blog](https://www.flyinggrizzly.net/2017/12/setting-up-staticman/ "Setting up Staticman for comments on a Jekyll blog")
+
+[Improving static comments with Jekyll & Staticman](https://mademistakes.com/articles/improving-jekyll-static-comments/ "Improving static comments with Jekyll & Staticman")
+
+[Deploying to Dokku](http://dokku.viewdocs.io/dokku~v0.12.13/deployment/application-deployment/ Deploying to Dokku")
