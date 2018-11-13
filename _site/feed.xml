@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2018-11-13T04:52:02+00:00</updated><id>https://shoreviewanalytics.github.io/</id><title type="html">shoreviewanalytics.github.io</title><subtitle></subtitle><author><name>Chad Downey</name></author><entry><title type="html">Staticman API Dokku Deployment</title><link href="https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment/" rel="alternate" type="text/html" title="Staticman API Dokku Deployment" /><published>2018-10-08T00:00:00+00:00</published><updated>2018-10-08T00:00:00+00:00</updated><id>https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment/">&lt;h2 id=&quot;using-dokku-to-deploy-the-staticman-api&quot;&gt;Using Dokku to deploy the Staticman API&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2018-11-13T05:01:24+00:00</updated><id>https://shoreviewanalytics.github.io/</id><title type="html">shoreviewanalytics.github.io</title><subtitle></subtitle><author><name>Chad Downey</name></author><entry><title type="html">Staticman API Dokku Deployment</title><link href="https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment/" rel="alternate" type="text/html" title="Staticman API Dokku Deployment" /><published>2018-10-08T00:00:00+00:00</published><updated>2018-10-08T00:00:00+00:00</updated><id>https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment/">&lt;h2 id=&quot;using-dokku-to-deploy-the-staticman-api&quot;&gt;Using Dokku to deploy the Staticman API&lt;/h2&gt;
 
 &lt;p&gt;If your reading this post, you have a desire to deploy the Staticman API as a stand alone application on premise or on a cloud based infrastructure. Over the past several months using the public Staticman API has become more and more difficult to use with a Jekyll blog on github pages, most likely due to usage policies on github.&lt;/p&gt;
 
@@ -45,7 +45,7 @@ After you complete this step you should be able to ssh to your droplet using at 
 
 &lt;p&gt;&lt;strong&gt;Step 5&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Use your second github account and add it as a collaborator to your github pages blog repository.  Also create a github token from this account to be used in the config.production.json file in Step 5.&lt;/p&gt;
+&lt;p&gt;Use your second github account and add it as a collaborator to your github pages blog repository.  Also create a github token from this account to be used in the config.production.json file in Step 6.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 6&lt;/strong&gt;&lt;/p&gt;
 
@@ -53,7 +53,7 @@ After you complete this step you should be able to ssh to your droplet using at 
 
 &lt;p&gt;&lt;strong&gt;Step 7&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;Now you should be close to pushing Staticman API, your forked / cloned version of Staticman that you’ve edited in your local branch to your Dokku droplet.  I’m going to assume that if you are reading this that you’ve decided to obtain a digitalocean account and have gone through all the steps necessary to connect to it.  Commit the changes made to config.production.json in the local branch.&lt;/p&gt;
+&lt;p&gt;Now you should be close to pushing Staticman API, your forked / cloned version of Staticman that you’ve edited in your local branch to your Dokku droplet. Commit the changes made to config.production.json in the local branch.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 8&lt;/strong&gt;&lt;/p&gt;
 

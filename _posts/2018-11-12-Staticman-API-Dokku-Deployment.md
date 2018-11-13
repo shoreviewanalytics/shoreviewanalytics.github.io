@@ -48,7 +48,7 @@ Create a new local branch for the cloned repository that you forked on your work
 
 **Step 5**
 
-Use your second github account and add it as a collaborator to your github pages blog repository.  Also create a github token from this account to be used in the config.production.json file in Step 5.       
+Use your second github account and add it as a collaborator to your github pages blog repository.  Also create a github token from this account to be used in the config.production.json file in Step 6.       
 
 **Step 6**  
 
@@ -56,7 +56,7 @@ If you look at the root directory in your staticman folder you will see a file c
 
 **Step 7**
 
-Now you should be close to pushing Staticman API, your forked / cloned version of Staticman that you've edited in your local branch to your Dokku droplet.  I'm going to assume that if you are reading this that you've decided to obtain a digitalocean account and have gone through all the steps necessary to connect to it.  Commit the changes made to config.production.json in the local branch.
+Now you should be close to pushing Staticman API, your forked / cloned version of Staticman that you've edited in your local branch to your Dokku droplet. Commit the changes made to config.production.json in the local branch.
 
 **Step 8**
 
