@@ -9,9 +9,7 @@ classes: wide
 Using Dokku to deploy the Staticman API
 ------------------------------------
 
-If your reading this post, you have a desire to deploy the Staticman API as a stand alone application on premise or on a cloud based infrastructure. Over the past several months using the public Staticman API has become more and more difficult to use with a Jekyll blog on github pages, most likely due to usage policies on github.  
-
-This post relates to how to get Staticman API up and running using the digitalocean infrastructure using an Ubuntu based droplet with Dokku pre-configured. Setting up my own instance of Staticman API means it will only service my blog, so hopefully because I don't generate a whole lot of traffic, it will stay well within the usage levels set by github.    
+If you are using the public (github hosted) version of [Staticman API](https://github.com/eduardoboucas/staticman "Staticman API "), you might have noticed that due to its popularity and GitHub API limits, it has become more difficult to use it to supply comments for your blog or website.  Perhaps you've experienced the  ['Invitation not found'](https://github.com/eduardoboucas/staticman/issues/227 "Invitation not found") or the 'Too many requests at this time' message when trying to use the public version of Staticman. As of September 2018, the author of the minimal-mistakes Jekyll theme, which I'm using for this blog and the author of the Staticman API, recommend deploying a standalone instance of the Staticman API to avoid the GitHub API limits. This post discusses the general process I used to get the Staticman API up and running within a cloud infrastructure, so it can supply a 'static comments engine' for this blog hosted using [Github Pages](https://pages.github.com/ "Github Pages").  
 
 Setup Needs:
 --------------
@@ -133,14 +131,16 @@ set up auto-renewal:
 	dokku letsencrypt:cron-job --add
 ```
 
-Well, this post doesn't include all the details you will need, but if you do your research by reviewing the references below and are able to complete the above steps, you should be able to get a working deployment of the Staticman API on a digitalocean Dokku droplet.  If you to try this out and get stuck and want some clarification, guess what, you can use the comments form included on this page.  
+Well, this post doesn't include all the details you will need, but if you review the content from the references below and are able to complete the above steps, you should be able to get a working deployment of the Staticman API on a digitalocean Dokku droplet.  If you to try this out and get stuck and want some clarification, guess what, you can use the comments form below to get in touch with me.  
 
 References:
 ------------
 
-[Effortlessly add HTTPS to Dokku, with Let’s Encrypt](https://medium.com/@pimterry/effortlessly-add-https-to-dokku-with-lets-encrypt-900696366890 "Effortlessly add HTTPS to Dokku, with Let’s Encrypt")
+[Staticman Documentation](https://staticman.net/docs/ "Staticman Documentation")
 
 [Setting up Staticman for comments on a Jekyll blog](https://www.flyinggrizzly.net/2017/12/setting-up-staticman/ "Setting up Staticman for comments on a Jekyll blog")
+
+[Effortlessly add HTTPS to Dokku, with Let’s Encrypt](https://medium.com/@pimterry/effortlessly-add-https-to-dokku-with-lets-encrypt-900696366890 "Effortlessly add HTTPS to Dokku, with Let’s Encrypt")
 
 [Improving static comments with Jekyll & Staticman](https://mademistakes.com/articles/improving-jekyll-static-comments/ "Improving static comments with Jekyll & Staticman")
 
