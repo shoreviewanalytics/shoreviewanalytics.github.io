@@ -1,0 +1,686 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.10.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Staticman API Dokku Deployment - shoreviewanalytics.github.io</title>
+<meta name="description" content="Using Dokku to deploy the Staticman API">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="shoreviewanalytics.github.io">
+<meta property="og:title" content="Staticman API Dokku Deployment">
+<meta property="og:url" content="https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment/">
+
+
+  <meta property="og:description" content="Using Dokku to deploy the Staticman API">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2018-10-08T00:00:00+00:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Person",
+      "name": "Chad Downey",
+      "url": "https://shoreviewanalytics.github.io",
+      "sameAs": null
+    }
+  </script>
+
+
+
+  <meta name="google-site-verification" content="googlef0fa90c52d6664f6" />
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="https://shoreviewanalytics.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="shoreviewanalytics.github.io Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://shoreviewanalytics.github.io/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single wide">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://shoreviewanalytics.github.io/">shoreviewanalytics.github.io</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://shoreviewanalytics.github.io/posts/" >Posts</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://github.com/shoreviewanalytics" >Repo</a>
+            </li>
+          
+        </ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+    <div class="initial-content">
+      
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="http://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+          <a href="https://shoreviewanalytics.github.io/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Staticman API Dokku Deployment</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="http://schema.org/Person">
+
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Chad Downey</h3>
+    
+    
+      <p class="author__bio" itemprop="description">
+        Technology professional living in the United States specializing in Data Analytics.
+      </p>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">United States</span>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://www.linkedin.com/in/chad-downey-48646812" itemprop="sameAs">
+            <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <li>
+          <a href="https://github.com/shoreviewanalytics" itemprop="sameAs">
+            <i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Staticman API Dokku Deployment">
+    <meta itemprop="description" content="Using Dokku to deploy the Staticman API">
+    <meta itemprop="datePublished" content="October 08, 2018">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Staticman API Dokku Deployment
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  7 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="using-dokku-to-deploy-the-staticman-api">Using Dokku to deploy the Staticman API</h2>
+
+<p>If your reading this post, you have a desire to deploy the Staticman API as a stand alone application on premise or on a cloud based infrastructure. Over the past several months using the public Staticman API has become more and more difficult due to usage policies on github. This post relates to how to get Staticman API up and running using the digitalocean infrastructure using an Ubuntu based droplet with Dokku pre-configured. Setting up my own instance of Staticman API means it will only service my blog, so hopefully since I don’t generate a whole lot of traffic, it will stay well within the usage levels set by github.</p>
+
+<p>To be clear, this post is not meant to be a step by step tutorial at this time, although it might turn into one as most likely will add more detail.  Frankly, a step by step could turn into a book, since there are so many different areas of technology used to deploy a standalone version of Staticman API.  For now, this post is more of a brain dump on the overall steps that I had to do in order to get the Staticman API working on the digitalocean platform.  I do hope that this post helps someone and possibly creates a dialog.  Hopefully, this write up can serve as a starting point or a resource for those brave enough to venture down this path. If your like me, you can’t stand not being able to figure something out, so your all in until you have success.  I know advice is cheap, but using the digitalocean platform with Dokku made this entire process doable for me. It really helped when I was faced with questions like how to enable HTTPS after deployment.</p>
+
+<h2 id="setup-needs">Setup Needs:</h2>
+
+<ul>
+  <li>
+    <p>A domain name and a way to manage it, so you can create a subdomain like staticman.shoreviewanalytics.com.</p>
+  </li>
+  <li>
+    <p>Create an account with digitalocean to create a Dokku droplet or similar setup.</p>
+  </li>
+  <li>
+    <p>Create a Dokku droplet with your digital ocean account.</p>
+  </li>
+  <li>
+    <p>Create an additional github account.  This account will be the collaborator to your blog repository and will be used to create a github token.</p>
+  </li>
+  <li>
+    <p>Install npm on your workstation, so you can run the tests provided with Staticman and also install json to format of .json files.</p>
+  </li>
+</ul>
+
+<p>Now the fun begins.  If you have all the above and are familiar with git, you should be able to work towards a successful deploy of Staticman API to a digitalocean Dokku droplet using the following steps.</p>
+
+<p><strong>Step 1</strong></p>
+
+<p>Create a Dokku droplet and do the basic server configuration.  Also use your domain to create a subdomain that points to this droplet.
+After you complete this step you should be able to ssh to your droplet using at least one account and you should be able to ping your droplet at staticman.yourdomain.com.</p>
+
+<p><strong>Step 2</strong></p>
+
+<p>Fork the Staticman API repository.  I actually forked a repository that had already been forked from the original Staticman API.  I did this because after doing some recon, I found that there was only one example of someone who had successfully deployed a standalone version of Staticman API using Dokku.  After trying to deploy a few times using the vanilla repository and failing, I wanted to start from a version of the code that had been successfully deployed.  You probably don’t have to do that as I believe the main thing to do if headed down this path is to fork the original repository and then remove all the Docker related files.</p>
+
+<p><strong>Step 3</strong></p>
+
+<p>Clone your forked version of Staticman API located under your main github account to your local environment.</p>
+
+<p><strong>Step 4</strong></p>
+
+<p>Create a new local branch for the cloned repository that you forked on your workstation.  If you didn’t fork a repository that had the docker files removed, then go ahead and remove them now and then update your local branch repository.  This step is really important since to deploy Staticman you will need to have a github token and a ssh key to add to the code. The goal here, at least based on my understanding is that you don’t want to push any secrets out to github.  If you do, you will get a nice little message from them saying you have sensitive information like a github token and they will disable it so you will have to create another one.</p>
+
+<p><strong>Step 5</strong></p>
+
+<p>Use your second github account and add it as a collaborator to your github pages blog repository.  Also create a github token from this account to be used in the config.production.json file in Step 5.</p>
+
+<p><strong>Step 6</strong></p>
+
+<p>If you look at the root directory in your staticman folder you will see a file called config.sample.json.  Copy this file to a file named config.production.json. Now that you have this new file you can edit it using the github token and a valid ssh key.  Github provides the documentation on how to create a token and how to create an ssh key.  I found that converting the standard key to .pem file works best.  After creating the config file and obtaining the token and key add them to this file.  Just be sure to use the ssh key from your github account that holds your blog and use the token from the second github account. Also when creating a ssh key, you should create one without a passphrase.</p>
+
+<p><strong>Step 7</strong></p>
+
+<p>Now you should be close to pushing Staticman API, your forked / cloned version of Staticman that you’ve edited in your local branch to your Dokku droplet.  I’m going to assume that if you are reading this that you’ve decided to obtain a digitalocean account and have gone through all the steps necessary to connect to it.  Commit the changes made to config.production.json in the local branch.</p>
+
+<p><strong>Step 8</strong></p>
+
+<p>Go to the Dokku droplet and create a Dokku application called staticman in all lower case letters.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dokku apps:create staticman
+</code></pre></div></div>
+
+<p><strong>Step 9</strong></p>
+
+<p>Now setup a remote git repository for your Doku server on your workstation, by using the following command.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add dokku dokku@yourserver:staticman
+</code></pre></div></div>
+<p>You can check to see what remote repositories you can push to using this command.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote -v
+</code></pre></div></div>
+<p>Push the local branch you created earlier to your remote repository on your Dokku droplet.  Notice you are NOT pushing the master branch that you haven’t updated.</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push dokku local:master
+</code></pre></div></div>
+<p>This is where you find out if you have correctly edited the config.production.json file.  If you are in doubt on whether you have a good format for your config.production.json file use the following command to check it.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>json -f config.production.json  
+</code></pre></div></div>
+
+<p><strong>Step 10</strong></p>
+
+<p>This is where it really gets cool.  You can now push Staticman to your Dokku droplet with the following command assuming you named your local git branch “local”.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push dokku local:master  
+</code></pre></div></div>
+
+<p>Now if all goes well you will have pushed your local branch of Staticman to your Dokku server.  If you have your DNS setup correctly you should be able to navigate to your Staticman API deploy by opening up a browser and typing in staticman.yourdomain.com.  For me it’s staticman.shoreviewanalytics.com.</p>
+
+<p><strong>Step 11</strong></p>
+
+<p>Now that you have Staticman up and running you need to activate it so it can work with your blog.  To do this as provided in Staticman API documentation navigate to the an address like the following that makes sense for your deployment.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://staticman.yourdomain.com/v2/connect/yourgithubusername/yourgithubpagesblog.github.io  
+</code></pre></div></div>
+
+<p>If all goes well you should get a response of ‘OK’.  If you don’t there’s something wrong and you’ll need to dig in a bit.  In my case I had to dig in a lot.</p>
+
+<p><strong>Step 12</strong></p>
+
+<p>Now that you have a working deploy of Staticman so you can navigate to it as in Step 9, it’s time to add the ability to navigate to the Staticman URL using HTTPS.  To do this you need to issue the following commands on your Dokku droplet server.  Essentially, if you don’t add this you won’t be able to use your comments so don’t skip it.
+This step depends on dokku-letsencrypt.</p>
+
+<p>first get it</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	dokku plugin:install https://github.com/dokku/dokku-letsencrypt.git
+</code></pre></div></div>
+<p>set an email address for notifications</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	dokku config:set --no-restart staticman DOKKU_LETSENCRYPT_EMAIL=your email address goes here
+</code></pre></div></div>
+<p>enable it</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	dokku letsencrypt staticman
+</code></pre></div></div>
+
+<p>set up auto-renewal:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	dokku letsencrypt:cron-job --add
+</code></pre></div></div>
+
+<p>So as I said at the beginning, this isn’t a step by step post, because it would take days to write up a full step by step tutorial.  However, if you do your research by reviewing the references below and complete the above are able to complete these steps, you should be able to get a working deployment of the Staticman API on a digitalocean Dokku droplet.  If you decided to try this and get stuck and want some clarification, please let me know by using the comments form on this page.</p>
+
+<p>References:</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-10-08T00:00:00+00:00">October 08, 2018</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Staticman+API+Dokku+Deployment%20https%3A%2F%2Fshoreviewanalytics.github.io%2FStaticman-API-Dokku-Deployment%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fshoreviewanalytics.github.io%2FStaticman-API-Dokku-Deployment%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://plus.google.com/share?url=https%3A%2F%2Fshoreviewanalytics.github.io%2FStaticman-API-Dokku-Deployment%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fshoreviewanalytics.github.io%2FStaticman-API-Dokku-Deployment%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="https://shoreviewanalytics.github.io/Spark-Logback-Example-Two/" class="pagination--pager" title="Spark Logback Example Two
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://shoreviewanalytics.github.io/Spark-Logback-Example-Two/" rel="permalink">Spark Logback Example Two
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Spark Logback Example Two
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://shoreviewanalytics.github.io/Spark-Logback-Example-One/" rel="permalink">Spark Logback Example One
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Spark Logback Example One
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/" rel="permalink">How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  8 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">How to become one of the (The Big 4)
+
+</p>
+  </article>
+</div>
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/" rel="permalink">Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  8 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+    
+        <li><a href="https://www.linkedin.com/in/"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+    
+    
+    
+    
+      <li><a href="https://github.com/shoreviewanalytics"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="https://shoreviewanalytics.github.io/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2018 Chad Downey. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="https://shoreviewanalytics.github.io/assets/js/main.min.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    (function ($) {
+    var $comments = $('.js-comments');
+
+    $('#new_comment').submit(function () {
+      var form = this;
+
+      $(form).addClass('disabled');
+      $('#comment-form-submit').html('<i class="fas fa-spinner fa-spin fa-fw"></i> Loading...');
+
+      $.ajax({
+        type: $(this).attr('method'),
+        url: $(this).attr('action'),
+        data: $(this).serialize(),
+        contentType: 'application/x-www-form-urlencoded',
+        success: function (data) {
+          $('#comment-form-submit').html('Submitted');
+          $('.page__comments-form .js-notice').removeClass('notice--danger');
+          $('.page__comments-form .js-notice').addClass('notice--success');
+          showAlert('Thanks for your comment! It will show on the site once it has been approved.');
+        },
+        error: function (err) {
+          console.log(err);
+          $('#comment-form-submit').html('Submit Comment');
+          $('.page__comments-form .js-notice').removeClass('notice--success');
+          $('.page__comments-form .js-notice').addClass('notice--danger');
+          showAlert('Sorry, there was an error with your submission. Please make sure all required fields have been completed and try again.');
+          $(form).removeClass('disabled');
+        }
+      });
+
+      return false;
+    });
+
+    function showAlert(message) {
+      $('.page__comments-form .js-notice').removeClass('hidden');
+      $('.page__comments-form .js-notice-text').html(message);
+    }
+  })(jQuery);
+  </script>
+
+  
+
+
+
+  </body>
+</html>

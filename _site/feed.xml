@@ -1,4 +1,127 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2018-11-12T19:35:16+00:00</updated><id>https://shoreviewanalytics.github.io/</id><title type="html">shoreviewanalytics.github.io</title><subtitle></subtitle><author><name>Chad Downey</name></author><entry><title type="html">Spark Logback Example Two</title><link href="https://shoreviewanalytics.github.io/Spark-Logback-Example-Two/" rel="alternate" type="text/html" title="Spark Logback Example Two" /><published>2018-10-08T00:00:00+00:00</published><updated>2018-10-08T00:00:00+00:00</updated><id>https://shoreviewanalytics.github.io/Spark-Logback-Example-Two</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Spark-Logback-Example-Two/">&lt;h2 id=&quot;spark-logback-example-two&quot;&gt;Spark Logback Example Two&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2018-11-13T03:55:13+00:00</updated><id>https://shoreviewanalytics.github.io/</id><title type="html">shoreviewanalytics.github.io</title><subtitle></subtitle><author><name>Chad Downey</name></author><entry><title type="html">Staticman API Dokku Deployment</title><link href="https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment/" rel="alternate" type="text/html" title="Staticman API Dokku Deployment" /><published>2018-10-08T00:00:00+00:00</published><updated>2018-10-08T00:00:00+00:00</updated><id>https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment/">&lt;h2 id=&quot;using-dokku-to-deploy-the-staticman-api&quot;&gt;Using Dokku to deploy the Staticman API&lt;/h2&gt;
+
+&lt;p&gt;If your reading this post, you have a desire to deploy the Staticman API as a stand alone application on premise or on a cloud based infrastructure. Over the past several months using the public Staticman API has become more and more difficult due to usage policies on github. This post relates to how to get Staticman API up and running using the digitalocean infrastructure using an Ubuntu based droplet with Dokku pre-configured. Setting up my own instance of Staticman API means it will only service my blog, so hopefully since I don’t generate a whole lot of traffic, it will stay well within the usage levels set by github.&lt;/p&gt;
+
+&lt;p&gt;To be clear, this post is not meant to be a step by step tutorial at this time, although it might turn into one as most likely will add more detail.  Frankly, a step by step could turn into a book, since there are so many different areas of technology used to deploy a standalone version of Staticman API.  For now, this post is more of a brain dump on the overall steps that I had to do in order to get the Staticman API working on the digitalocean platform.  I do hope that this post helps someone and possibly creates a dialog.  Hopefully, this write up can serve as a starting point or a resource for those brave enough to venture down this path. If your like me, you can’t stand not being able to figure something out, so your all in until you have success.  I know advice is cheap, but using the digitalocean platform with Dokku made this entire process doable for me. It really helped when I was faced with questions like how to enable HTTPS after deployment.&lt;/p&gt;
+
+&lt;h2 id=&quot;setup-needs&quot;&gt;Setup Needs:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;A domain name and a way to manage it, so you can create a subdomain like staticman.shoreviewanalytics.com.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create an account with digitalocean to create a Dokku droplet or similar setup.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create a Dokku droplet with your digital ocean account.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Create an additional github account.  This account will be the collaborator to your blog repository and will be used to create a github token.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install npm on your workstation, so you can run the tests provided with Staticman and also install json to format of .json files.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now the fun begins.  If you have all the above and are familiar with git, you should be able to work towards a successful deploy of Staticman API to a digitalocean Dokku droplet using the following steps.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Create a Dokku droplet and do the basic server configuration.  Also use your domain to create a subdomain that points to this droplet.
+After you complete this step you should be able to ssh to your droplet using at least one account and you should be able to ping your droplet at staticman.yourdomain.com.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Fork the Staticman API repository.  I actually forked a repository that had already been forked from the original Staticman API.  I did this because after doing some recon, I found that there was only one example of someone who had successfully deployed a standalone version of Staticman API using Dokku.  After trying to deploy a few times using the vanilla repository and failing, I wanted to start from a version of the code that had been successfully deployed.  You probably don’t have to do that as I believe the main thing to do if headed down this path is to fork the original repository and then remove all the Docker related files.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Clone your forked version of Staticman API located under your main github account to your local environment.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Create a new local branch for the cloned repository that you forked on your workstation.  If you didn’t fork a repository that had the docker files removed, then go ahead and remove them now and then update your local branch repository.  This step is really important since to deploy Staticman you will need to have a github token and a ssh key to add to the code. The goal here, at least based on my understanding is that you don’t want to push any secrets out to github.  If you do, you will get a nice little message from them saying you have sensitive information like a github token and they will disable it so you will have to create another one.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 5&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Use your second github account and add it as a collaborator to your github pages blog repository.  Also create a github token from this account to be used in the config.production.json file in Step 5.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 6&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;If you look at the root directory in your staticman folder you will see a file called config.sample.json.  Copy this file to a file named config.production.json. Now that you have this new file you can edit it using the github token and a valid ssh key.  Github provides the documentation on how to create a token and how to create an ssh key.  I found that converting the standard key to .pem file works best.  After creating the config file and obtaining the token and key add them to this file.  Just be sure to use the ssh key from your github account that holds your blog and use the token from the second github account. Also when creating a ssh key, you should create one without a passphrase.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 7&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now you should be close to pushing Staticman API, your forked / cloned version of Staticman that you’ve edited in your local branch to your Dokku droplet.  I’m going to assume that if you are reading this that you’ve decided to obtain a digitalocean account and have gone through all the steps necessary to connect to it.  Commit the changes made to config.production.json in the local branch.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 8&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Go to the Dokku droplet and create a Dokku application called staticman in all lower case letters.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dokku apps:create staticman
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 9&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now setup a remote git repository for your Doku server on your workstation, by using the following command.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote add dokku dokku@yourserver:staticman
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;You can check to see what remote repositories you can push to using this command.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote -v
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Push the local branch you created earlier to your remote repository on your Dokku droplet.  Notice you are NOT pushing the master branch that you haven’t updated.&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push dokku local:master
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;This is where you find out if you have correctly edited the config.production.json file.  If you are in doubt on whether you have a good format for your config.production.json file use the following command to check it.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;json -f config.production.json  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 10&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This is where it really gets cool.  You can now push Staticman to your Dokku droplet with the following command assuming you named your local git branch “local”.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push dokku local:master  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Now if all goes well you will have pushed your local branch of Staticman to your Dokku server.  If you have your DNS setup correctly you should be able to navigate to your Staticman API deploy by opening up a browser and typing in staticman.yourdomain.com.  For me it’s staticman.shoreviewanalytics.com.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 11&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that you have Staticman up and running you need to activate it so it can work with your blog.  To do this as provided in Staticman API documentation navigate to the an address like the following that makes sense for your deployment.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://staticman.yourdomain.com/v2/connect/yourgithubusername/yourgithubpagesblog.github.io  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If all goes well you should get a response of ‘OK’.  If you don’t there’s something wrong and you’ll need to dig in a bit.  In my case I had to dig in a lot.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 12&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now that you have a working deploy of Staticman so you can navigate to it as in Step 9, it’s time to add the ability to navigate to the Staticman URL using HTTPS.  To do this you need to issue the following commands on your Dokku droplet server.  Essentially, if you don’t add this you won’t be able to use your comments so don’t skip it.
+This step depends on dokku-letsencrypt.&lt;/p&gt;
+
+&lt;p&gt;first get it&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	dokku plugin:install https://github.com/dokku/dokku-letsencrypt.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;set an email address for notifications&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	dokku config:set --no-restart staticman DOKKU_LETSENCRYPT_EMAIL=your email address goes here
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;enable it&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	dokku letsencrypt staticman
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;set up auto-renewal:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	dokku letsencrypt:cron-job --add
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;So as I said at the beginning, this isn’t a step by step post, because it would take days to write up a full step by step tutorial.  However, if you do your research by reviewing the references below and complete the above are able to complete these steps, you should be able to get a working deployment of the Staticman API on a digitalocean Dokku droplet.  If you decided to try this and get stuck and want some clarification, please let me know by using the comments form on this page.&lt;/p&gt;
+
+&lt;p&gt;References:&lt;/p&gt;</content><author><name>Chad Downey</name></author><summary type="html">Using Dokku to deploy the Staticman API</summary></entry><entry><title type="html">Spark Logback Example Two</title><link href="https://shoreviewanalytics.github.io/Spark-Logback-Example-Two/" rel="alternate" type="text/html" title="Spark Logback Example Two" /><published>2018-10-08T00:00:00+00:00</published><updated>2018-10-08T00:00:00+00:00</updated><id>https://shoreviewanalytics.github.io/Spark-Logback-Example-Two</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Spark-Logback-Example-Two/">&lt;h2 id=&quot;spark-logback-example-two&quot;&gt;Spark Logback Example Two&lt;/h2&gt;
 
 &lt;p&gt;This post is relates to my other &lt;a href=&quot;https://shoreviewanalytics.github.io/Spark-Logback-Example-One/&quot;&gt;post&lt;/a&gt; on how to use Logback, the successor to Log4j with your spark application to create job specific logging when using the DataStax Enterprise (DSE) Analytics platform. Essentially everything is the same for this example, except you don’t need to pass the location of the logback.xml file in the spark-submit and this example also let’s you pass the job name to the logback.xml file, so the name of the log file is the same as the name of the job.&lt;/p&gt;
 

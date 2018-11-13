@@ -18,4 +18,9 @@ var store = [{
         "excerpt":"Spark Logback Example TwoThis post is relates to my other post on how to use Logback, the successor to Log4j with your spark application to create job specific logging when using the DataStax Enterprise (DSE) Analytics platform. Essentially everything is the same for this example, except you don’t need to...","categories": [],
         "tags": [],
         "url": "https://shoreviewanalytics.github.io/Spark-Logback-Example-Two/",
+        "teaser":null},{
+        "title": "Staticman API Dokku Deployment",
+        "excerpt":"Using Dokku to deploy the Staticman APIIf your reading this post, you have a desire to deploy the Staticman API as a stand alone application on premise or on a cloud based infrastructure. Over the past several months using the public Staticman API has become more and more difficult due...","categories": [],
+        "tags": [],
+        "url": "https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment/",
         "teaser":null}]
