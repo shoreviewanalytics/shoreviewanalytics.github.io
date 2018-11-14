@@ -134,12 +134,12 @@ Well, this post doesn't include all the details you will need, but if you review
 References:
 ------------
 
-[Staticman Documentation [https://staticman.net/docs/]](https://staticman.net/docs/ "Staticman Documentation")
+[Staticman Documentation](https://staticman.net/docs/ "Staticman Documentation")
 
-[Setting up Staticman for comments on a Jekyll [https://www.flyinggrizzly.net/2017/12/setting-up-staticman/]](https://www.flyinggrizzly.net/2017/12/setting-up-staticman/ "Setting up Staticman for comments on a Jekyll blog")
+[Setting up Staticman for comments on a Jekyll blog](https://www.flyinggrizzly.net/2017/12/setting-up-staticman/ "Setting up Staticman for comments on a Jekyll blog")
 
-[Effortlessly add HTTPS to Dokku [https://medium.com/@pimterry/effortlessly-add-https-to-dokku-with-lets-encrypt-900696366890]](https://medium.com/@pimterry/effortlessly-add-https-to-dokku-with-lets-encrypt-900696366890 "Effortlessly add HTTPS to Dokku, with Let’s Encrypt")
+[Effortlessly add HTTPS to Dokku, with Let’s Encrypt](https://medium.com/@pimterry/effortlessly-add-https-to-dokku-with-lets-encrypt-900696366890 "Effortlessly add HTTPS to Dokku, with Let’s Encrypt")
 
-[Improving static comments with Jekyll & Staticman  [https://mademistakes.com/articles/improving-jekyll-static-comments/]](https://mademistakes.com/articles/improving-jekyll-static-comments/ "Improving static comments with Jekyll & Staticman")
+[Improving static comments with Jekyll & Staticman](https://mademistakes.com/articles/improving-jekyll-static-comments/ "Improving static comments with Jekyll & Staticman")
 
-[Deploying to Dokku  [http://dokku.viewdocs.io/dokku~v0.12.13/deployment/application-deployment/]](http://dokku.viewdocs.io/dokku~v0.12.13/deployment/application-deployment "Deploying to Dokku")
+[Deploying to Dokku](http://dokku.viewdocs.io/dokku~v0.12.13/deployment/application-deployment/ Deploying to Dokku")
