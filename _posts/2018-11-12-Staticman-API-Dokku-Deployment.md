@@ -142,4 +142,4 @@ References:
 
 [Improving static comments with Jekyll & Staticman](https://mademistakes.com/articles/improving-jekyll-static-comments/ "Improving static comments with Jekyll & Staticman")
 
-[Deploying to Dokku](http://dokku.viewdocs.io/dokku~v0.12.13/deployment/application-deployment/ Deploying to Dokku")
+[Deploying to Dokku](http://dokku.viewdocs.io/dokku~v0.12.13/deployment/application-deployment/ "Deploying to Dokku")
