@@ -9,7 +9,7 @@ classes: wide
 Using Dokku to deploy the Staticman API
 ------------------------------------
 
-If you are using the public (github hosted) version of [Staticman API](https://github.com/eduardoboucas/staticman "Staticman API "), you might have noticed that due to its popularity and GitHub API limits, it has become more difficult to use it to supply comments for your blog or website.  Perhaps you've experienced the  ['Invitation not found'](https://github.com/eduardoboucas/staticman/issues/227 "Invitation not found") or the 'Too many requests at this time' message when trying to use the public version of Staticman. As of September 2018, the author of the minimal-mistakes Jekyll theme, which I'm using for this blog and the author of the Staticman API, recommend deploying a standalone instance of the Staticman API to avoid the GitHub API limits. This post discusses the general process I used to get the Staticman API up and running within a cloud infrastructure, so it can supply a 'static comments engine' for this blog hosted using [Github Pages](https://pages.github.com/ "Github Pages").  
+If you are using the public (GitHub hosted) version of [Staticman API](https://github.com/eduardoboucas/staticman "Staticman API "), you might have noticed that due to its popularity and GitHub API limits, it has become more difficult to use it as a comments engine for your blog or website.  Perhaps you've experienced the  ['Invitation not found'](https://github.com/eduardoboucas/staticman/issues/227 "Invitation not found") or the 'Too many requests at this time' message when trying to use the public version of Staticman. As of September 2018, the author of the minimal-mistakes Jekyll theme, which I'm using for this blog and the author of the Staticman API, recommend deploying a standalone instance of the Staticman API to avoid the GitHub API limits. This post discusses the general process I used to get the Staticman API up and running within a cloud infrastructure, so it can supply a 'static comments engine' for my blog hosted on [Github Pages](https://pages.github.com/ "Github Pages").  
 
 Setup Needs:
 --------------
@@ -20,37 +20,36 @@ Setup Needs:
 
 - Create a Dokku droplet with your digital ocean account.  
 
-- Create an additional github account.  This account will be the collaborator to your blog repository and will be used to create a github token.
+- Create an additional GitHub account.  This account will be the collaborator to your blog repository and will be used to create a GitHub token.
 
-- Install npm on your workstation, so you can run the tests provided with Staticman and also install json to format of .json files.  
+- Install npm on your workstation, so you can run the tests provided with Staticman and to install json to format .json files.  
 
 
-Now the fun begins.  If you have all the above and are familiar with git, you should be able to work towards a successful deploy of Staticman API to a digitalocean Dokku droplet using the following steps.  
+Now the fun begins.  If you have all the setup needs and are familiar with git, you should be able to work towards a successful deployment of Staticman API to a digitalocean Dokku droplet using the following steps.  
 
 **Step 1**
 
-Create a Dokku droplet and do the basic server configuration.  Also use your domain to create a subdomain that points to this droplet.
-After you complete this step you should be able to ssh to your droplet using at least one account and you should be able to ping your droplet at staticman.yourdomain.com.
+Create a Dokku droplet and do the basic server configuration.  Use your domain to create a subdomain that points to this droplet. After you complete this step you should be able to ssh to your droplet using at least one account and you should be able to ping your droplet at staticman.yourdomain.com.
 
 **Step 2**
 
-Fork the Staticman API repository.  I actually forked a repository that had already been forked from the original Staticman API.  I did this because after doing some recon, I found that there was only one example of someone who had successfully deployed a standalone version of Staticman API using Dokku.  After trying to deploy a few times using the vanilla repository and failing, I wanted to start from a version of the code that had been successfully deployed.  You probably don't have to do that as I believe the main to do is to fork the original repository and then remove all the Docker related files.  
+Fork the Staticman API repository.  I actually forked a repository that had already been forked from the original Staticman API.  I did this because after doing some recon, I found only one [example](https://www.flyinggrizzly.net/2017/12/setting-up-staticman/ "Setting up Staticman for comments on a Jekyll blog") of a standalone version of Staticman API using Dokku.  After trying to deploy a few times using the vanilla repository and failing, I wanted to start from a version of the code that had been successfully deployed. I believe the main reason why the deploy was failing is because of the Docker deployment files, so forking the current repository should be fine.    
 
 **Step 3**
 
-Clone your forked version of Staticman API located under your main github account to your local environment.
+Clone your forked version of Staticman API from your GitHub account to your local environment.
 
 **Step 4**
 
-Create a new local branch for the cloned repository that you forked on your workstation.  Don't forget to checkout your new branch for your edits. Also, if you didn't fork a repository that had the docker files removed, then go ahead and remove them now and then update your local branch repository.  This step is really important since to deploy Staticman you will need to have a github token and a ssh key to add to the code. The goal here, at least based on my understanding is that you don't want to push any secrets out to github.  If you do, you will get a nice little message from them saying you have sensitive information like a github token and they will disable it so you will have to create another one.  
+Create a new local branch for the cloned repository that you forked on your workstation.  Don't forget to checkout your new branch for your edits. Also, if you didn't fork a repository that had the docker files removed, then go ahead and remove them now and then update your local branch repository.  This step is really important since to deploy Staticman you will need to have a GitHub token and a ssh key to add to a configuration file. The goal here, at least based on my understanding is that you don't want to push any secrets out to GitHub.  If you do, you will get a nice little message from them saying you have sensitive information like a GitHub token and they will disable it so you will have to create another one.  
 
 **Step 5**
 
-Use your second github account and add it as a collaborator to your github pages blog repository.  Also create a github token from this account to be used in the config.production.json file in Step 6.       
+Use your second GitHub account and add it as a collaborator to your GitHub Pages blog repository.  Also create a GitHub token from this account to be used in the config.production.json file in Step 6.       
 
 **Step 6**  
 
-If you look at the root directory in your staticman folder you will see a file called config.sample.json.  Copy this file to a file named config.production.json. Now that you have this new file you can edit it using the github token and a valid ssh key.  Github provides the documentation on how to create a token and how to create an ssh key.  I found that converting the standard key to .pem file works best.  After creating the config file and obtaining the token and key add them to this file.  Just be sure to use the ssh key from your github account that holds your blog and use the token from the second github account. Also when creating a ssh key, you should create one without a passphrase.  
+If you look at the root directory in your staticman folder you will see a file called config.sample.json.  Copy this file to a file named config.production.json. Now that you have this new file you can edit it using the GitHub token and a valid ssh key.  GitHub provides the documentation on how to create a token and how to create an ssh key.  I found that converting the standard key to .pem file works best.  After creating the config file and obtaining the token and key add them to this file.  Just be sure to use the ssh key from your GitHub account that holds your blog and use the token from the second GitHub account. Also when creating a ssh key, you should create one without a passphrase.  
 
 **Step 7**
 
@@ -107,8 +106,7 @@ If all goes well you should get a response of 'OK'.  If you don't there's someth
 
 **Step 12**
 
-Now that you have a working deploy of Staticman so you can navigate to it as in Step 9, it's time to add the ability to navigate to the Staticman URL using HTTPS.  To do this you need to issue the following commands on your Dokku droplet server.  Essentially, if you don't add this you won't be able to use your comments so don't skip it.
-This step depends on dokku-letsencrypt.  
+Now that you have a working deploy of Staticman so you can navigate to it as in Step 9, it's time to add the ability to navigate to the Staticman URL using HTTPS.  To do this you need to issue the following commands on your Dokku droplet server.  Essentially, if you don't add this you won't be able to use your comments so don't skip it. This step depends on dokku-letsencrypt.  
 
 first get it
 
@@ -136,12 +134,12 @@ Well, this post doesn't include all the details you will need, but if you review
 References:
 ------------
 
-[Staticman Documentation](https://staticman.net/docs/ "Staticman Documentation")
+[Staticman Documentation [https://staticman.net/docs/]](https://staticman.net/docs/ "Staticman Documentation")
 
-[Setting up Staticman for comments on a Jekyll blog](https://www.flyinggrizzly.net/2017/12/setting-up-staticman/ "Setting up Staticman for comments on a Jekyll blog")
+[Setting up Staticman for comments on a Jekyll [https://www.flyinggrizzly.net/2017/12/setting-up-staticman/]](https://www.flyinggrizzly.net/2017/12/setting-up-staticman/ "Setting up Staticman for comments on a Jekyll blog")
 
-[Effortlessly add HTTPS to Dokku, with Let’s Encrypt](https://medium.com/@pimterry/effortlessly-add-https-to-dokku-with-lets-encrypt-900696366890 "Effortlessly add HTTPS to Dokku, with Let’s Encrypt")
+[Effortlessly add HTTPS to Dokku [https://medium.com/@pimterry/effortlessly-add-https-to-dokku-with-lets-encrypt-900696366890]](https://medium.com/@pimterry/effortlessly-add-https-to-dokku-with-lets-encrypt-900696366890 "Effortlessly add HTTPS to Dokku, with Let’s Encrypt")
 
-[Improving static comments with Jekyll & Staticman](https://mademistakes.com/articles/improving-jekyll-static-comments/ "Improving static comments with Jekyll & Staticman")
+[Improving static comments with Jekyll & Staticman  [https://mademistakes.com/articles/improving-jekyll-static-comments/]](https://mademistakes.com/articles/improving-jekyll-static-comments/ "Improving static comments with Jekyll & Staticman")
 
-[Deploying to Dokku](http://dokku.viewdocs.io/dokku~v0.12.13/deployment/application-deployment/ Deploying to Dokku")
+[Deploying to Dokku  [http://dokku.viewdocs.io/dokku~v0.12.13/deployment/application-deployment/]](http://dokku.viewdocs.io/dokku~v0.12.13/deployment/application-deployment "Deploying to Dokku")
