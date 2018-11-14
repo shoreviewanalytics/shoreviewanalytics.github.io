@@ -29,11 +29,6 @@ comments:
 staticman:
   branch                 : "master"
 
-# reCaptcha keys
-reCaptcha          :
-  siteKey          : "6LdLw3oUAAAAAFYR3DN4tiD-wG1Ca-cNqYB1EkVA"
-  secret           : "6LdLw3oUAAAAAEB5F6yUJq7bMMmCEiX5iH5VCASe"
-
 # SEO Related
 google_site_verification : "googlef0fa90c52d6664f6"
 bing_site_verification   :
