@@ -16,6 +16,6 @@ comments:
   transforms:
     email            : md5
   reCaptcha          :
-    enabled          : false
+    enabled          : true
     siteKey          : "6LdLw3oUAAAAAFYR3DN4tiD-wG1Ca-cNqYB1EkVA"
     secret           : "ohUd/bmWOcIuHhEip/js1k2KJO1oTEk9+CAv9qjrGWjDQflTQudOJlpUnhXNOEkfBIeDAFWHZJRLP5jdsaeOCyng5t2RRjRkVtXzoLGqoOCOodFXKfBs7zw7PeGJRDht8cE4E9Bg8sw9zDpHRkpxN7NFE7XcZBitywsl/KGNsJDrQf8YUp8vZJXGo/fTbtfSaRjPXj2Kh/CeTbiKO7+EHFNAxdpTl9i9DdKzDss8cS+3lGT10sK6Oake2U7VQ3v+c9RozAG8CtMVoqLbNBiCO5TVPW8jUo0BIRrWqHJ0G1PFE8W2cz/uN6gkuuDB7nnWcbBpFLor51GH1evrWj8USb4Dv1sDbU6ap0ToGXqJqyHN6y1JRqlSqTpDsIr/Mjfuz4Az2EEs6y/00ibTme2q9XKp9mQTmubEomuuS6DZTZO8lFTsT58vZsNvvM39g1GyXoOsZj9Gk+PgpVpB6vIRtApRVwKPs99gSK7fCiaYFGXtBO/0sYI8I5w1aumHedNhLMsgvwHaXqWlqdTZ1EVBMXbV0zWcJMnSovAHGPMMIe/PHU+kB6cFeNGq62+uP7yMktZLmTfYhrWtBQrUcyeG5T2/uE4Sr1mRzuFVOVEzB8lD7mW+IEVo7cpd1B4RalprEs4JKW0S2eOR4z+dFbAolInAMQd4gwvvUc4N3DCiqbE="
