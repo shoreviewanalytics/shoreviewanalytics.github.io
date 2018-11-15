@@ -15,7 +15,7 @@ comments:
   requiredFields     : ["name", "email", "message"]
   transforms:
     email            : md5
-  reCaptcha          :
-    enabled          : false
-    siteKey          : "6LdLw3oUAAAAAFYR3DN4tiD-wG1Ca-cNqYB1EkVA"
-    secret           : "yPYmyCOLRSgjev1ri5kVkIkU2L3OAigynLVBwzAkleQo/opyBUBkm/RyJFM4OKRI2hM6n3osn7VSQSSxwt5ijRrkd9MJ/ZKzQ/QrLW/fe8LtNQtIFlvXqSjaMSUw94AZ2Cv6edzAv129R+y2eg13BPnYSxTN9YIvb2fBMjBR76A="
+  #reCaptcha          :
+    #enabled          : true
+    #siteKey          : "6LdLw3oUAAAAAFYR3DN4tiD-wG1Ca-cNqYB1EkVA"
+    #secret           : "yPYmyCOLRSgjev1ri5kVkIkU2L3OAigynLVBwzAkleQo/opyBUBkm/RyJFM4OKRI2hM6n3osn7VSQSSxwt5ijRrkd9MJ/ZKzQ/QrLW/fe8LtNQtIFlvXqSjaMSUw94AZ2Cv6edzAv129R+y2eg13BPnYSxTN9YIvb2fBMjBR76A="
