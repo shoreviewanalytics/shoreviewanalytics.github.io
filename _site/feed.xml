@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2019-08-26T18:17:48-04:00</updated><id>https://shoreviewanalytics.github.io/</id><title type="html">shoreviewanalytics.github.io</title><subtitle></subtitle><author><name>Chad Downey</name></author><entry><title type="html">Fixing The 401 Unauthorized Message After Installing Tomcat9 On Ubuntu 18.04</title><link href="https://shoreviewanalytics.github.io/Fixing-The-401-Unauthorized-Message-After-Installing-Tomcat9-On-Ubuntu-18.04/" rel="alternate" type="text/html" title="Fixing The 401 Unauthorized Message After Installing Tomcat9 On Ubuntu 18.04" /><published>2019-08-26T00:00:00-04:00</published><updated>2019-08-26T00:00:00-04:00</updated><id>https://shoreviewanalytics.github.io/Fixing-The-401-Unauthorized-Message-After-Installing-Tomcat9-On-Ubuntu-18.04</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Fixing-The-401-Unauthorized-Message-After-Installing-Tomcat9-On-Ubuntu-18.04/">&lt;h1 id=&quot;installing-tomcat-9-on-ubuntu-1804&quot;&gt;Installing Tomcat 9 on Ubuntu 18.04&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2019-08-26T18:27:35-04:00</updated><id>https://shoreviewanalytics.github.io/</id><title type="html">shoreviewanalytics.github.io</title><subtitle></subtitle><author><name>Chad Downey</name></author><entry><title type="html">Fixing The 401 Unauthorized Message After Installing Tomcat9 On Ubuntu 18.04</title><link href="https://shoreviewanalytics.github.io/Fixing-The-401-Unauthorized-Message-After-Installing-Tomcat9-On-Ubuntu-18.04/" rel="alternate" type="text/html" title="Fixing The 401 Unauthorized Message After Installing Tomcat9 On Ubuntu 18.04" /><published>2019-08-26T00:00:00-04:00</published><updated>2019-08-26T00:00:00-04:00</updated><id>https://shoreviewanalytics.github.io/Fixing-The-401-Unauthorized-Message-After-Installing-Tomcat9-On-Ubuntu-18.04</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Fixing-The-401-Unauthorized-Message-After-Installing-Tomcat9-On-Ubuntu-18.04/">&lt;h1 id=&quot;installing-tomcat-9-on-ubuntu-1804&quot;&gt;Installing Tomcat 9 on Ubuntu 18.04&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Fixing the 401 Unauthorized Message&lt;/strong&gt;&lt;/p&gt;
 
@@ -6,21 +6,19 @@
 
 &lt;p&gt;Apache Tomcat® is an open source implementation of Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. This guide explains how to setup Apache Tomcat® 9 on Ubuntu 18.04 and essentially follows the same steps that you can find in other posted tutorials (see reference below) .&lt;/p&gt;
 
-&lt;p&gt;The main difference with this post is that it clarifies the security problems that can occur when trying to access the Server Status, Manager App and the Host Application pages from the Tomcat home page after an initial install.&lt;/p&gt;
+&lt;p&gt;While this post can be used for a fresh install of Tomcat 9 on Ubuntu 18.04 it clarifies the security problems that can occur when trying to access the Server Status, Manager App and the Host Application buttons on the Tomcat home page after an initial install.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://shoreviewanalytics.github.io/assets/images/buttons.png&quot; alt=&quot;buttons&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;If, when you try to access one of the administrative pages like “Server Status “ or “Host Manager” you are facing the “401 Unauthorized” issue, you can safely skip down to Steps 6 to 8 below.&lt;/p&gt;
+&lt;p&gt;If, you have successfully installed Tomcat 9, but when you try to access one of the administrative pages like “Server Status “ or “Host Manager” you get the “401 Unauthorized” message, you can safely skip down to Steps 6 to 8 below.&lt;/p&gt;
 
-&lt;p&gt;The issue occurs when you click on one of the administrative buttons.  When you do that you will be prompted to enter credentials.&lt;/p&gt;
+&lt;p&gt;You will get the “401 Unauthorized message” if there is an issue with how users or roles are setup.  So no matter what you do, you will be prompted to enter credentials, which does not work.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://shoreviewanalytics.github.io/assets/images/credentials.png&quot; alt=&quot;credentials&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;This prompt won’t go away until it recognizes you as a valid user.  If you click cancel you get.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;https://shoreviewanalytics.github.io/assets/images/401Unauthorized.png&quot; alt=&quot;Unauthorized&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;If you are installing of Tomcat 9 for the first time on Ubuntu 18.04, you will want to go through all steps.&lt;/p&gt;
 
 &lt;h3 id=&quot;prerequisites&quot;&gt;Prerequisites&lt;/h3&gt;
 

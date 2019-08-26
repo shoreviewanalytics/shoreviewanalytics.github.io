@@ -8,21 +8,19 @@
 
 Apache Tomcat® is an open source implementation of Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. This guide explains how to setup Apache Tomcat® 9 on Ubuntu 18.04 and essentially follows the same steps that you can find in other posted tutorials (see reference below) .  
 
-The main difference with this post is that it clarifies the security problems that can occur when trying to access the Server Status, Manager App and the Host Application pages from the Tomcat home page after an initial install.  
+While this post can be used for a fresh install of Tomcat 9 on Ubuntu 18.04 it clarifies the security problems that can occur when trying to access the Server Status, Manager App and the Host Application buttons on the Tomcat home page after an initial install.  
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/buttons.png" alt="buttons">
 
-If, when you try to access one of the administrative pages like "Server Status " or "Host Manager" you are facing the "401 Unauthorized" issue, you can safely skip down to Steps 6 to 8 below.   
+If, you have successfully installed Tomcat 9, but when you try to access one of the administrative pages like "Server Status " or "Host Manager" you get the "401 Unauthorized" message, you can safely skip down to Steps 6 to 8 below.   
 
-The issue occurs when you click on one of the administrative buttons.  When you do that you will be prompted to enter credentials.
+You will get the "401 Unauthorized message" if there is an issue with how users or roles are setup.  So no matter what you do, you will be prompted to enter credentials, which does not work.
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/credentials.png" alt="credentials">
 
 This prompt won't go away until it recognizes you as a valid user.  If you click cancel you get. 
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/401Unauthorized.png" alt="Unauthorized">
-
-If you are installing of Tomcat 9 for the first time on Ubuntu 18.04, you will want to go through all steps.  
 
 ### Prerequisites
 
