@@ -23,4 +23,14 @@ var store = [{
         "excerpt":"Using Dokku to deploy the Staticman APIIf you are using the public (GitHub hosted) version of Staticman API, you might have noticed that due to its popularity and GitHub API limits, it has become more difficult to use it as a comments engine for your blog or website. Perhaps you’ve...","categories": [],
         "tags": [],
         "url": "https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment/",
+        "teaser":null},{
+        "title": "Fixing The 401 Unauthorized Message After Installing Tomcat9 On Ubuntu 18.04",
+        "excerpt":"Installing Tomcat 9 on Ubuntu 18.04Fixing the 401 Unauthorized MessageIntroductionApache Tomcat® is an open source implementation of Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. This guide explains how to setup Apache Tomcat® 9 on Ubuntu 18.04 and essentially follows the same steps that you can find...","categories": [],
+        "tags": [],
+        "url": "https://shoreviewanalytics.github.io/Fixing-The-401-Unauthorized-Message-After-Installing-Tomcat9-On-Ubuntu-18.04/",
+        "teaser":null},{
+        "title": "Install Tomcat9 On Ubuntu 18.04",
+        "excerpt":"Installing Tomcat 9 on Ubuntu 18.04IntroductionApache Tomcat® is an open source implementation of Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. This guide explains how to setup Apache Tomcat® 9 on Ubuntu 18.04 and essentially follows the same steps that you can find in other posted tutorials...","categories": [],
+        "tags": [],
+        "url": "https://shoreviewanalytics.github.io/Install-Tomcat9-On-Ubuntu-18.04/",
         "teaser":null}]
