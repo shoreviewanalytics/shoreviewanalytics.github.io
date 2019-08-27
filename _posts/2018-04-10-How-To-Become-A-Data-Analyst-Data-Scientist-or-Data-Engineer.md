@@ -14,7 +14,7 @@ header:
 
 ------------------------------------
 
-Hello everyone! For this post I want to discuss how to work towards becoming a
+For this post I want to discuss how to work towards becoming a
 Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer, which
 for brevity I will refer to as “The Big 4”.  When I look at the number of job
 postings for “The Big 4” on employment web sites as of writing this post it is
