@@ -66,9 +66,8 @@ sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 
 ## Step 3 Install Tomcat
 
-To install the latest version of Tomcat go to the download page for Tomcat 9.
+To install the latest version of Tomcat go to the [download](https://tomcat.apache.org/download-90.cgi/ "download") page for Tomcat 9.
 
-https://tomcat.apache.org/download-90.cgi
 
 Once on this page you can hover over the download link for the tar.gz download. At this time the version is 9.0.24.
 
