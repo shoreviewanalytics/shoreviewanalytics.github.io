@@ -20,7 +20,7 @@ You may have installed Tomcat 9 and it is up and running, but when you click one
 
 This prompt won't go away because Tomcat doesn't recognize the user's username and password as associated with a role that has been granted access to these administrative applications.  If you click the "Cancel" button you get.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/401Unauthorized.png" alt="Issue">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/401.png" alt="401 Unauthorized">
 
 ### Prerequisites
 
