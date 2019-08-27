@@ -11,7 +11,7 @@ header:
 
 --------------------------------------------
 
-Apache Tomcat® is an open source implementation of Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. This guide explains how to setup Apache Tomcat® 9 on Ubuntu 18.04 and essentially follows the same steps that you can find in other posted tutorials (see reference below) .  It also helps to clarify the security problems that can occur after install, when you try to access the Server Status, Manager App or the Host Manager buttons on the Tomcat home page. 
+Apache Tomcat® is an open source implementation of Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. This guide explains how to setup Apache Tomcat® 9 on Ubuntu 18.04.  It also helps to clarify the security problems that can occur after an install, such as when you try to access the Server Status, Manager App or the Host Manager buttons on the Tomcat home page. 
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/buttons.png" alt="buttons">
 
