@@ -3,12 +3,7 @@ date: "2018-04-10"
 title: "How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer"
 layout: single
 classes: wide
-
-header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/abstract.jpg
 ---
-
 
 ------------------------------------
 

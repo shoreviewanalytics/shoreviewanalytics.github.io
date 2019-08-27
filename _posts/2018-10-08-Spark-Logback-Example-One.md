@@ -3,10 +3,6 @@ date: "2018-10-08"
 title: "Spark Logback Example One"
 layout: single
 classes: wide
-
-header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/abstract.jpg
 ---
 
 ------------------------------------
