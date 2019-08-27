@@ -10,23 +10,21 @@ classes: wide
 
 Apache Tomcat® is an open source implementation of Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. This guide explains how to setup Apache Tomcat® 9 on Ubuntu 18.04 and essentially follows the same steps that you can find in other posted tutorials (see reference below) .  
 
-While this post can be used for a fresh install of Tomcat 9 on Ubuntu 18.04 it clarifies the security problems that can occur when trying to access the Server Status, Manager App or the Host Manager buttons on the Tomcat home page after an initial install.  
+While this post can be used for a fresh install of Tomcat 9 on Ubuntu 18.04. It also helps to clarify the security problems that can occur after install, when you try to access the Server Status, Manager App or the Host Manager buttons on the Tomcat home page. 
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/buttons.png" alt="buttons">
 
-If, you have successfully installed Tomcat 9, but when you try to access one of the administrative pages like "Server Status " or "Host Manager" you get the "401 Unauthorized" message, you can safely skip down to Steps 6 to 8 below.   
-
-You will get the "401 Unauthorized message" if there is an issue with how users or roles are setup.  So no matter what you do, you will be prompted to enter credentials, which does not work.
+You may have installed Tomcat 9 and it is up and running, but when you click one one of the above buttons you get prompted for a username and password.  
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/credentials.png" alt="credentials">
 
-This prompt won't go away until it recognizes you as a valid user.  If you click cancel you get.
+This prompt won't go away because Tomcat doesn't recognize the user's username and password as associated with a role that has been granted access to these administrative applications.  If you click the "Cancel" button you get.
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/401Unauthorized.png" alt="Unauthorized">
 
 ### Prerequisites
 
-In order to proceed with this guide it is necessary to have non-root user with sudo privileges setup on your server or desktop install of Ubuntu.
+In order to proceed with this guide it is necessary to have non-root user with sudo privileges setup on your server or desktop install of Ubuntu.  
 
 ## Step 1 Install Java
 
