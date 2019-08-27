@@ -1,4 +1,10 @@
+---
+layout: single
+title: 'Fixing The 401 Unauthorized Message After Installing Tomcat 9 On Ubuntu 18.04'
+date: '2019-08-26'
+classes: wide
 
+---
 
 ###### Introduction
 
@@ -14,7 +20,7 @@ You will get the "401 Unauthorized message" if there is an issue with how users 
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/credentials.png" alt="credentials">
 
-This prompt won't go away until it recognizes you as a valid user.  If you click cancel you get. 
+This prompt won't go away until it recognizes you as a valid user.  If you click cancel you get.
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/401Unauthorized.png" alt="Unauthorized">
 
@@ -65,9 +71,9 @@ To install the latest version of Tomcat go to the download page for Tomcat 9.
 
 https://tomcat.apache.org/download-90.cgi
 
-Once on this page you can hover over the download link for the tar.gz download. At this time the version is 9.0.24. 
+Once on this page you can hover over the download link for the tar.gz download. At this time the version is 9.0.24.
 
-Open up terminal window and cd to Downloads directory. 
+Open up terminal window and cd to Downloads directory.
 
 `cd Downloads`
 
@@ -244,7 +250,7 @@ You should now have the following lines uncommented.
 <user username="role1" password="<must-be-changed>" roles="role1"/>
 ```
 
-Next change the default lines above to the following three lines. 
+Next change the default lines above to the following three lines.
 
 ```
 <role rolename="manager-gui"/>
@@ -260,9 +266,9 @@ Save and close the file when done.
 
 ## Step 7 - Granting Access To The Manager Application
 
-After adding an admin user and password in Step 7 you are set to configure access to the Manager application. 
+After adding an admin user and password in Step 7 you are set to configure access to the Manager application.
 
-First open the configuration file for the Manager application. 
+First open the configuration file for the Manager application.
 
 ```
 sudo vi /opt/tomcat/webapps/manager/META-INF/context.xml
@@ -280,7 +286,7 @@ The changed line should look something like the following, where the "| IP addre
 <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1|IP address of your server goes here!" />
 ```
 
-Next save the file and exit. 
+Next save the file and exit.
 
 ## Step 8 - Granting Access To The Host Manager Application
 
@@ -290,9 +296,9 @@ First open the configuration file for the Host Manager Application.
 sudo vi /opt/tomcat/webapps/host-manager/META-INF/context.xml
 ```
 
-Complete the same activities as done in Step 7 above for this file. 
+Complete the same activities as done in Step 7 above for this file.
 
-Save the file and then exit. 
+Save the file and then exit.
 
 ## Step 9 - Trying it out
 
@@ -317,4 +323,3 @@ Well, that's all there is to it, you should now have Tomcat 9 successfully insta
 ## References
 
 https://www.digitalocean.com/community/tutorials/install-tomcat-9-ubuntu-1804
-
