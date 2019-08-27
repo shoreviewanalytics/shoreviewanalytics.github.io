@@ -2,9 +2,9 @@
 layout: single
 permalink: /posts/
 
-header:
-  overlay_image: /assets/images/jekyll-island-cropped.jpg
-  overlay_filter: rgba(13, 0, 12, 0.35)
+#header:
+#  overlay_image: /assets/images/jekyll-island-cropped.jpg
+#  overlay_filter: rgba(13, 0, 12, 0.35)
 ---
 
 
