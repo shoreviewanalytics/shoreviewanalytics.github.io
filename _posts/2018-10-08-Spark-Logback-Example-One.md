@@ -4,9 +4,11 @@ title: "Spark Logback Example One"
 layout: single
 classes: wide
 
+header:
+  overlay_color: "#5e616c"
+  overlay_image: /assets/images/abstract.jpg
 ---
 
-Spark Logback Example One
 ------------------------------------
 
 This post takes a look at how use Logback, the successor to Log4j with your spark application to create application specific logging. If you have spent any amount of time with Apache Spark you will notice that there is a ton of logging that goes on, but that logging is usually limited to what spark as an application is doing so there's lot's of logging about spark master or worker processing and what the executors are doing. While this information is important it doesn't tell you a whole lot about how your specific application is doing across your cluster. With logging setup specifically for the spark job running, you can obtain granular information about how it is running on the spark cluster and detailed  [DAG](https://stackoverflow.com/questions/25836316/how-dag-works-under-the-covers-in-rdd) information as well.  In addition, if there are system wide settings for logging of spark applications you can have just one log for all your applications.  This example shows how to create a log file for each spark job and how to use verbose logging for development and then turn it down for production to only log what you really need to log, like errors and basic feedback.    

@@ -1,6 +1,9 @@
 ---
 layout: splash
+author_profile: true
+
 permalink: /
+
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/abstract.jpg
@@ -11,5 +14,14 @@ excerpt: >
   A professional blog for me...<br />
   <small><a href="https://mmistakes.github.io/minimal-mistakes/">Learn how to create your own blog!</a></small>
 ---
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
+
 
 

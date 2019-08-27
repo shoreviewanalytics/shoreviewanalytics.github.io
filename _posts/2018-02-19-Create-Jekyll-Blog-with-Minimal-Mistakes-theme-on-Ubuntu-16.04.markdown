@@ -4,7 +4,13 @@ title: 'Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04'
 date: '2018-02-19'
 classes: wide
 
+header:
+  overlay_color: "#5e616c"
+  overlay_image: /assets/images/abstract.jpg
+
 ---
+
+--------------------------------------------
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/jekyll-logo-black-red-transparent.png" alt="Jekyll Island">
 

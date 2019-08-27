@@ -20,7 +20,7 @@ description              : ""
 url                      : "https://shoreviewanalytics.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "shoreviewanalytics/shoreviewanalytics.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/jekyll-logo-black-red-transparent.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "/assets/images/writing.png" # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 
@@ -129,9 +129,9 @@ kramdown:
 
 
 # Sass/SCSS
-#sass:
-#  sass_dir: _sass
-#  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+sass:
+  sass_dir: _sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
 # Outputting

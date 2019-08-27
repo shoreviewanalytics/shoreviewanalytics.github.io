@@ -4,9 +4,12 @@ title: 'Fixing The 401 Unauthorized Message After Installing Tomcat 9 On Ubuntu 
 date: '2019-08-26'
 classes: wide
 
+header:
+  overlay_color: "#5e616c"
+  overlay_image: /assets/images/abstract.jpg
 ---
 
-###### Introduction
+--------------------------------------------
 
 Apache Tomcat® is an open source implementation of Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. This guide explains how to setup Apache Tomcat® 9 on Ubuntu 18.04 and essentially follows the same steps that you can find in other posted tutorials (see reference below) .  It also helps to clarify the security problems that can occur after install, when you try to access the Server Status, Manager App or the Host Manager buttons on the Tomcat home page. 
 

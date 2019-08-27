@@ -4,9 +4,12 @@ title: "How to become a Data Scientist, Data Analyst, Data Engineer or Machine L
 layout: single
 classes: wide
 
+header:
+  overlay_color: "#5e616c"
+  overlay_image: /assets/images/abstract.jpg
 ---
 
-How to become one of the (The Big 4)
+
 ------------------------------------
 
 Hello everyone! For this post I want to discuss how to work towards becoming a
