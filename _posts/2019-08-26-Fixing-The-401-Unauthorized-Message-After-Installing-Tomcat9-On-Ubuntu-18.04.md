@@ -4,6 +4,10 @@ title: 'Fixing The 401 Unauthorized Message After Installing Tomcat 9 On Ubuntu 
 date: '2019-08-26'
 classes: wide
 
+header:
+  overlay_color: "#5e616c"
+  overlay_image: /assets/images/abstract.jpg
+
 ---
 
 --------------------------------------------

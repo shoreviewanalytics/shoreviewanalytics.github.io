@@ -11,15 +11,19 @@ header:
     - label: "<i class='fas fa-download'></i> Install now"
       url: "/docs/quick-start-guide/"
 excerpt: >
-  A professional blog for me...<br />
-  <small><a href="https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/">Learn how to create your own blog!</a></small>
+  A professional blog for me..<br />
+  <small><a href="https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/">Create your own blog!</a></small><br />
+
+
 ---
+
+Recent Posts
 
 <ul>
   {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
+    
+      <small><li><a href="{{ post.url }}">{{ post.title }}</a></li></small><br>
+    
   {% endfor %}
 </ul>
 
