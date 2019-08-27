@@ -12,7 +12,7 @@ Apache Tomcat® is an open source implementation of Java Servlet, JavaServer Pag
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/buttons.png" alt="buttons">
 
-You may have installed Tomcat 9 and it is up and running, but when you click one one of the above buttons you get prompted for a username and password.  
+You may have installed Tomcat 9 and it is up and running, but when you click one one of the above buttons you get prompted by the authentication required form where you need to enter a username and password.  
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/credentials.png" alt="credentials">
 
