@@ -262,7 +262,7 @@ Next, add a username and a password where you see "username goes here!" and "pas
 
 Save and close the file when done.
 
-## Step 7 - Granting Access To The Manager Application
+## Step 7 - Granting Access To "Manager App"
 
 After adding an admin user and password in Step 7 you are set to configure access to the Manager application.
 
@@ -286,7 +286,7 @@ The changed line should look something like the following, where the "| IP addre
 
 Next save the file and exit.
 
-## Step 8 - Granting Access To The Host Manager Application
+## Step 8 - Granting Access To "Host Manager"
 
 First open the configuration file for the Host Manager Application.
 
@@ -316,7 +316,7 @@ Click on the button that says "Server Status".  You should be prompted for the u
 
 ## Conclusion
 
-Well, that's all there is to it, you should now have Tomcat 9 successfully installed on your Ubuntu 18.04 server or desktop and be able to login and view the Server Status, view the Host Manager or the Manager App.  You can experiment around with additional users and roles, try the examples provided and of course there's that thing called documentation.   
+Well, that's all there is to it, you should now have Tomcat 9 successfully installed on your Ubuntu 18.04 server or desktop and be able to login and view the Server Status, view the Host Manager or the Manager App.  You can experiment around with additional users and roles, try the examples provided and of course there's always the documentation.   
 
 ## References
 

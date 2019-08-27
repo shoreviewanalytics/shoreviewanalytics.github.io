@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2019-08-26T21:01:37-04:00</updated><id>https://shoreviewanalytics.github.io/feed.xml</id><title type="html">[shoreviewanalytics.github.io]</title><subtitle></subtitle><author><name>CHAD DOWNEY, M.SC. IT</name></author><entry><title type="html">Fixing The 401 Unauthorized Message After Installing Tomcat 9 On Ubuntu 18.04</title><link href="https://shoreviewanalytics.github.io/Fixing-The-401-Unauthorized-Message-After-Installing-Tomcat9-On-Ubuntu-18.04/" rel="alternate" type="text/html" title="Fixing The 401 Unauthorized Message After Installing Tomcat 9 On Ubuntu 18.04" /><published>2019-08-26T00:00:00-04:00</published><updated>2019-08-26T00:00:00-04:00</updated><id>https://shoreviewanalytics.github.io/Fixing-The-401-Unauthorized-Message-After-Installing-Tomcat9-On-Ubuntu-18.04</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Fixing-The-401-Unauthorized-Message-After-Installing-Tomcat9-On-Ubuntu-18.04/">&lt;h6 id=&quot;introduction&quot;&gt;Introduction&lt;/h6&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2019-08-26T21:05:29-04:00</updated><id>https://shoreviewanalytics.github.io/feed.xml</id><title type="html">[shoreviewanalytics.github.io]</title><subtitle></subtitle><author><name>CHAD DOWNEY, M.SC. IT</name></author><entry><title type="html">Fixing The 401 Unauthorized Message After Installing Tomcat 9 On Ubuntu 18.04</title><link href="https://shoreviewanalytics.github.io/Fixing-The-401-Unauthorized-Message-After-Installing-Tomcat9-On-Ubuntu-18.04/" rel="alternate" type="text/html" title="Fixing The 401 Unauthorized Message After Installing Tomcat 9 On Ubuntu 18.04" /><published>2019-08-26T00:00:00-04:00</published><updated>2019-08-26T00:00:00-04:00</updated><id>https://shoreviewanalytics.github.io/Fixing-The-401-Unauthorized-Message-After-Installing-Tomcat9-On-Ubuntu-18.04</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Fixing-The-401-Unauthorized-Message-After-Installing-Tomcat9-On-Ubuntu-18.04/">&lt;h6 id=&quot;introduction&quot;&gt;Introduction&lt;/h6&gt;
 
 &lt;p&gt;Apache Tomcat® is an open source implementation of Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. This guide explains how to setup Apache Tomcat® 9 on Ubuntu 18.04 and essentially follows the same steps that you can find in other posted tutorials (see reference below) .&lt;/p&gt;
 
@@ -228,7 +228,7 @@ To                         Action      From
 
 &lt;p&gt;Save and close the file when done.&lt;/p&gt;
 
-&lt;h2 id=&quot;step-7---granting-access-to-the-manager-application&quot;&gt;Step 7 - Granting Access To The Manager Application&lt;/h2&gt;
+&lt;h2 id=&quot;step-7---granting-access-to-manager-app&quot;&gt;Step 7 - Granting Access To “Manager App”&lt;/h2&gt;
 
 &lt;p&gt;After adding an admin user and password in Step 7 you are set to configure access to the Manager application.&lt;/p&gt;
 
@@ -256,7 +256,7 @@ To                         Action      From
 
 &lt;p&gt;Next save the file and exit.&lt;/p&gt;
 
-&lt;h2 id=&quot;step-8---granting-access-to-the-host-manager-application&quot;&gt;Step 8 - Granting Access To The Host Manager Application&lt;/h2&gt;
+&lt;h2 id=&quot;step-8---granting-access-to-host-manager&quot;&gt;Step 8 - Granting Access To “Host Manager”&lt;/h2&gt;
 
 &lt;p&gt;First open the configuration file for the Host Manager Application.&lt;/p&gt;
 
@@ -284,7 +284,7 @@ To                         Action      From
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;Well, that’s all there is to it, you should now have Tomcat 9 successfully installed on your Ubuntu 18.04 server or desktop and be able to login and view the Server Status, view the Host Manager or the Manager App.  You can experiment around with additional users and roles, try the examples provided and of course there’s that thing called documentation.&lt;/p&gt;
+&lt;p&gt;Well, that’s all there is to it, you should now have Tomcat 9 successfully installed on your Ubuntu 18.04 server or desktop and be able to login and view the Server Status, view the Host Manager or the Manager App.  You can experiment around with additional users and roles, try the examples provided and of course there’s always the documentation.&lt;/p&gt;
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
