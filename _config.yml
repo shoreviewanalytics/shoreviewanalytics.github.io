@@ -13,7 +13,7 @@ minimal_mistakes_skin    : "mint" #"default" , "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "SHOREVIEWANALYTICS.GITHUB.IO"
+title                    : "[shoreviewanalytics.github.io]"
 title_separator          : "-"
 name                     : "Chad Downey"
 description              : ""
