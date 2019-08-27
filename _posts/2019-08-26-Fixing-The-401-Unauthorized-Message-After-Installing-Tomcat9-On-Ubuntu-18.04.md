@@ -12,11 +12,11 @@ Apache Tomcat® is an open source implementation of Java Servlet, JavaServer Pag
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/buttons.png" alt="buttons">
 
-You may have installed Tomcat 9 and it is up and running, but when you click one one of the above buttons you get prompted by the authentication required form where you need to enter a username and password.  
+You may have installed Tomcat 9 and it is up and running, but when you click one one of the above buttons you get prompted by the authentication required form, where you need to enter a username and password.  
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/credentials.png" alt="credentials">
 
-This prompt won't go away because Tomcat doesn't recognize the user's username and password as associated with a role that has been granted access to these administrative applications.  If you click the "Cancel" button you get.
+This prompt won't go away because Tomcat doesn't recognize the username and password associated with a role that can access these administrative applications.  If you click the "Cancel" button you get.
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/401.png" alt="401 Unauthorized">
 
