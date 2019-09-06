@@ -576,10 +576,11 @@ To                         Action      From
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /&gt;
 </code></pre></div></div>
 
-<p>The changed line should look something like the following, where the IP address of your server goes at the end. Note it is necessary to add the pipe symbol to delimit between the entries of allowed IP addresses.</p>
+<p>The changed line should look something like the following, where the IP address of your server goes at the end.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1|IP address of your server goes here!" /&gt;
 </code></pre></div></div>
+<p>Note it is necessary to add the pipe symbol to delimit between the entries of allowed IP addresses.</p>
 
 <p>Next save the file and exit.</p>
 

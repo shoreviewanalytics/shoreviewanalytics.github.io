@@ -280,11 +280,12 @@ Edit the the following line by adding the IP address of the server to end.
 <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />
 ```
 
-The changed line should look something like the following, where the IP address of your server goes at the end. Note it is necessary to add the pipe symbol to delimit between the entries of allowed IP addresses.   
+The changed line should look something like the following, where the IP address of your server goes at the end.    
 
 ```
 <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1|IP address of your server goes here!" />
 ```
+Note it is necessary to add the pipe symbol to delimit between the entries of allowed IP addresses.
 
 Next save the file and exit.
 
