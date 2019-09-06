@@ -3,6 +3,8 @@ date: "2018-10-08"
 title: "Spark Logback Example One"
 layout: single
 classes: wide
+taxonomy: spark # category name
+entries_layout: list # (default), grid
 ---
 
 ------------------------------------
