@@ -338,17 +338,7 @@
         
         <hr />
 
-<p>Apache Tomcat® is an open source implementation of Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. This guide explains how to setup Apache Tomcat® 9 on Ubuntu 18.04.  It also helps to clarify the security problems that can occur after an install, such as when you try to access the Server Status, Manager App or the Host Manager buttons on the Tomcat home page.</p>
-
-<p><img src="https://shoreviewanalytics.github.io/assets/images/buttons.png" alt="buttons" /></p>
-
-<p>You may have installed Tomcat 9 and it is up and running, but when you click one one of the above buttons you get prompted by the authentication required form, where you need to enter a username and password.</p>
-
-<p><img src="https://shoreviewanalytics.github.io/assets/images/credentials.png" alt="credentials" /></p>
-
-<p>This prompt won’t go away because Tomcat doesn’t recognize the username and password associated with a role that can access these administrative applications.  If you click the “Cancel” button you get.</p>
-
-<p><img src="https://shoreviewanalytics.github.io/assets/images/401.png" alt="401 Unauthorized" /></p>
+<p>Apache Tomcat® is an open source implementation of Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. This post explains how to setup Apache Tomcat® 9 on Ubuntu 18.04.  It also clarifies how to setup security.</p>
 
 <h3 id="prerequisites">Prerequisites</h3>
 
@@ -584,7 +574,7 @@ To                         Action      From
 
 <p>Next save the file and exit.</p>
 
-<h2 id="step-8---granting-access-to-host-manager">Step 8 - Granting Access To “Host Manager”</h2>
+<h2 id="step-8---granting-remote-access-to-host-manager">Step 8 - Granting Remote Access To “Host Manager”</h2>
 
 <p>First open the configuration file for the Host Manager Application.</p>
 
