@@ -552,9 +552,9 @@ To                         Action      From
 
 <p>Save and close the file when done.</p>
 
-<h2 id="step-7---granting-remote-access-to-manager-app">Step 7 - Granting Remote Access To “Manager App”</h2>
+<h2 id="step-7---granting-access-to-manager-app">Step 7 - Granting Access To “Manager App”</h2>
 
-<p>After adding an admin user and password in Step 7 you are set to configure access to the Manager application from the server where Tomcat is installed or from a remote location.</p>
+<p>After adding an admin user and password in Step 7 you are set to configure access to the Manager application from the server where Tomcat is installed.</p>
 
 <p>First open the configuration file for the Manager application.</p>
 
@@ -572,9 +572,14 @@ To                         Action      From
 </code></pre></div></div>
 <p>Note it is necessary to add the pipe symbol to delimit between the entries of allowed IP addresses.</p>
 
+<p>To access the host manager or manager from any device on your network comment out the following lines.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /&gt;
+</code></pre></div></div>
+
 <p>Next save the file and exit.</p>
 
-<h2 id="step-8---granting-remote-access-to-host-manager">Step 8 - Granting Remote Access To “Host Manager”</h2>
+<h2 id="step-8---granting-access-to-host-manager">Step 8 - Granting Access To “Host Manager”</h2>
 
 <p>First open the configuration file for the Host Manager Application.</p>
 
