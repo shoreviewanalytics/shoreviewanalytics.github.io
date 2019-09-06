@@ -1,6 +1,7 @@
 ---
 layout: single
 title: 'Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04'
+description: 'Learn how to create your own blog using Jekyll.'
 date: '2018-02-19'
 classes: wide
 
