@@ -24,8 +24,8 @@ var store = [{
         "tags": [],
         "url": "https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment/",
         "teaser":"https://shoreviewanalytics.github.io/assets/images/writing.png"},{
-        "title": "Fixing The 401 Unauthorized Message After Installing Tomcat 9 On Ubuntu 18.04",
+        "title": "Installing Tomcat 9 On Ubuntu 18.04",
         "excerpt":"Apache Tomcat® is an open source implementation of Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. This guide explains how to setup Apache Tomcat® 9 on Ubuntu 18.04. It also helps to clarify the security problems that can occur after an install, such as when you try...","categories": [],
         "tags": [],
-        "url": "https://shoreviewanalytics.github.io/Fixing-The-401-Unauthorized-Message-After-Installing-Tomcat9-On-Ubuntu-18.04/",
+        "url": "https://shoreviewanalytics.github.io/Installing-Tomcat9-On-Ubuntu-18.04/",
         "teaser":"https://shoreviewanalytics.github.io/assets/images/writing.png"}]
