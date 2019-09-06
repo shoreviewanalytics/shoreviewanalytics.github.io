@@ -13,7 +13,7 @@ header:
 
 --------------------------------------------
 
-Apache Tomcat® is an open source implementation of Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. This guide explains how to setup Apache Tomcat® 9 on Ubuntu 18.04.  It also helps to clarify the security problems that can occur after an install, such as when you try to access the Server Status, Manager App or the Host Manager buttons on the Tomcat home page. 
+Apache Tomcat® is an open source implementation of Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. This guide explains how to setup Apache Tomcat® 9 on Ubuntu 18.04.  It also helps to clarify the security problems that can occur after an install, such as when you try to access the Server Status, Manager App or the Host Manager buttons on the Tomcat home page.
 
 <img src="{{ site.url }}{{ site.baseurl }}/assets/images/buttons.png" alt="buttons">
 
@@ -264,9 +264,9 @@ Next, add a username and a password where you see "username goes here!" and "pas
 
 Save and close the file when done.
 
-## Step 7 - Granting Access To "Manager App"
+## Step 7 - Granting Remote Access To "Manager App"
 
-After adding an admin user and password in Step 7 you are set to configure access to the Manager application.
+After adding an admin user and password in Step 7 you are set to configure access to the Manager application from the server where Tomcat is installed or from a remote location.
 
 First open the configuration file for the Manager application.
 
@@ -280,7 +280,7 @@ Edit the the following line by adding the IP address of the server to end.
 <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />
 ```
 
-The changed line should look something like the following, where the "| IP address of your server goes here!" matches your server's IP address.  Note it is necessary to add the pipe symbol to delimit between the entries of allowed IP addresses.   
+The changed line should look something like the following, where the IP address of your server goes at the end. Note it is necessary to add the pipe symbol to delimit between the entries of allowed IP addresses.   
 
 ```
 <Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1|IP address of your server goes here!" />

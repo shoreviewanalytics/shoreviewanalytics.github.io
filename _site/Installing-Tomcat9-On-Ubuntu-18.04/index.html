@@ -562,9 +562,9 @@ To                         Action      From
 
 <p>Save and close the file when done.</p>
 
-<h2 id="step-7---granting-access-to-manager-app">Step 7 - Granting Access To “Manager App”</h2>
+<h2 id="step-7---granting-remote-access-to-manager-app">Step 7 - Granting Remote Access To “Manager App”</h2>
 
-<p>After adding an admin user and password in Step 7 you are set to configure access to the Manager application.</p>
+<p>After adding an admin user and password in Step 7 you are set to configure access to the Manager application from the server where Tomcat is installed or from a remote location.</p>
 
 <p>First open the configuration file for the Manager application.</p>
 
@@ -576,14 +576,7 @@ To                         Action      From
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /&gt;
 </code></pre></div></div>
 
-<table>
-  <tbody>
-    <tr>
-      <td>The changed line should look something like the following, where the “</td>
-      <td>IP address of your server goes here!” matches your server’s IP address.  Note it is necessary to add the pipe symbol to delimit between the entries of allowed IP addresses.</td>
-    </tr>
-  </tbody>
-</table>
+<p>The changed line should look something like the following, where the IP address of your server goes at the end. Note it is necessary to add the pipe symbol to delimit between the entries of allowed IP addresses.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1|IP address of your server goes here!" /&gt;
 </code></pre></div></div>
