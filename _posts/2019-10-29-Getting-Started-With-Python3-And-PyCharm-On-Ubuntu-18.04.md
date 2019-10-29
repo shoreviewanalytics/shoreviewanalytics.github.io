@@ -4,13 +4,10 @@ title: 'Getting Started with Python3 and PyCharm on Ubuntu 18.04'
 description: 'This post explains how to create a virtual environment for Python development as well as how to open a Python project folder using PyCharm. As a bonus I have included a step below that explains how to install Jupyter Notebook.'
 date: '2019-10-29'
 classes: wide
-
 header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/geometric-blue.jpg
 ---
-
-# Getting Started with Python3 and PyCharm on Ubuntu 18.04
 
 If you are new to Python and haven't yet selected an IDE you might want to have a look at PyCharm. Also if you have done some Java programming and have used Intellij the look and feel of PyCharm is very similar. For this short post I will explain how to create a virtual environment for your Python development as well as how to open a Python project folder using PyCharm.  As a bonus I have included a step below that explains how to install Jupyter Notebook.  
 

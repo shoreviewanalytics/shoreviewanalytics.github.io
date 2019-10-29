@@ -9,8 +9,6 @@ header:
   overlay_image: /assets/images/geometric-blue.jpg
 ---
 
-------------------------------------
-
 If you are using the public (GitHub hosted) version of [Staticman API](https://github.com/eduardoboucas/staticman "Staticman API "), you might have noticed that due to its popularity and GitHub API limits, it has become more difficult to use it as a comments engine for your blog or website.  Perhaps you've experienced the  ['Invitation not found'](https://github.com/eduardoboucas/staticman/issues/227 "Invitation not found") or the 'Too many requests at this time' message when trying to use the public version of Staticman. As of September 2018, the author of the minimal-mistakes Jekyll theme, which I'm using for this blog and the author of the Staticman API, recommend deploying a standalone instance of the Staticman API to avoid the GitHub API limits. This post discusses the general process I used to get the Staticman API up and running within a cloud infrastructure, so it can supply a 'static comments engine' for my blog hosted on [Github Pages](https://pages.github.com/ "Github Pages").  
 
 Setup Needs:

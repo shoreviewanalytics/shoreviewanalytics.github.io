@@ -9,10 +9,6 @@ header:
   overlay_image: /assets/images/geometric-blue.jpg
 ---
 
-
-
-------------------------------------
-
 For this post I want to discuss how to work towards becoming a
 Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer, which
 for brevity I will refer to as “The Big 4”.  When I look at the number of job
