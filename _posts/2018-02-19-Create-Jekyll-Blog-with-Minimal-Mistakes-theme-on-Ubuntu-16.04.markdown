@@ -5,9 +5,8 @@ description: 'Learn how to create your own blog using Jekyll.'
 date: '2018-02-19'
 classes: wide
 
-header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/jekyll-island.jpg
+header:  
+  overlay_image: /assets/images/abstract.jpg
 ---
 
 --------------------------------------------

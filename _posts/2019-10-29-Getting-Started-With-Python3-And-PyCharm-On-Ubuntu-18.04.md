@@ -5,9 +5,8 @@ description: 'This post explains how to create a virtual environment for Python 
 date: '2019-10-29'
 classes: wide
 
-header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/jekyll-island.jpg
+header:  
+  overlay_image: /assets/images/abstract.jpg
 ---
 
 --------------------------------------------

@@ -5,9 +5,8 @@ description: 'This step by step post walks you through installing Tomcat 9 on Ub
 date: '2019-08-26'
 classes: wide
 
-header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/jekyll-island.jpg
+header:  
+  overlay_image: /assets/images/abstract.jpg
 ---
 
 --------------------------------------------

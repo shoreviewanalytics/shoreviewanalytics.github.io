@@ -4,9 +4,8 @@ title: "Spark Logback Example One"
 layout: categories
 classes: wide
 
-header:
-  overlay_color: "#5e616c"
-  overlay_image: /assets/images/jekyll-island.jpg
+header:  
+  overlay_image: /assets/images/abstract.jpg
 ---
 
 --------------------------------------------
