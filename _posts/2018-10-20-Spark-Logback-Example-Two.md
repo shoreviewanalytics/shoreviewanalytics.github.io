@@ -6,8 +6,10 @@ classes: wide
 
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/abstract.jpg
+  overlay_image: /assets/images/jekyll-island.jpg
 ---
+
+--------------------------------------------
 
 This post is relates to my other [post](https://shoreviewanalytics.github.io/Spark-Logback-Example-One/) on how to use Logback, the successor to Log4j with your spark application to create job specific logging when using the DataStax Enterprise (DSE) Analytics platform. Essentially everything is the same for this example, except you don't need to pass the location of the logback.xml file in the spark-submit and this example also let's you pass the job name to the logback.xml file, so the name of the log file is the same as the name of the job.   
 

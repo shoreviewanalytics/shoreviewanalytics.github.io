@@ -6,8 +6,10 @@ classes: wide
 
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/geometric-blue.jpg
+  overlay_image: /assets/images/jekyll-island.jpg
 ---
+
+--------------------------------------------
 
 For this post I want to discuss how to work towards becoming a
 Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer, which

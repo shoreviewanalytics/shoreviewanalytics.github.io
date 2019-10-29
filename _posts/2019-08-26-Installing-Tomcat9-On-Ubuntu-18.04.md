@@ -4,11 +4,13 @@ title: 'Installing Tomcat 9 On Ubuntu 18.04'
 description: 'This step by step post walks you through installing Tomcat 9 on Ubuntu 18.04. It also explains why may get the 401 Unauthorized error after an install.'
 date: '2019-08-26'
 classes: wide
+
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/geometric-blue.jpg
-
+  overlay_image: /assets/images/jekyll-island.jpg
 ---
+
+--------------------------------------------
 
 Apache Tomcat® is an open source implementation of Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. This post explains how to setup Apache Tomcat® 9 on Ubuntu 18.04.  It also clarifies how to setup security.
 
