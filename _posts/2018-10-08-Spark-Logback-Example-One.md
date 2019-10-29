@@ -1,7 +1,7 @@
 ---
 date: "2018-10-08"
 title: "Spark Logback Example One"
-layout: single
+layout: categories
 classes: wide
 taxonomy: spark
 ---
