@@ -4,7 +4,7 @@ permalink: /posts/
 
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/abstract.jpg
+  overlay_image: /assets/images/geometric-blue.jpg
 ---
 
 

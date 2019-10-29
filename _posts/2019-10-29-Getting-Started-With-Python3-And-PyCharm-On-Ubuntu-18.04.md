@@ -7,7 +7,7 @@ classes: wide
 
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/abstract.jpg
+  overlay_image: /assets/images/geometric-blue.jpg
 ---
 
 # Getting Started with Python3 and PyCharm on Ubuntu 18.04

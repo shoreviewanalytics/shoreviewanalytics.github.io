@@ -3,8 +3,14 @@ date: "2018-10-08"
 title: "Spark Logback Example One"
 layout: categories
 classes: wide
-taxonomy: spark
+
+header:
+  overlay_color: "#5e616c"
+  overlay_image: /assets/images/geometric-blue.jpg
+
 ---
+
+
 
 ------------------------------------
 
