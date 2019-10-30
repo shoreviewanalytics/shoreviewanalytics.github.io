@@ -33,4 +33,9 @@ var store = [{
         "excerpt":"GitLab® is a open-source licensed web-based DevOps platform that provides a Git-repository manager wiki combined with issue-tracking, CI/CD pipeline features, developed by GitLab Inc. A common issue when working with Gitlab initially is configuration of the environment as related to security. Security is great but when it prevents you from...","categories": [],
         "tags": [],
         "url": "https://shoreviewanalytics.github.io/Gitlab-Fix-Runner-Registration-x509-Certification-Error/",
+        "teaser":"https://shoreviewanalytics.github.io/assets/images/writing.png"},{
+        "title": "Getting Started with Python3 and PyCharm on Ubuntu 18.04",
+        "excerpt":"If you are new to Python and haven’t yet selected an IDE you might want to have a look at PyCharm. Also if you have done some Java programming and have used Intellij the look and feel of PyCharm is very similar. For this short post I will explain how...","categories": [],
+        "tags": [],
+        "url": "https://shoreviewanalytics.github.io/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04/",
         "teaser":"https://shoreviewanalytics.github.io/assets/images/writing.png"}]
