@@ -22,14 +22,14 @@ You can check the version if you like with the following command.
 ```
 python3 --version
 ```
-You should see the following.  
+You should see the following output.
 
 ```
 Python 3.6.8
 ```
 ### Step 1 - Installing python3-env
 
-Great so now that you know you have Python it's time to create what is called a Python virtual environment. In order to be able to create a virtual environment it is necessary to install a package called python3-venv.  
+Now that you know you have Python3 installed, it's time to create what is called a Python virtual environment. In order to be able to create a virtual environment it is necessary to install a package called python3-venv.  
 ```
 sudo apt install python3-env
 ```
@@ -39,18 +39,18 @@ Next create a folder where you would like to store your Python programs and crea
 
 ### Step 2 - Create a Python Virtual Environment
 
-Next open the lpython folder in a terminal and issue the following command.
+Open the lpython folder in a terminal session and issue the following command.
 ```
 python3 -m venv env
 ```
-If no issues occurred you should be able to issue the following command to activate your virtual python environment. 
-
 ### Step 3 - Activate a Python Virtual Environment
+
+If no issues have occurred you should be able to issue the following command.
 
 ```
 source env/bin/activate
 ```
-This command activates your virtual python environment.  While in the virtual environment you can install additional packages that you know you will need during your programming. For example the following command installs numpy a commonly used library for Data Scientists and Data Analysts.
+This command activates your virtual python environment.  While in the virtual environment you can install additional packages that you will need during your programming. For example the following command installs numpy a commonly used library for Data Scientists and Data Analysts.
 ```
 python3 -m pip install numpy
 ```
@@ -86,4 +86,4 @@ jupyter notebook
 
 ## Summary
 
-After completing the above steps you should have a working Python virtual environment with the ability to use PyCharm or Jupyter Notebook for your Python programming.   The advantage of using a virtual environment to install Python libraries is that if you should have an issue with package dependencies, you can always remove or create a new virtual environment. If you have any issues or questions please let me know.  
+After completing the above steps you should have a working Python virtual environment with the ability to use PyCharm or Jupyter Notebook for your Python programming.   The advantage of using a virtual environment to install Python libraries is that if you have an issue with the virtual environment, you can always remove, recreate or create a new virtual environment. If you have any issues or questions with this post, please let me know.  
