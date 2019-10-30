@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Spark Logback Example One - shoreviewanalytics.github.io</title>
+<!-- begin _includes/seo.html --><title>Spark Logback Example One - chad.d’s blog</title>
 <meta name="description" content="">
 
 
@@ -18,14 +18,16 @@
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="shoreviewanalytics.github.io">
+<meta property="og:site_name" content="chad.d's blog">
 <meta property="og:title" content="Spark Logback Example One">
-<meta property="og:url" content="https://shoreviewanalytics.github.io/Spark-Logback-Example-One/">
+<meta property="og:url" content="http://localhost:4000/Spark-Logback-Example-One/">
 
 
   <meta property="og:description" content="">
 
 
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/header.jpg">
 
 
 
@@ -42,7 +44,7 @@
   
 
 
-<link rel="canonical" href="https://shoreviewanalytics.github.io/Spark-Logback-Example-One/">
+<link rel="canonical" href="http://localhost:4000/Spark-Logback-Example-One/">
 
 
 
@@ -53,7 +55,7 @@
     
       "@type": "Person",
       "name": "shoreviewanalytics",
-      "url": "https://shoreviewanalytics.github.io/"
+      "url": "http://localhost:4000/"
     
   }
 </script>
@@ -68,7 +70,7 @@
 <!-- end _includes/seo.html -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="shoreviewanalytics.github.io Feed">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="chad.d's blog Feed">
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -105,7 +107,7 @@
 
   </head>
 
-  <body class="layout--single wide">
+  <body class="layout--categories wide">
     <nav class="skip-links">
   <h2 class="screen-reader-text">Skip links</h2>
   <ul>
@@ -123,7 +125,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://shoreviewanalytics.github.io/">shoreviewanalytics.github.io</a>
+        <a class="site-title" href="http://localhost:4000/">chad.d's blog</a>
         <ul class="visible-links">
           
             
@@ -145,13 +147,44 @@
 
     <div class="initial-content">
       
+  
 
-<div id="main" role="main">
-  <article class="splash" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="datePublished" content="October 08, 2018">
-    
-    <section class="page__content" itemprop="text">
+
+
+
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style=" background-image: url('http://localhost:4000/assets/images/header.jpg');"
+>
+  
+    <div class="wrapper">
+      <p class="page__lead">  
+       
+          Spark Logback Example One
+
+        
+      </p>
       
+        <p class="page__lead"><hr />
+
+</p>
+      
+      
+      
+    </div>
+  
+  
+</div>
+
+
+
+
   
     
 
@@ -164,7 +197,7 @@
     
       
         <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="https://shoreviewanalytics.github.io/" itemprop="item"><span itemprop="name">Home</span></a>
+          <a href="http://localhost:4000/" itemprop="item"><span itemprop="name">Home</span></a>
           <meta itemprop="position" content="1" />
         </li>
         <span class="sep">/</span>
@@ -224,7 +257,7 @@
 
       
         <li>
-          <a href="https://www.linkedin.com/in/chad-downey-48646812" itemprop="sameAs" rel="nofollow noopener noreferrer">
+          <a href="https://www.linkedin.com/in/chaddowney2019" itemprop="sameAs" rel="nofollow noopener noreferrer">
             <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn
           </a>
         </li>
@@ -287,32 +320,9 @@
   </div>
 
 
-  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Spark Logback Example One">
-    <meta itemprop="description" content="">
-    <meta itemprop="datePublished" content="October 08, 2018">
+  <div class="archive">
     
-
-    <div class="page__inner-wrap">
-      
-        <header>
-          <h1 class="page__title" itemprop="headline">Spark Logback Example One
-</h1>
-          
-            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  3 minute read
-</p>
-          
-        </header>
-      
-
-      <section class="page__content" itemprop="text">
-        
-        <hr />
+    <hr />
 
 <p>This post takes a look at how use Logback, the successor to Log4j with your spark application to create application specific logging. If you have spent any amount of time with Apache Spark you will notice that there is a ton of logging that goes on, but that logging is usually limited to what spark as an application is doing so there’s lot’s of logging about spark master or worker processing and what the executors are doing. While this information is important it doesn’t tell you a whole lot about how your specific application is doing across your cluster. With logging setup specifically for the spark job running, you can obtain granular information about how it is running on the spark cluster and detailed  <a href="https://stackoverflow.com/questions/25836316/how-dag-works-under-the-covers-in-rdd">DAG</a> information as well.  In addition, if there are system wide settings for logging of spark applications you can have just one log for all your applications.  This example shows how to create a log file for each spark job and how to use verbose logging for development and then turn it down for production to only log what you really need to log, like errors and basic feedback.</p>
 
@@ -370,211 +380,18 @@ This is where the fun happens.  Look for the following property in the logback.x
 
 <p>Finally, to test out this logging example on a distributed computing environment, I used a three node cluster with DataStax Enterprise Analytics enabled. For more information about DataStax Enterprise Analytics check out the <a href="https://www.datastax.com/products/datastax-enterprise-analytics">DataStax Enterprise Analytics  </a> page on the DataStax website.</p>
 
-        
-      </section>
-
-      <footer class="page__meta">
-        
-        
 
 
-        
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-10-08T00:00:00-04:00">October 08, 2018</time></p>
-        
-      </footer>
 
-      <section class="page__share">
+
+<ul class="taxonomy__index">
   
-
-  <a href="https://twitter.com/intent/tweet?text=Spark+Logback+Example+One%20https%3A%2F%2Fshoreviewanalytics.github.io%2FSpark-Logback-Example-One%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
-
-  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fshoreviewanalytics.github.io%2FSpark-Logback-Example-One%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
-
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fshoreviewanalytics.github.io%2FSpark-Logback-Example-One%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
-</section>
-
-
-      
-  <nav class="pagination">
-    
-      <a href="https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/" class="pagination--pager" title="How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer
-">Previous</a>
-    
-    
-      <a href="https://shoreviewanalytics.github.io/Spark-Logback-Example-Two/" class="pagination--pager" title="Spark Logback Example Two
-">Next</a>
-    
-  </nav>
-
-    </div>
-
-    
-  </article>
-
-  
-  
-    <div class="page__related">
-      <h4 class="page__related-title">You May Also Enjoy</h4>
-      <div class="grid__wrapper">
-        
-          
+</ul>
 
 
 
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/writing.png"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/Gitlab-Fix-Runner-Registration-x509-Certification-Error/" rel="permalink">Gitlab Runner Registration x509 Certificate Error
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  1 minute read
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">
-
-</p>
-  </article>
+  </div>
 </div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/writing.png"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/Installing-Tomcat9-On-Ubuntu-18.04/" rel="permalink">Installing Tomcat 9 On Ubuntu 18.04
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  5 minute read
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/writing.png"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/Staticman-API-Dokku-Deployment/" rel="permalink">Staticman API Dokku Deployment
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  6 minute read
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "/assets/images/writing.png"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="/Spark-Logback-Example-Two/" rel="permalink">Spark Logback Example Two
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  2 minute read
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">
-
-</p>
-  </article>
-</div>
-
-        
-      </div>
-    </div>
-  
-  
-</div>
-
-    </section>
-  </article>
-</div>
-
     </div>
 
     
@@ -588,7 +405,7 @@ This is where the fun happens.  Look for the following property in the logback.x
   <ul class="social-icons">
     
     
-        <li><a href="https://www.linkedin.com/in/chad-downey-48646812"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/in/chaddowney2019"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
     
     
     
@@ -597,7 +414,7 @@ This is where the fun happens.  Look for the following property in the logback.x
     
     
     
-    <li><a href="https://shoreviewanalytics.github.io/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="http://localhost:4000/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 

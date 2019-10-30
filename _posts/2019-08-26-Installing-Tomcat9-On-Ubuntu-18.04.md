@@ -6,7 +6,7 @@ date: '2019-08-26'
 classes: wide
 
 header:  
-  overlay_image: /assets/images/abstract.jpg
+  overlay_image: /assets/images/header.jpg
 ---
 
 --------------------------------------------

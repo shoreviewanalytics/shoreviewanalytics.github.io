@@ -13,7 +13,7 @@ minimal_mistakes_skin    : "air" #"default" , "air", "aqua", "contrast", "dark",
 
 # Site Settings
 locale                   : "en-US"
-title                    : "shoreviewanalytics.github.io"
+title                    : "chad.d's blog"
 title_separator          : "-"
 name                     : "shoreviewanalytics"
 description              : ""
@@ -68,7 +68,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : ""
   location         : "USA"
-  linkedin         : "chad-downey-48646812" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
+  linkedin         : "chaddowney2019" # "john-doe-12345678" (the last part of your profile url, e.g. https://www.linkedin.com/in/john-doe-12345678)
   github           : "shoreviewanalytics"
 
 # Reading Files

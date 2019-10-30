@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://shoreviewanalytics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://shoreviewanalytics.github.io/" rel="alternate" type="text/html" /><updated>2019-10-29T20:11:22-04:00</updated><id>https://shoreviewanalytics.github.io/feed.xml</id><title type="html">shoreviewanalytics.github.io</title><subtitle></subtitle><author><name>CHAD DOWNEY, M.SC. IT</name></author><entry><title type="html">Getting Started with Python3 and PyCharm on Ubuntu 18.04</title><link href="https://shoreviewanalytics.github.io/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04/" rel="alternate" type="text/html" title="Getting Started with Python3 and PyCharm on Ubuntu 18.04" /><published>2019-10-29T00:00:00-04:00</published><updated>2019-10-29T00:00:00-04:00</updated><id>https://shoreviewanalytics.github.io/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04/">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-29T20:48:40-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">chad.d’s blog</title><subtitle></subtitle><author><name>CHAD DOWNEY, M.SC. IT</name></author><entry><title type="html">Getting Started with Python3 and PyCharm on Ubuntu 18.04</title><link href="http://localhost:4000/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04/" rel="alternate" type="text/html" title="Getting Started with Python3 and PyCharm on Ubuntu 18.04" /><published>2019-10-29T00:00:00-04:00</published><updated>2019-10-29T00:00:00-04:00</updated><id>http://localhost:4000/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04</id><content type="html" xml:base="http://localhost:4000/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04/">&lt;hr /&gt;
 
 &lt;p&gt;If you are new to Python and haven’t yet selected an IDE you might want to have a look at PyCharm. Also if you have done some Java programming and have used Intellij the look and feel of PyCharm is very similar. For this short post I will explain how to create a virtual environment for your Python development as well as how to open a Python project folder using PyCharm.  As a bonus I have included a step below that explains how to install Jupyter Notebook.&lt;/p&gt;
 
@@ -65,7 +65,7 @@
 
 &lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
 
-&lt;p&gt;After completing the above steps you should have a working Python virtual environment with the ability to use PyCharm or Jupyter Notebook for your Python programming.   The advantage of using a virtual environment to install Python libraries is that if you should have an issue with package dependencies, you can always remove or create a new virtual environment. If you have any issues or questions please let me know.&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Gitlab Runner Registration x509 Certificate Error</title><link href="https://shoreviewanalytics.github.io/Gitlab-Fix-Runner-Registration-x509-Certification-Error/" rel="alternate" type="text/html" title="Gitlab Runner Registration x509 Certificate Error" /><published>2019-09-06T00:00:00-04:00</published><updated>2019-09-06T00:00:00-04:00</updated><id>https://shoreviewanalytics.github.io/Gitlab-Fix-Runner-Registration-x509-Certification-Error</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Gitlab-Fix-Runner-Registration-x509-Certification-Error/">&lt;hr /&gt;
+&lt;p&gt;After completing the above steps you should have a working Python virtual environment with the ability to use PyCharm or Jupyter Notebook for your Python programming.   The advantage of using a virtual environment to install Python libraries is that if you should have an issue with package dependencies, you can always remove or create a new virtual environment. If you have any issues or questions please let me know.&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Gitlab Runner Registration x509 Certificate Error</title><link href="http://localhost:4000/Gitlab-Fix-Runner-Registration-x509-Certification-Error/" rel="alternate" type="text/html" title="Gitlab Runner Registration x509 Certificate Error" /><published>2019-09-06T00:00:00-04:00</published><updated>2019-09-06T00:00:00-04:00</updated><id>http://localhost:4000/Gitlab-Fix-Runner-Registration-x509-Certification-Error</id><content type="html" xml:base="http://localhost:4000/Gitlab-Fix-Runner-Registration-x509-Certification-Error/">&lt;hr /&gt;
 
 &lt;p&gt;GitLab® is a open-source licensed web-based DevOps platform that provides a Git-repository manager wiki combined with  issue-tracking, CI/CD pipeline features, developed by GitLab Inc.&lt;/p&gt;
 
@@ -118,7 +118,7 @@ rm -R *
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;If the initial issue was not being able to register a runner for a pipeline, you should now be able to register a runner for the pipeline.&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Installing Tomcat 9 On Ubuntu 18.04</title><link href="https://shoreviewanalytics.github.io/Installing-Tomcat9-On-Ubuntu-18.04/" rel="alternate" type="text/html" title="Installing Tomcat 9 On Ubuntu 18.04" /><published>2019-08-26T00:00:00-04:00</published><updated>2019-08-26T00:00:00-04:00</updated><id>https://shoreviewanalytics.github.io/Installing-Tomcat9-On-Ubuntu-18.04</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Installing-Tomcat9-On-Ubuntu-18.04/">&lt;hr /&gt;
+&lt;p&gt;If the initial issue was not being able to register a runner for a pipeline, you should now be able to register a runner for the pipeline.&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Installing Tomcat 9 On Ubuntu 18.04</title><link href="http://localhost:4000/Installing-Tomcat9-On-Ubuntu-18.04/" rel="alternate" type="text/html" title="Installing Tomcat 9 On Ubuntu 18.04" /><published>2019-08-26T00:00:00-04:00</published><updated>2019-08-26T00:00:00-04:00</updated><id>http://localhost:4000/Installing-Tomcat9-On-Ubuntu-18.04</id><content type="html" xml:base="http://localhost:4000/Installing-Tomcat9-On-Ubuntu-18.04/">&lt;hr /&gt;
 
 &lt;p&gt;Apache Tomcat® is an open source implementation of Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. This post explains how to setup Apache Tomcat® 9 on Ubuntu 18.04.  It also clarifies how to setup security.&lt;/p&gt;
 
@@ -393,7 +393,7 @@ To                         Action      From
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
-&lt;p&gt;https://www.digitalocean.com/community/tutorials/install-tomcat-9-ubuntu-1804&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Spark Logback Example One</title><link href="https://shoreviewanalytics.github.io/Spark-Logback-Example-One/" rel="alternate" type="text/html" title="Spark Logback Example One" /><published>2018-10-08T00:00:00-04:00</published><updated>2018-10-08T00:00:00-04:00</updated><id>https://shoreviewanalytics.github.io/Spark-Logback-Example-One</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Spark-Logback-Example-One/">&lt;hr /&gt;
+&lt;p&gt;https://www.digitalocean.com/community/tutorials/install-tomcat-9-ubuntu-1804&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Spark Logback Example One</title><link href="http://localhost:4000/Spark-Logback-Example-One/" rel="alternate" type="text/html" title="Spark Logback Example One" /><published>2018-10-08T00:00:00-04:00</published><updated>2018-10-08T00:00:00-04:00</updated><id>http://localhost:4000/Spark-Logback-Example-One</id><content type="html" xml:base="http://localhost:4000/Spark-Logback-Example-One/">&lt;hr /&gt;
 
 &lt;p&gt;This post takes a look at how use Logback, the successor to Log4j with your spark application to create application specific logging. If you have spent any amount of time with Apache Spark you will notice that there is a ton of logging that goes on, but that logging is usually limited to what spark as an application is doing so there’s lot’s of logging about spark master or worker processing and what the executors are doing. While this information is important it doesn’t tell you a whole lot about how your specific application is doing across your cluster. With logging setup specifically for the spark job running, you can obtain granular information about how it is running on the spark cluster and detailed  &lt;a href=&quot;https://stackoverflow.com/questions/25836316/how-dag-works-under-the-covers-in-rdd&quot;&gt;DAG&lt;/a&gt; information as well.  In addition, if there are system wide settings for logging of spark applications you can have just one log for all your applications.  This example shows how to create a log file for each spark job and how to use verbose logging for development and then turn it down for production to only log what you really need to log, like errors and basic feedback.&lt;/p&gt;
 
@@ -449,7 +449,7 @@ This is where the fun happens.  Look for the following property in the logback.x
 
 &lt;p&gt;You can experiment with the various ways to configure a logback.xml file to add or reduce the verbosity of your logging. To learn more about Logback and all of its features check out the project’s &lt;a href=&quot;https://logback.qos.ch/&quot;&gt;website&lt;/a&gt;. Also note that this example includes a class called SysStreamsLogger, which I did not write, but did amend for the purpose of this example.  The SysStreamsLogger.java class redirects the output normally only available through the console to the specified log file set in logback.xml as the spark job is running.  Entries in the log file will have the logger name of SysStreamLogger.java when information is captured from the console and redirected by this class to the log file.&lt;/p&gt;
 
-&lt;p&gt;Finally, to test out this logging example on a distributed computing environment, I used a three node cluster with DataStax Enterprise Analytics enabled. For more information about DataStax Enterprise Analytics check out the &lt;a href=&quot;https://www.datastax.com/products/datastax-enterprise-analytics&quot;&gt;DataStax Enterprise Analytics  &lt;/a&gt; page on the DataStax website.&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Spark Logback Example Two</title><link href="https://shoreviewanalytics.github.io/Spark-Logback-Example-Two/" rel="alternate" type="text/html" title="Spark Logback Example Two" /><published>2018-10-08T00:00:00-04:00</published><updated>2018-10-08T00:00:00-04:00</updated><id>https://shoreviewanalytics.github.io/Spark-Logback-Example-Two</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Spark-Logback-Example-Two/">&lt;hr /&gt;
+&lt;p&gt;Finally, to test out this logging example on a distributed computing environment, I used a three node cluster with DataStax Enterprise Analytics enabled. For more information about DataStax Enterprise Analytics check out the &lt;a href=&quot;https://www.datastax.com/products/datastax-enterprise-analytics&quot;&gt;DataStax Enterprise Analytics  &lt;/a&gt; page on the DataStax website.&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Spark Logback Example Two</title><link href="http://localhost:4000/Spark-Logback-Example-Two/" rel="alternate" type="text/html" title="Spark Logback Example Two" /><published>2018-10-08T00:00:00-04:00</published><updated>2018-10-08T00:00:00-04:00</updated><id>http://localhost:4000/Spark-Logback-Example-Two</id><content type="html" xml:base="http://localhost:4000/Spark-Logback-Example-Two/">&lt;hr /&gt;
 
 &lt;p&gt;This post is relates to my other &lt;a href=&quot;https://shoreviewanalytics.github.io/Spark-Logback-Example-One/&quot;&gt;post&lt;/a&gt; on how to use Logback, the successor to Log4j with your spark application to create job specific logging when using the DataStax Enterprise (DSE) Analytics platform. Essentially everything is the same for this example, except you don’t need to pass the location of the logback.xml file in the spark-submit and this example also let’s you pass the job name to the logback.xml file, so the name of the log file is the same as the name of the job.&lt;/p&gt;
 
@@ -505,7 +505,7 @@ This is where the fun happens.  Look for the following property in the logback.x
 
 &lt;p&gt;You can experiment with the various ways to configure a logback.xml file to add or reduce the verbosity of your logging. To learn more about Logback and all of its features check out the project’s &lt;a href=&quot;https://logback.qos.ch/&quot;&gt;website&lt;/a&gt;. Also note that this example includes a class called SysStreamsLogger, which I did not write, but did amend for the purpose of this example.  The SysStreamsLogger.java class redirects the output normally only available through the console to the specified log file set in logback.xml as the spark job is running.  Entries in the log file will have the logger name of SysStreamLogger.java when information is captured from the console and redirected by this class to the log file.&lt;/p&gt;
 
-&lt;p&gt;To test out this logging example on a distributed computing environment, I used a three node cluster with DataStax Enterprise Analytics enabled. For more information about DataStax Enterprise Analytics check out the &lt;a href=&quot;https://www.datastax.com/products/datastax-enterprise-analytics&quot;&gt;DataStax Enterprise Analytics  &lt;/a&gt; page on the DataStax website. If you have questions or feedback regarding this post, you can contact me using the comments form below.&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Staticman API Dokku Deployment</title><link href="https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment/" rel="alternate" type="text/html" title="Staticman API Dokku Deployment" /><published>2018-10-08T00:00:00-04:00</published><updated>2018-10-08T00:00:00-04:00</updated><id>https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Staticman-API-Dokku-Deployment/">&lt;hr /&gt;
+&lt;p&gt;To test out this logging example on a distributed computing environment, I used a three node cluster with DataStax Enterprise Analytics enabled. For more information about DataStax Enterprise Analytics check out the &lt;a href=&quot;https://www.datastax.com/products/datastax-enterprise-analytics&quot;&gt;DataStax Enterprise Analytics  &lt;/a&gt; page on the DataStax website. If you have questions or feedback regarding this post, you can contact me using the comments form below.&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Staticman API Dokku Deployment</title><link href="http://localhost:4000/Staticman-API-Dokku-Deployment/" rel="alternate" type="text/html" title="Staticman API Dokku Deployment" /><published>2018-10-08T00:00:00-04:00</published><updated>2018-10-08T00:00:00-04:00</updated><id>http://localhost:4000/Staticman-API-Dokku-Deployment</id><content type="html" xml:base="http://localhost:4000/Staticman-API-Dokku-Deployment/">&lt;hr /&gt;
 
 &lt;p&gt;If you are using the public (GitHub hosted) version of &lt;a href=&quot;https://github.com/eduardoboucas/staticman&quot; title=&quot;Staticman API &quot;&gt;Staticman API&lt;/a&gt;, you might have noticed that due to its popularity and GitHub API limits, it has become more difficult to use it as a comments engine for your blog or website.  Perhaps you’ve experienced the  &lt;a href=&quot;https://github.com/eduardoboucas/staticman/issues/227&quot; title=&quot;Invitation not found&quot;&gt;‘Invitation not found’&lt;/a&gt; or the ‘Too many requests at this time’ message when trying to use the public version of Staticman. As of September 2018, the author of the minimal-mistakes Jekyll theme, which I’m using for this blog and the author of the Staticman API, recommend deploying a standalone instance of the Staticman API to avoid the GitHub API limits. This post discusses the general process I used to get the Staticman API up and running within a cloud infrastructure, so it can supply a ‘static comments engine’ for my blog hosted on &lt;a href=&quot;https://pages.github.com/&quot; title=&quot;Github Pages&quot;&gt;Github Pages&lt;/a&gt;.&lt;/p&gt;
 
@@ -632,329 +632,4 @@ This is where the fun happens.  Look for the following property in the logback.x
 
 &lt;p&gt;&lt;a href=&quot;https://mademistakes.com/articles/improving-jekyll-static-comments/&quot; title=&quot;Improving static comments with Jekyll &amp;amp; Staticman&quot;&gt;Improving static comments with Jekyll &amp;amp; Staticman&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://dokku.viewdocs.io/dokku~v0.12.13/deployment/application-deployment/&quot; title=&quot;Deploying to Dokku&quot;&gt;Deploying to Dokku&lt;/a&gt;&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer</title><link href="https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/" rel="alternate" type="text/html" title="How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer" /><published>2018-04-10T00:00:00-04:00</published><updated>2018-04-10T00:00:00-04:00</updated><id>https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer</id><content type="html" xml:base="https://shoreviewanalytics.github.io/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/">&lt;hr /&gt;
-
-&lt;p&gt;For this post I want to discuss how to work towards becoming a
-Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer, which
-for brevity I will refer to as “The Big 4”.  When I look at the number of job
-postings for “The Big 4” on employment web sites as of writing this post it is
-astonishing. All you have to do is go to LinkedIn or another job site and do a
-search for “Data Analyst” in the United States and you will see several pages of
-openings and that’s just for one of “The Big 4”.&lt;/p&gt;
-
-&lt;p&gt;Related to “The Big 4” are specialized roles in Natural Language Processing (NLP) and AI techniques, but I believe these are just variants of say a Machine Learning Engineer role or Data Scientist role, so I don’t mention NLP or AI as separate roles. As of writing this post when I do a search on Linkedin for NLP it returns Data Science positions. Well, the fact that there are many openings with the job title of
-“Data Analyst” or “Data Scientist” is great, but what if you haven’t held a job as a “Data Analyst” or “Data Scientist” or any of “The Big 4”?&lt;/p&gt;
-
-&lt;h2 id=&quot;ready-set-go&quot;&gt;Ready, Set, Go!&lt;/h2&gt;
-
-&lt;p&gt;So, where does one start if you are interested in working as one of “The Big 4”?
-I took the advice of well-known professionals in the field, those who have
-written books or teach “The Big 4”. I also reviewed several blogs of those who
-work as one of “The Big 4”, where they share their work and thoughts. I have
-enrolled in two different online curriculums one is &lt;a href=&quot;https://www.coursera.org/&quot;&gt;Coursera&lt;/a&gt;, where I am taking a
-Machine Learning course. The other is called &lt;a href=&quot;https://www.dataquest.io&quot;&gt;Dataquest.io&lt;/a&gt;, which provides paths
-for students who are interested becoming a Data Scientist, Data Analyst or Data
-Engineer. I am also considering an online Master’s degree in Data Science.&lt;/p&gt;
-
-&lt;p&gt;As you begin exploration into “The Big 4”, you will realize that there is some
-overlap and often you will see in job postings that suffer from I call the “bundle complex” where a given job posting bundles what could possibly be 1 or 2 FTE’s into a position description, but
-this is the subject of a future post.&lt;/p&gt;
-
-&lt;p&gt;For now, to show how these roles overlap,
-consider the image below a data plotting exercise from my Data Analyst / Data
-Scientist track on Dataquest.io. The example, comes from a section on “Improving
-Plot Aesthetics” in the “Storytelling Through Data Visualization” course.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://shoreviewanalytics.github.io/assets/images/sample-graph.png&quot; alt=&quot;Simple Graph&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;To create the graph above, I used standard tools of a Data Analyst or Data
-Scientist, which in this case are the Python libraries pandas, matplotlib.pyplot
-using IPython.&lt;/p&gt;
-
-&lt;p&gt;The good thing is that much of the software used in “The Big 4”
-is open source and very accessible. For example, &lt;a href=&quot;https://www.anaconda.com/&quot;&gt;Anaconda&lt;/a&gt;  a software platform, which integrates many different tools for Data Analysts or Data Scientists such as IPython or Jupyter Notebook. Additionally, there are complete Data Science platforms available as
-well as Big Data Platforms that integrate “The Big 4” tools.&lt;/p&gt;
-
-&lt;h2 id=&quot;the-mathematics-journey&quot;&gt;The Mathematics Journey&lt;/h2&gt;
-
-&lt;p&gt;One thing that has become clear early on in my Journey into “The Big 4” is the 
-need to brush up on statistics, linear algebra, vector mathematics and some calculus.  If you
-plan to become a Machine Learning Engineer or Data Scientist it is important to know how to solve basic equations, but you won’t need to compute partial derivatives necessarily.  However, if you are a mathematical wizard and can apply what you know to the formulas used within the field, it doesn’t hurt either. As I continue my journey with “The Big 4”, I am realizing that rather than solving equations manually it is more important to understand which model 
-to apply and the proper way to apply it, in order to produce the best results.&lt;/p&gt;
-
-&lt;p&gt;The Machine Learning class that I am currently taking on Coursera does include a fair amount of mathematical formulas, but these formulas themselves are rarely used to manually produce a result.  Instead, the formulas are translated to a more practical format to be used in a programming language.    As an example, here is a formula used in my machine learning course in week 6 of the class.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://shoreviewanalytics.github.io/assets/images/formula.png&quot; alt=&quot;Cost Function&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;This formula represents what is called a cost function and it is helping to calculate the errors on training data and cross validation data in a process to plot a learning curve, which is helpful in debugging a machine learning algorithm.  The good thing is during the class you translate this formula numerous times into a vectorized equivalent within the Octave programming environment.  Yay, for Octave!  As you continue your journey you will discover that many different programming languages such as Python or R have what are called mathematical libraries that provide translations of machine learning formulas.  While the language is different, the implementaion is usually optimized.&lt;/p&gt;
-
-&lt;h2 id=&quot;do-i-need-a-degree-in-data-science-or-data-analysis&quot;&gt;Do I need a Degree in Data Science or Data Analysis?&lt;/h2&gt;
-
-&lt;p&gt;You might be asking yourself if you should go back to college to obtain a Master’s Degree in Data Science? That’s a good question, which is not easily answered. The answer to this question is that it really depends on where you are in your career and whether you have a STEM degree.  In my
-case, I had not done any statistics since college, but I do hold a Master’s degree in Information Technology and have many years of experience working with data driven applications and recently held the role of Analytics Consultant, which provided valuable experience in data analysis and data visualization with exposure to some data science methods.  My most recent role more than likely served as catalyst to my journey to become one of “The Big 4”.&lt;/p&gt;
-
-&lt;p&gt;While doing my research, I found an &lt;a href=&quot;https://www.forbes.com/sites/metabrown/2017/10/31/read-this-before-you-pay-for-that-masters-in-data-science-program/2/#3b691f8850d5&quot;&gt;article&lt;/a&gt;  on Forbes written by an expert in the field that says you may want to rethink getting your degree in Data Science, meaning you may not have to obtain one of these degrees, in order to pursue “The Big 4”. The article suggests that you review or take a basic statistics course to become familiar with some of the methods that are used in “The Big 4” roles to determine if you even like it or to show you that you can learn the techniques without actually enrolling in Data Science program. Indeed, this appears to be true, because there are many online resources that provide more than enough to get started. However, this doesn’t mean that I won’t pursue a Master’s degree in Data Science to expand my horizons, it just means I am carefully considering if it is the right thing for me to do.  I’m thankful that I read this article since I did end up downloading a free e-book on statistics. By the way, the book is called “&lt;a href=&quot;https://openstax.org/details/introductory-statistics&quot;&gt;Introductory Statistics&lt;/a&gt; “ and it has a very nice introduction to Linear Regression.&lt;/p&gt;
-
-&lt;h2 id=&quot;create-your-blog&quot;&gt;Create your Blog!&lt;/h2&gt;
-
-&lt;p&gt;I found that it is recommended and, in some cases, required for employment purposes or education programs that you create a blog or create blog posts if you are planning to pursue “The Big 4”. For example, an employer that I recently
-interviewed with that provides a Big Data platform stated that as an employee you are expected to contribute to the company blog and can also use the time spent blogging as part of your utilization.&lt;/p&gt;
-
-&lt;p&gt;I’ve also seen programs that teach “The Big 4” require you to blog as you progress through the program. While you do not have
-to create a blog, for me it works, because I like blogging and can use Github Pages to host my blog and essentially, the same platform to post code samples worthy of sharing, helping me to stay organized.&lt;/p&gt;
-
-&lt;p&gt;If you haven’t created a blog yet, be sure to check out my &lt;a href=&quot;https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/&quot;&gt;tutorial&lt;/a&gt;  on how to build a blog using Jeckyll and Github Pages. It will 
-take some effort to get through it, but after completing it, you will have very nice professional looking blog, that is relatively easy to maintain.&lt;/p&gt;
-
-&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
-
-&lt;p&gt;After enrolling in online curriculums above, I realized that many of the tools used in “The Big 4” are readily available on a platform that I’m already using for a day to day workstation, which is Ubuntu Linux. While you do not have to
-use Linux to become one of “The Big 4”, you might be surprised to learn that most if not all of the tools used for these careers are readily available on the Linux platform. This is especially great if you are like me and enjoy working on
-an open source platform. Either way hopefully you are doing something that you enjoy.&lt;/p&gt;
-
-&lt;p&gt;To be perfectly honest, working toward becoming one of “The Big 4” is not necessarily an easy journey.  If becoming one of “The Big 4” was easy, then anyone or everyone would be doing it.&lt;/p&gt;
-
-&lt;p&gt;If you are considering a career change, have a great deal of experience with data systems (DBA, Data Modeling, OO Programming, SQL etc.) and have done some data visualization or quantitative reporting, and want to take your skill set and use it to become one of “The Big 4”, you can get there a variety of ways and as it turns out it doesn’t have to necessarily be expensive either. You can probably get there without having a great deal of experience in data systems or programing, but the Journey may take a bit longer. For example, if you have not done any programming it may be pretty hard to pick up Python as used in my Data Analyst / Data Science track with Dataquest.io. The good is that they have a complete introduction to Python as a part of their Data Analyst or Data Scientist tracks and there are other online training sites such as &lt;a href=&quot;https://www.datacamp.com/&quot;&gt;DataCamp&lt;/a&gt; that provide similar training with some free tutorials for Python or R.&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04</title><link href="https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/" rel="alternate" type="text/html" title="Create Jekyll Blog with Minimal Mistakes theme on Ubuntu 16.04" /><published>2018-02-19T00:00:00-05:00</published><updated>2018-02-19T00:00:00-05:00</updated><id>https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04</id><content type="html" xml:base="https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/">&lt;hr /&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://shoreviewanalytics.github.io/assets/images/jekyll-logo-black-red-transparent.png&quot; alt=&quot;Jekyll Island&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Recently, I discovered &lt;a href=&quot;https://jekyllrb.com/&quot; title=&quot;Jekyll&quot;&gt;Jekyll&lt;/a&gt; a static website and blog generator that let’s you create a feature rich, professional looking blog and then publish it on &lt;a href=&quot;https://pages.github.com/&quot; title=&quot;Github Pages&quot;&gt;Github Pages&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&quot;why-jekyll&quot;&gt;Why Jekyll?&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;A Jekyll blog hosted on Github Pages, gives you complete control over your content.&lt;/li&gt;
-  &lt;li&gt;Hosting on Github Pages is free (for now!).&lt;/li&gt;
-  &lt;li&gt;You desire a professional looking blog without the complexity and dependence on a hosting company.&lt;/li&gt;
-  &lt;li&gt;Because, I give Jekyll a :+1:!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;here-are-the-requirements-i-had-in-mind-for-my-blog&quot;&gt;Here are the requirements I had in mind for my blog.&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Blog should portable and not dependent on a specific hosting company, especially the content.&lt;/li&gt;
-  &lt;li&gt;The theme used for it should be easy to maintain and have advanced features.&lt;/li&gt;
-  &lt;li&gt;The theme and blog software should be able to be updated.&lt;/li&gt;
-  &lt;li&gt;It should be low to no cost to deploy.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;If you host your blog on Github Pages and abide by their &lt;a href=&quot;https://help.github.com/articles/what-is-github-pages/#usage-limits&quot;&gt;guidelines&lt;/a&gt; you can deploy your blog or website for no cost.&lt;/p&gt;
-
-&lt;p&gt;By the way there are many web based tutorials that you can review to get started with Jekyll.  To get your feet wet check out the following tutorial.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://www.taniarascia.com/make-a-static-website-with-jekyll/&quot; title=&quot;Tania's Tutorial&quot;&gt;Tania’s tutorial&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The steps below outline how to create a Jekyll powered blog using the &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/&quot; title=&quot;minimal-mistakes&quot;&gt;minimal-mistakes&lt;/a&gt; theme hosting it using &lt;a href=&quot;https://pages.github.com/&quot; title=&quot;Github Pages&quot;&gt;github pages&lt;/a&gt;. If you review the quick start guide for the minimal-mistakes theme, it provides three different methods to install. This post explains how to use the fork method. For QA, I have gone through the steps below to build the mininmalmistakesdemo site at least two times to be sure they are accurate and lead to success.&lt;/p&gt;
-
-&lt;p&gt;It will be necessary to move slowly and do all the tasks in each step. Some of the steps, like creating a gh-pages layer on Github (as described in Step 10 below), can be confusing if you haven’t used git.&lt;/p&gt;
-
-&lt;p&gt;I have not used these steps to build a githubusername.github.io site, because I already have my blog published at that location. From my experience with Github you do not have to have a working site at githubusername.github.io to deploy to githubusername.github.io/subsite, but you do need to use this nomenclature to publish a subsite.&lt;/p&gt;
-
-&lt;p&gt;The cool thing is when you complete this tutorial you should have a fully functional Jekyll blog using the minimal-mistakes theme.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://shoreviewanalytics.github.io/minimalmistakesjekylldemo/&quot; title=&quot;minimal-mistakes theme demo&quot;&gt;https://shoreviewanalytics.github.io/minimalmistakesjekylldemo/&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;The initial version of the site is pretty basic looking, so you will need to make adjustments and add your own content to make it more interesting. What’s really cool about going this route for your blog is you will have a professional blog that looks fantastic on any browser including your mobile phone.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-1&quot;&gt;Step 1&lt;/h2&gt;
-
-&lt;p&gt;Install dependencies&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install gcc make zlib1g-dev sqlite3 automake autoconf libtool build-essential
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Install Ruby using the following command:&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install ruby ruby-dev
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Install Bundler&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo gem install bundler
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Usually git is installed on Ubuntu by default, but in case it isn’t, use the following command to install it.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt-get install git
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;If you currently do not have a Github account, you will need to create one, to complete this tutorial.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-2&quot;&gt;Step 2&lt;/h2&gt;
-
-&lt;p&gt;After you have a setup your github account, create a new repository using the following naming conventions.&lt;/p&gt;
-
-&lt;p&gt;Create a repository with a name of githubusername.github.io if you want a web address like:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;https://githubusername.github.io&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Create a repository with a name minimaljekylldemo if you want a web address like:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;https://githubusername.github.io/minimaljekylldemo&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;Creating a repository defaults to the root or master level and you can only have one Jekyll site at this level.  All other sites must be placed at the gh-pages level. For example, if you are reading this post and you already have a blog like I do at http://shoreviewanalytics.github.io you would create a new repository called minimalmistakesjekylldemo and would navigate to it with the following url.  https://shoreviewanalytics.github.io/minimalmistakesjekylldemo/.&lt;/p&gt;
-
-&lt;p&gt;I will get into the details of how this is done and why below.  The main point of this step is to make sure you create an account on github.com and also create the desired repository.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-3&quot;&gt;Step 3&lt;/h2&gt;
-
-&lt;p&gt;Create a new folder in your home directory to use as a sandbox for your Jekyll efforts.  I called mine websites, but you can call it whatever suites your needs.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-4&quot;&gt;Step 4&lt;/h2&gt;
-
-&lt;p&gt;Next you will need to fork the minimal-mistakes theme.  To do this you will need to login to your github account and then search for the minimal-mistakes repository.  Once you have found the minimal-mistakes repository, click on the fork icon in the upper right hand corner of the repository.  Once the fork process has completed you will have the minimal-mistakes repository as a fork under your github account.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-5&quot;&gt;Step 5&lt;/h2&gt;
-
-&lt;p&gt;Now that you have the minimal-mistakes repository forked to your github account, you can clone it to the folder created in Step 3.&lt;/p&gt;
-
-&lt;p&gt;Click on the green button that says Clone or download and then click on the copy icon to copy the URL to your clipboard. Issue the following command in a terminal when in the root of your sandbox folder.&lt;/p&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/shoreviewanalytics/minimal-mistakes.git  
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You should now have the minimal-mistakes repository on your local machine in your sandbox / jekyll development directory created above in step 3.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-6&quot;&gt;Step 6&lt;/h2&gt;
-
-&lt;p&gt;Clean up the minimal-mistakes directory, by removing the following folders and files.&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;.github&lt;/li&gt;
-  &lt;li&gt;.git&lt;/li&gt;
-  &lt;li&gt;docs&lt;/li&gt;
-  &lt;li&gt;test&lt;/li&gt;
-  &lt;li&gt;screenshot.png&lt;/li&gt;
-  &lt;li&gt;screenshot-layouts.png&lt;/li&gt;
-  &lt;li&gt;README.md&lt;/li&gt;
-  &lt;li&gt;.gitiqnore&lt;/li&gt;
-  &lt;li&gt;.gitattributes&lt;/li&gt;
-  &lt;li&gt;.editorconfig&lt;/li&gt;
-  &lt;li&gt;banner.js&lt;/li&gt;
-  &lt;li&gt;CHANGELOG.md&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;step-7&quot;&gt;Step 7&lt;/h2&gt;
-
-&lt;p&gt;Using the command line from the root of the minimal-mistakes directory issue the following commands.&lt;/p&gt;
-
-&lt;p&gt;–Initialize as git&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git init
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;–Install bundles&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle install
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;–Update bundles&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle update
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;–Build the site&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle exec jekyll serve watch
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;If using Ubuntu you can either copy the server address and paste it into a browser or right click on the link and choose
-“open link”.&lt;/p&gt;
-
-&lt;p&gt;You should now see a very basic looking Jekyll blog, that uses the minimal-mistakes theme.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-8&quot;&gt;Step 8&lt;/h2&gt;
-
-&lt;p&gt;While in the minimal-mistakes directory, copy configuration file named &lt;em&gt;_config.yml&lt;/em&gt; to &lt;em&gt;_config_dev.yml&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;Make the following edits to the &lt;em&gt;_config_dev.yml&lt;/em&gt; file.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;url     : &quot;http://localhost:4000/&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h2 id=&quot;step-9&quot;&gt;Step 9&lt;/h2&gt;
-
-&lt;p&gt;Now when working locally you can issue the following command.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle exec jekyll serve --config _config_dev.yml
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;note: When working locally you might see the following error when previewing.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ERROR `/favicon.ico' not found.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;This error appears to be harmless and doesn’t impact the use of the site or cause any errors that I have seen when deploying to github.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-10&quot;&gt;Step 10&lt;/h2&gt;
-
-&lt;p&gt;Make the appropriate edits to the &lt;em&gt;_config.yml&lt;/em&gt; and &lt;em&gt;_config_dev.yml&lt;/em&gt;.&lt;br /&gt;
-For the purposes of this tutorial I will not discuss all of the options in this file. They are described well in the minimal-mistakes documentation.
-After making edits run the following command to be sure all is well.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle exec jekyll serve --config _config_dev.yml
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;h2 id=&quot;step-11&quot;&gt;Step 11&lt;/h2&gt;
-
-&lt;p&gt;Make the appropriate edits to &lt;em&gt;_config.yml&lt;/em&gt; based on your github account and the repository you created.&lt;/p&gt;
-
-&lt;p&gt;The following settings are used if you are creating a sub site or gh-pages site.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;url     : &quot;https://shoreviewanalytics.github.io&quot;
-baseurl : &quot;/minimalmistakesjekylldemo&quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;To ensure the site still compiles run the following commands.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle exec jekyll --config _config.yml serve
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Now that you have a basic blog minus any customizations that you will want, you can publish it to github.&lt;/p&gt;
-
-&lt;p&gt;There are two different locations where you can publish your blog on github.&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;
-    &lt;p&gt;The root of your github account also known as the master.  This is when you want to view your blog at a web address like I am doing at shoreviewanalytics.github.io.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;You can also serve up your blog using a project site also known as gh-pages.  This is when you want to view your blog at an address like shoreviewanalytics.github.io/minimalmistakesjekylldemo.&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Note: You can only have one site published at the master level.  You might be able to have multiple repositories at the master level, but github will not recognize multiple jekyll blogs at the root level.&lt;/p&gt;
-
-&lt;p&gt;If you want to setup your blog so it is served at githubusername.github.io just don’t change the default branch as described below.&lt;/p&gt;
-
-&lt;p&gt;If you are following along and only want to demo the minimal-mistakes theme you can create a new repository on github called minimalmistakesjekylldemo.  After creating the repository make sure you place it in a branch adjacent to master by creating a new branch called ‘gh-pages’. To do this you will need to create the branch gh-pages by clicking on branch drop down of the minimalmistakesjekylldemo repository and then typing in the name gh-pages.  Once you have done this click on settings and go to branches and set this repository to the default branch of gh-pages. Make sure you do not have anything in the directory before making this change, otherwise it will all be gone after this change.  :)&lt;/p&gt;
-
-&lt;p&gt;Next, on your local computer open a terminal session in your sandbox root folder to clone the new gh-pages repository by issuing the following command.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/yourgithubusername/minimalmistakesjekylldemo.git
-cd minimalmistakesjekylldemo
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;If you want to access your blog at githubusername.github.io, then you would create a new repository called githubusername.github.io.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/yourgithubusername/yourgithubusername.github.io.git
-cd yourgithubusername.github.io
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Regardless, each folder will be empty except for a .git folder.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-12&quot;&gt;Step 12&lt;/h2&gt;
-
-&lt;p&gt;Next, copy the all the content minus the .git folder from the forked minimal-mistakes repository called “minimal-mistakes”.  Remember the folder options above. You will either be creating a new repository at the master level or gh-pages level.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-13&quot;&gt;Step 13&lt;/h2&gt;
-
-&lt;p&gt;Using a terminal session in the root of the new repository on you local machine, issue the following command to make sure the the site is still functional.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;bundle exec jekyll serve
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;You should be able to navigate to the site locally.&lt;/p&gt;
-
-&lt;h2 id=&quot;step-14&quot;&gt;Step 14&lt;/h2&gt;
-
-&lt;p&gt;Now you can push minimalmistakesjekylldemo or githubusername.github.io to the repository created in step 11.&lt;/p&gt;
-
-&lt;p&gt;Issue the following commands if you want to push to gh-pages.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
-git commit -m &quot;first minimalmistakesjekylldemo&quot;
-git push -u origin gh-pages
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Issue the following commands if have a repository named githubusername.github.io.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git add .
-git commit -m &quot;first githubusername.github.io&quot;
-git push -u origin master
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
-
-&lt;p&gt;Congratulations! You should now have a working jekyll blog using the minimal-mistakes theme that is served up at the root or master level or the gh-pages level of your github account.
-Of course this is just the beginning to all the fun.  As you can see there are many options and features to explore.&lt;/p&gt;
-
-&lt;p&gt;After initial deployment of my blog using the fork method, I switched gears to the gem method, so I could take advantage of major changes to the theme and have a more tidy repository for my blog. One of my requirements above was to have a blog that I could easily maintain. If you are in a hurry and want to just get started with the gem method to use the minimal mistakes theme, you can  &lt;a href=&quot;https://github.com/shoreviewanalytics/shoreviewanalytics.github.io&quot; title=&quot;fork&quot;&gt;fork&lt;/a&gt; my repository.&lt;/p&gt;
-
-&lt;h2 id=&quot;markdown-reference&quot;&gt;Markdown Reference:&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&quot; title=&quot;Markdown-Cheatsheet&quot;&gt;Markdown-Cheatsheet&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.cirosantilli.com/markdown-style-guide/&quot; title=&quot;Markdown Style Guide&quot;&gt;Markdown Style Guide&lt;/a&gt;&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://dokku.viewdocs.io/dokku~v0.12.13/deployment/application-deployment/&quot; title=&quot;Deploying to Dokku&quot;&gt;Deploying to Dokku&lt;/a&gt;&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry></feed>
