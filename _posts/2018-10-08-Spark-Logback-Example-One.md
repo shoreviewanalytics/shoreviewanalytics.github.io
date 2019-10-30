@@ -5,7 +5,7 @@ layout: categories
 classes: wide
 
 header:  
-  overlay_image: /assets/images/header.jpg
+  overlay_image: /assets/images/abstract.jpg
 ---
 
 --------------------------------------------

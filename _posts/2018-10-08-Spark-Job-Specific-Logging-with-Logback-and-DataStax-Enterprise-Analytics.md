@@ -4,6 +4,9 @@ title: "Spark Job Specific Logging with Logback and DataStax Enterprise Analytic
 layout: single
 classes: wide
 
+header:  
+  overlay_image: /assets/images/abstract.jpg
+
 ---
 
 Spark Job Specific Logging with Logback and DataStax Enterprise Analytics
