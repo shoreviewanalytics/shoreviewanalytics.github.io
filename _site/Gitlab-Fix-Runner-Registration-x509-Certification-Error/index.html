@@ -350,41 +350,41 @@
 
 <p>Login to the server where Gitlab is installed and become root as the /etc/gitlab-runner directory is owned by root.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -i
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -i
 </code></pre></div></div>
 
 <p>Next, cd to the /etc/gitlab-runner directory.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /etc/gitlab-runner
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /etc/gitlab-runner
 </code></pre></div></div>
 
 <p>If you are just getting started you will want to run the following command to that creates a folder and a certificate.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir -p /etc/gitlab-runner/certs &amp;&amp; openssl s_client -connect gitlab.example.io:443 -showcerts &lt; /dev/null | openssl x509 -outform PEM &gt; /etc/gitlab-runner/certs/gitlab.example.io.crt
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mkdir -p /etc/gitlab-runner/certs &amp;&amp; openssl s_client -connect gitlab.example.io:443 -showcerts &lt; /dev/null | openssl x509 -outform PEM &gt; /etc/gitlab-runner/certs/gitlab.example.io.crt
 </code></pre></div></div>
 
 <p>Note: You will need to change the domain name in the above commands.</p>
 
 <p>If you already have a certs folder and the certificate is now invalid. Run the following commands first.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /certs
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /certs
 rm -R *
 </code></pre></div></div>
 <p>This will remove the invalid certificates.  To replace run the following command.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl s_client -connect gitlab.example.io:443 -showcerts &lt; /dev/null | openssl x509 -outform PEM &gt; /etc/gitlab-runner/certs/gitlab.example.io.crt
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl s_client -connect gitlab.example.io:443 -showcerts &lt; /dev/null | openssl x509 -outform PEM &gt; /etc/gitlab-runner/certs/gitlab.example.io.crt
 </code></pre></div></div>
 
 <p>Finally, after creating the new certificate export it to PEM format.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl s_client -connect gitlab.example.io:443 -showcerts &lt; /dev/null | openssl x509 -outform PEM &gt; ca.crt
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl s_client -connect gitlab.example.io:443 -showcerts &lt; /dev/null | openssl x509 -outform PEM &gt; ca.crt
 </code></pre></div></div>
 
 <h2 id="step-2-validate-the-certificate">Step 2 Validate the certificate</h2>
 
 <p>To validate the certificates on you server run the following command.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl s_client -showcerts -connect gitlab.example.io:443 &lt;/dev/null
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openssl s_client -showcerts -connect gitlab.example.io:443 &lt;/dev/null
 </code></pre></div></div>
 
 <h2 id="conclusion">Conclusion</h2>

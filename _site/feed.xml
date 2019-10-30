@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-29T20:48:40-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">chad.d’s blog</title><subtitle></subtitle><author><name>CHAD DOWNEY, M.SC. IT</name></author><entry><title type="html">Getting Started with Python3 and PyCharm on Ubuntu 18.04</title><link href="http://localhost:4000/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04/" rel="alternate" type="text/html" title="Getting Started with Python3 and PyCharm on Ubuntu 18.04" /><published>2019-10-29T00:00:00-04:00</published><updated>2019-10-29T00:00:00-04:00</updated><id>http://localhost:4000/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04</id><content type="html" xml:base="http://localhost:4000/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04/">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-29T23:25:21-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">chad.d’s blog</title><subtitle></subtitle><author><name>CHAD DOWNEY, M.SC. IT</name></author><entry><title type="html">Getting Started with Python3 and PyCharm on Ubuntu 18.04</title><link href="http://localhost:4000/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04/" rel="alternate" type="text/html" title="Getting Started with Python3 and PyCharm on Ubuntu 18.04" /><published>2019-10-29T00:00:00-04:00</published><updated>2019-10-29T00:00:00-04:00</updated><id>http://localhost:4000/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04</id><content type="html" xml:base="http://localhost:4000/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04/">&lt;hr /&gt;
 
 &lt;p&gt;If you are new to Python and haven’t yet selected an IDE you might want to have a look at PyCharm. Also if you have done some Java programming and have used Intellij the look and feel of PyCharm is very similar. For this short post I will explain how to create a virtual environment for your Python development as well as how to open a Python project folder using PyCharm.  As a bonus I have included a step below that explains how to install Jupyter Notebook.&lt;/p&gt;
 
@@ -8,16 +8,16 @@
 
 &lt;p&gt;You can check the version if you like with the following command.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 --version
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 --version
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;You should see the following.&lt;/p&gt;
+&lt;p&gt;You should see the following output.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Python 3.6.8
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Python 3.6.8
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&quot;step-1---installing-python3-env&quot;&gt;Step 1 - Installing python3-env&lt;/h3&gt;
 
-&lt;p&gt;Great so now that you know you have Python it’s time to create what is called a Python virtual environment. In order to be able to create a virtual environment it is necessary to install a package called python3-venv.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install python3-env
+&lt;p&gt;Now that you know you have Python3 installed, it’s time to create what is called a Python virtual environment. In order to be able to create a virtual environment it is necessary to install a package called python3-venv.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install python3-env
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;What this package does essentially is allow you to create a virtual Python3 environment within a directory of your choice. A virtual environment for Python let’s you work in an isolated or virtual Python environment.&lt;/p&gt;
 
@@ -25,47 +25,47 @@
 
 &lt;h3 id=&quot;step-2---create-a-python-virtual-environment&quot;&gt;Step 2 - Create a Python Virtual Environment&lt;/h3&gt;
 
-&lt;p&gt;Next open the lpython folder in a terminal and issue the following command.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 -m venv env
+&lt;p&gt;Open the lpython folder in a terminal session and issue the following command.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 -m venv env
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;If no issues occurred you should be able to issue the following command to activate your virtual python environment.&lt;/p&gt;
-
 &lt;h3 id=&quot;step-3---activate-a-python-virtual-environment&quot;&gt;Step 3 - Activate a Python Virtual Environment&lt;/h3&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;source env/bin/activate
+&lt;p&gt;If no issues have occurred you should be able to issue the following command.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;source env/bin/activate
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;This command activates your virtual python environment.  While in the virtual environment you can install additional packages that you know you will need during your programming. For example the following command installs numpy a commonly used library for Data Scientists and Data Analysts.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 -m pip install numpy
+&lt;p&gt;This command activates your virtual python environment.  While in the virtual environment you can install additional packages that you will need during your programming. For example the following command installs numpy a commonly used library for Data Scientists and Data Analysts.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 -m pip install numpy
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&quot;step-4---installing-pycharm&quot;&gt;Step 4 - Installing PyCharm&lt;/h3&gt;
 
 &lt;p&gt;Next install PyCharm using the following command.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo snap install pycharm-community --classic
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo snap install pycharm-community --classic
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;After you have installed PyCharm go ahead and launch it.  After you have launched PyCharm, rather than create a new project choose open.  When you choose open, navigate to the folder structure you created above or the /home/your username/python/lpython directory.&lt;/p&gt;
 
 &lt;p&gt;Now click on the terminal tab at the bottom of the IDE.  Notice that when you click on it you are automatically taken into the virtual environment that you created earlier.&lt;/p&gt;
 
 &lt;p&gt;In order to leave the virtual environment type the following command while within the virtual environment.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;deactivate
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;deactivate
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;step-5---installing-jupyter-notebook&quot;&gt;Step 5 - Installing Jupyter Notebook&lt;/h3&gt;
 
 &lt;p&gt;If you have successfully completed the above steps creating a virtual environment you can now also install Jupyter and run it in your newly created virtual Python environment.  To install Jupyter Notebook use the following command while within the Python virtual environment.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install jupyter
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install jupyter
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;To launch Jupyter use the following command from within the virtual environment.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jupyter notebook
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jupyter notebook
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
 
-&lt;p&gt;After completing the above steps you should have a working Python virtual environment with the ability to use PyCharm or Jupyter Notebook for your Python programming.   The advantage of using a virtual environment to install Python libraries is that if you should have an issue with package dependencies, you can always remove or create a new virtual environment. If you have any issues or questions please let me know.&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Gitlab Runner Registration x509 Certificate Error</title><link href="http://localhost:4000/Gitlab-Fix-Runner-Registration-x509-Certification-Error/" rel="alternate" type="text/html" title="Gitlab Runner Registration x509 Certificate Error" /><published>2019-09-06T00:00:00-04:00</published><updated>2019-09-06T00:00:00-04:00</updated><id>http://localhost:4000/Gitlab-Fix-Runner-Registration-x509-Certification-Error</id><content type="html" xml:base="http://localhost:4000/Gitlab-Fix-Runner-Registration-x509-Certification-Error/">&lt;hr /&gt;
+&lt;p&gt;After completing the above steps you should have a working Python virtual environment with the ability to use PyCharm or Jupyter Notebook for your Python programming.   The advantage of using a virtual environment to install Python libraries is that if you have an issue with the virtual environment, you can always remove, recreate or create a new virtual environment. If you have any issues or questions with this post, please let me know.&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Gitlab Runner Registration x509 Certificate Error</title><link href="http://localhost:4000/Gitlab-Fix-Runner-Registration-x509-Certification-Error/" rel="alternate" type="text/html" title="Gitlab Runner Registration x509 Certificate Error" /><published>2019-09-06T00:00:00-04:00</published><updated>2019-09-06T00:00:00-04:00</updated><id>http://localhost:4000/Gitlab-Fix-Runner-Registration-x509-Certification-Error</id><content type="html" xml:base="http://localhost:4000/Gitlab-Fix-Runner-Registration-x509-Certification-Error/">&lt;hr /&gt;
 
 &lt;p&gt;GitLab® is a open-source licensed web-based DevOps platform that provides a Git-repository manager wiki combined with  issue-tracking, CI/CD pipeline features, developed by GitLab Inc.&lt;/p&gt;
 
@@ -79,41 +79,41 @@
 
 &lt;p&gt;Login to the server where Gitlab is installed and become root as the /etc/gitlab-runner directory is owned by root.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo -i
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo -i
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Next, cd to the /etc/gitlab-runner directory.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /etc/gitlab-runner
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /etc/gitlab-runner
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;If you are just getting started you will want to run the following command to that creates a folder and a certificate.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir -p /etc/gitlab-runner/certs &amp;amp;&amp;amp; openssl s_client -connect gitlab.example.io:443 -showcerts &amp;lt; /dev/null | openssl x509 -outform PEM &amp;gt; /etc/gitlab-runner/certs/gitlab.example.io.crt
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkdir -p /etc/gitlab-runner/certs &amp;amp;&amp;amp; openssl s_client -connect gitlab.example.io:443 -showcerts &amp;lt; /dev/null | openssl x509 -outform PEM &amp;gt; /etc/gitlab-runner/certs/gitlab.example.io.crt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Note: You will need to change the domain name in the above commands.&lt;/p&gt;
 
 &lt;p&gt;If you already have a certs folder and the certificate is now invalid. Run the following commands first.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /certs
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /certs
 rm -R *
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;This will remove the invalid certificates.  To replace run the following command.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl s_client -connect gitlab.example.io:443 -showcerts &amp;lt; /dev/null | openssl x509 -outform PEM &amp;gt; /etc/gitlab-runner/certs/gitlab.example.io.crt
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl s_client -connect gitlab.example.io:443 -showcerts &amp;lt; /dev/null | openssl x509 -outform PEM &amp;gt; /etc/gitlab-runner/certs/gitlab.example.io.crt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Finally, after creating the new certificate export it to PEM format.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl s_client -connect gitlab.example.io:443 -showcerts &amp;lt; /dev/null | openssl x509 -outform PEM &amp;gt; ca.crt
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl s_client -connect gitlab.example.io:443 -showcerts &amp;lt; /dev/null | openssl x509 -outform PEM &amp;gt; ca.crt
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;step-2-validate-the-certificate&quot;&gt;Step 2 Validate the certificate&lt;/h2&gt;
 
 &lt;p&gt;To validate the certificates on you server run the following command.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl s_client -showcerts -connect gitlab.example.io:443 &amp;lt;/dev/null
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl s_client -showcerts -connect gitlab.example.io:443 &amp;lt;/dev/null
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
@@ -128,18 +128,18 @@ rm -R *
 
 &lt;h2 id=&quot;step-1-install-java&quot;&gt;Step 1 Install Java&lt;/h2&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt update
 sudo apt install default-jdk
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You can check the version of Java using the following command.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;java --version
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;java --version
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You should see output like the following.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openjdk 11.0.4 2019-07-16
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openjdk 11.0.4 2019-07-16
 OpenJDK Runtime Environment (build 11.0.4+11-post-Ubuntu-1ubuntu218.04.3)
 OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu218.04.3, mixed mode, sharing)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -150,12 +150,12 @@ OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu218.04.3, mixed mod
 
 &lt;p&gt;First create the Tomcat group.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo groupadd tomcat
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo groupadd tomcat
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now, create a new tomcat user and add it to the newly created tomcat group, setting the -d flag to the home directory of /opt/tomcat (the Tomcat installation directory). Set the -s flag to /bin/false (so nobody can log into the account):&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;step-3-install-tomcat&quot;&gt;Step 3 Install Tomcat&lt;/h2&gt;
@@ -166,54 +166,54 @@ OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu218.04.3, mixed mod
 
 &lt;p&gt;Open up terminal window and cd to Downloads directory.&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;cd Downloads&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;cd Downloads&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Next issue the following curl command. Be sure that the curl command includes the most recent version of Tomcat 9.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -O http://mirror.cc.columbia.edu/pub/software/apache/tomcat/tomcat-9/v9.0.24/bin/apache-tomcat-9.0.24.tar.gz
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl -O http://mirror.cc.columbia.edu/pub/software/apache/tomcat/tomcat-9/v9.0.24/bin/apache-tomcat-9.0.24.tar.gz
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Next create a directory for Tomcat.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo mkdir /opt/tomcat
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo mkdir /opt/tomcat
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now extract and copy the content of the extracted tar.gz file to /opt/tomcat using the following command.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo tar xzvf apache-tomcat-9*tar.gz -C /opt/tomcat --strip-components=1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo tar xzvf apache-tomcat-9*tar.gz -C /opt/tomcat --strip-components=1
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Next cd into the /opt/tomcat directory.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /opt/tomcat
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd /opt/tomcat
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Give tomcat permission to the entire /opt/tomcat directory.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chgrp -R tomcat /opt/tomcat
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chgrp -R tomcat /opt/tomcat
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Next give read to the conf directory and all its content and execute access on the directory itself.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chmod -R g+r conf
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chmod -R g+r conf
 sudo chmod g+x conf
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now make the tomcat user the owner of the /webapps, /work, /temp and /logs directories.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chown -R tomcat webapps/ work/ temp/ logs/
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo chown -R tomcat webapps/ work/ temp/ logs/
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;step-4---setting-up-the-tomcat-service&quot;&gt;Step 4 - Setting Up The Tomcat Service&lt;/h2&gt;
 
 &lt;p&gt;In order to have tomcat available as a service it is necessary to create a systemd service file.  The service file contains a line that points to the jdk installed in step 1.  To obtain the path to the jdk use the following command.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo update-java-alternatives -l
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo update-java-alternatives -l
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You should see output like this.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;java-1.11.0-openjdk-amd64      1111       /usr/lib/jvm/java-1.11.0-openjdk-amd64
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;java-1.11.0-openjdk-amd64      1111       /usr/lib/jvm/java-1.11.0-openjdk-amd64
 java-8-oracle                  1081       /usr/lib/jvm/java-8-oracle
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -221,12 +221,12 @@ java-8-oracle                  1081       /usr/lib/jvm/java-8-oracle
 
 &lt;p&gt;Next create a systemd service file for tomcat.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi /etc/systemd/system/tomcat.service
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi /etc/systemd/system/tomcat.service
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Insert the following lines into the newly created service file. And make sure that the Environment=JAVA_HOME= points to the location where you have the jdk installed in step 1.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Unit]
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;[Unit]
 Description=Apache Tomcat Web Application Container
 After=network.target
 
@@ -255,34 +255,34 @@ WantedBy=multi-user.target
 
 &lt;p&gt;Save and close the tomcat.service file and then reload the systemd daemon.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl daemon-reload
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl daemon-reload
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Next start tomcat.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl start tomcat.service
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl start tomcat.service
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Check the status.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl status tomcat.service
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl status tomcat.service
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;step-5---adjust-firewall-and-test&quot;&gt;Step 5 - Adjust Firewall and Test&lt;/h2&gt;
 
 &lt;p&gt;Tomcat uses port 8080 by default.  To allow port 8080 on a server with ufw enabled, execute the following command.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo ufw allow 8080
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo ufw allow 8080
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;To check to see that this rule is active using this command.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo ufw status
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo ufw status
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;You should see output similar to the following.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Status: active
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Status: active
 
 To                         Action      From
 --                         ------      ----
@@ -298,12 +298,12 @@ To                         Action      From
 
 &lt;p&gt;Open the tomcat-users.xml file.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi /opt/tomcat/conf/tomcat-users.xml
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi /opt/tomcat/conf/tomcat-users.xml
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Uncomment the lines as shown below.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;!--
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;!--
   &amp;lt;role rolename=&quot;tomcat&quot;/&amp;gt;
   &amp;lt;role rolename=&quot;role1&quot;/&amp;gt;
   &amp;lt;user username=&quot;tomcat&quot; password=&quot;&amp;lt;must-be-changed&amp;gt;&quot; roles=&quot;tomcat&quot;/&amp;gt;
@@ -314,7 +314,7 @@ To                         Action      From
 
 &lt;p&gt;You should now have the following lines uncommented.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;role rolename=&quot;tomcat&quot;/&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;role rolename=&quot;tomcat&quot;/&amp;gt;
 &amp;lt;role rolename=&quot;role1&quot;/&amp;gt;
 &amp;lt;user username=&quot;tomcat&quot; password=&quot;&amp;lt;must-be-changed&amp;gt;&quot; roles=&quot;tomcat&quot;/&amp;gt;
 &amp;lt;user username=&quot;both&quot; password=&quot;&amp;lt;must-be-changed&amp;gt;&quot; roles=&quot;tomcat,role1&quot;/&amp;gt;
@@ -323,7 +323,7 @@ To                         Action      From
 
 &lt;p&gt;Next change the default lines above to the following three lines.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;role rolename=&quot;manager-gui&quot;/&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;role rolename=&quot;manager-gui&quot;/&amp;gt;
 &amp;lt;role rolename=&quot;admin-gui&quot;/&amp;gt;
 &amp;lt;user username=&quot;username goes here!&quot; password=&quot;password goes here!&quot; roles=&quot;manager-gui,admin-gui&quot;/&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -340,23 +340,23 @@ To                         Action      From
 
 &lt;p&gt;First open the configuration file for the Manager application.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi /opt/tomcat/webapps/manager/META-INF/context.xml
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi /opt/tomcat/webapps/manager/META-INF/context.xml
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Edit the the following line by adding the IP address of the server to end.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;Valve className=&quot;org.apache.catalina.valves.RemoteAddrValve&quot; allow=&quot;127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1&quot; /&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;Valve className=&quot;org.apache.catalina.valves.RemoteAddrValve&quot; allow=&quot;127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1&quot; /&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The changed line should look something like the following, where the IP address of your server goes at the end.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;Valve className=&quot;org.apache.catalina.valves.RemoteAddrValve&quot; allow=&quot;127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1|IP address of your server goes here!&quot; /&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;Valve className=&quot;org.apache.catalina.valves.RemoteAddrValve&quot; allow=&quot;127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1|IP address of your server goes here!&quot; /&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Note it is necessary to add the pipe symbol to delimit between the entries of allowed IP addresses.&lt;/p&gt;
 
 &lt;p&gt;To access the host manager or manager from any device on your network comment out the following lines.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;Valve className=&quot;org.apache.catalina.valves.RemoteAddrValve&quot; allow=&quot;127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1&quot; /&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;Valve className=&quot;org.apache.catalina.valves.RemoteAddrValve&quot; allow=&quot;127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1&quot; /&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Next save the file and exit.&lt;/p&gt;
@@ -365,7 +365,7 @@ To                         Action      From
 
 &lt;p&gt;First open the configuration file for the Host Manager Application.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi /opt/tomcat/webapps/host-manager/META-INF/context.xml
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo vi /opt/tomcat/webapps/host-manager/META-INF/context.xml
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Complete the same activities as done in Step 7 above for this file.&lt;/p&gt;
@@ -376,14 +376,14 @@ To                         Action      From
 
 &lt;p&gt;After all your hard work it’s time to check to see if all is working as expected.  To put the above changes to work it is necessary to restart tomcat.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl restart tomcat
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo systemctl restart tomcat
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Next, close your browser and then relaunch it and then navigate to the Tomcat home page.&lt;/p&gt;
 
 &lt;p&gt;http://localhost:8080&lt;/p&gt;
 
-&lt;p&gt;or &lt;code class=&quot;highlighter-rouge&quot;&gt;http://your_servers_ip:8080&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;http://your_servers_ip:8080&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;Click on the button that says “Server Status”.  You should be prompted for the username and password you entered in Step 6.&lt;/p&gt;
 
@@ -411,7 +411,7 @@ To                         Action      From
 &lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Clone the following repository to your workstation using the following command.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/shoreviewanalytics/spark-logback-example-one.git
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/shoreviewanalytics/spark-logback-example-one.git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
@@ -426,7 +426,7 @@ To                         Action      From
 
 &lt;p&gt;Run the example using spark-submit.  The exact syntax of this command depends on the platform you are using, whether you have security enabled or not, the location of your logback.xml file, the location of the .jar file (your spark job) and the configuration of your cluster environment.  Also the following command is separated into multiple lines just for this blog post and should be run as a single line in a terminal window.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dse -u username -p password spark-submit
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dse -u username -p password spark-submit
 --class com.java.spark.LoggingSample
 --master dse://?
 --driver-java-options &quot;-Dlogback.configurationFile=/pathtoyour/logback.xml&quot;
@@ -436,13 +436,13 @@ To                         Action      From
 &lt;p&gt;&lt;strong&gt;Step 5&lt;/strong&gt;
 This is where the fun happens.  Look for the following property in the logback.xml file.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &amp;lt;logger name=&quot;org.apache.spark&quot; level=&quot;INFO&quot;/&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &amp;lt;logger name=&quot;org.apache.spark&quot; level=&quot;INFO&quot;/&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;When this property is set to INFO the log will contain DAG information and more details about the job running.&lt;/p&gt;
 
 &lt;p&gt;If you set the level to OFF, the output to the log file is significantly reduced, but the explicit logging messages you have added to your code will still be logged.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &amp;lt;logger name=&quot;org.apache.spark&quot; level=&quot;OFF&quot;/&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &amp;lt;logger name=&quot;org.apache.spark&quot; level=&quot;OFF&quot;/&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/p&gt;
@@ -467,7 +467,7 @@ This is where the fun happens.  Look for the following property in the logback.x
 &lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Clone the following repository to your workstation using the following command.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/shoreviewanalytics/spark-logback-example-two.git
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/shoreviewanalytics/spark-logback-example-two.git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
@@ -482,7 +482,7 @@ This is where the fun happens.  Look for the following property in the logback.x
 
 &lt;p&gt;Run the example using dse spark-submit.  Notice that the option –driver-java-options “-Dlogback.configurationFile=/pathtoyour/logback.xml” is no longer in the spark-submit command.  This command is separated into multiple lines for formatting in this post and should be run as a single line in a terminal window.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dse -u username -p password spark-submit
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dse -u username -p password spark-submit
 --class com.java.spark.LoggingSample
 --master dse://?
 /path to your jarfile/LoggingSample.jar
@@ -492,13 +492,13 @@ This is where the fun happens.  Look for the following property in the logback.x
 
 &lt;p&gt;This is where the fun happens.  Look for the following property in the logback.xml file.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &amp;lt;logger name=&quot;org.apache.spark&quot; level=&quot;INFO&quot;/&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &amp;lt;logger name=&quot;org.apache.spark&quot; level=&quot;INFO&quot;/&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;When this property is set to INFO the log will contain DAG information and more details about the job running.&lt;/p&gt;
 
 &lt;p&gt;If you set the level to OFF, the output to the log file is significantly reduced, but the explicit logging messages you have added to your code will still be logged.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &amp;lt;logger name=&quot;org.apache.spark&quot; level=&quot;OFF&quot;/&amp;gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &amp;lt;logger name=&quot;org.apache.spark&quot; level=&quot;OFF&quot;/&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Summary&lt;/strong&gt;&lt;/p&gt;
@@ -563,31 +563,31 @@ This is where the fun happens.  Look for the following property in the logback.x
 
 &lt;p&gt;Go to the Dokku droplet and create a Dokku application called staticman in all lower case letters.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dokku apps:create staticman
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dokku apps:create staticman
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 9&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Now setup a remote git repository for your Doku server on your workstation, by using the following command.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote add dokku dokku@yourserver:staticman
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote add dokku dokku@yourserver:staticman
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;You can check to see what remote repositories you can push to using this command.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote -v
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git remote -v
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;Push the local branch you created earlier to your remote repository on your Dokku droplet.  Notice you are NOT pushing the master branch that you haven’t updated.&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push dokku local:master
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push dokku local:master
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;This is where you find out if you have correctly edited the config.production.json file.  If you are in doubt on whether you have a good format for your config.production.json file use the following command to check it.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;json -f config.production.json  
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;json -f config.production.json  
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 10&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;This is where it really gets cool.  You can now push Staticman to your Dokku droplet with the following command assuming you named your local git branch “local”.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push dokku local:master  
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push dokku local:master  
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Now if all goes well you will have pushed your local branch of Staticman to your Dokku server.  If you have your DNS setup correctly you should be able to navigate to your Staticman API deploy by opening up a browser and typing in staticman.yourdomain.com.  For me it’s staticman.shoreviewanalytics.com.&lt;/p&gt;
@@ -596,7 +596,7 @@ This is where the fun happens.  Look for the following property in the logback.x
 
 &lt;p&gt;Now that you have Staticman up and running you need to activate it so it can work with your blog.  To do this as provided in Staticman API documentation navigate to the an address like the following that makes sense for your deployment.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://staticman.yourdomain.com/v2/connect/yourgithubusername/yourgithubpagesblog.github.io  
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;http://staticman.yourdomain.com/v2/connect/yourgithubusername/yourgithubpagesblog.github.io  
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;If all goes well you should get a response of ‘OK’.  If you don’t there’s something wrong and you’ll need to dig in a bit.  In my case I had to dig in a lot.&lt;/p&gt;
@@ -607,19 +607,19 @@ This is where the fun happens.  Look for the following property in the logback.x
 
 &lt;p&gt;first get it&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	dokku plugin:install https://github.com/dokku/dokku-letsencrypt.git
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	dokku plugin:install https://github.com/dokku/dokku-letsencrypt.git
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;set an email address for notifications&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	dokku config:set --no-restart staticman DOKKU_LETSENCRYPT_EMAIL=your email address goes here
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	dokku config:set --no-restart staticman DOKKU_LETSENCRYPT_EMAIL=your email address goes here
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;enable it&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	dokku letsencrypt staticman
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	dokku letsencrypt staticman
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;set up auto-renewal:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	dokku letsencrypt:cron-job --add
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	dokku letsencrypt:cron-job --add
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Well, this post doesn’t include all the details you will need, but if you review the content from the references below and are able to complete the above steps, you should be able to get a working deployment of the Staticman API on a digitalocean Dokku droplet.  If you to try this out and get stuck and want some clarification, guess what, you can use the comments form below to get in touch with me.&lt;/p&gt;

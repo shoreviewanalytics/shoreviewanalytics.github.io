@@ -346,16 +346,16 @@
 
 <p>You can check the version if you like with the following command.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 --version
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 --version
 </code></pre></div></div>
-<p>You should see the following.</p>
+<p>You should see the following output.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Python 3.6.8
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Python 3.6.8
 </code></pre></div></div>
 <h3 id="step-1---installing-python3-env">Step 1 - Installing python3-env</h3>
 
-<p>Great so now that you know you have Python it’s time to create what is called a Python virtual environment. In order to be able to create a virtual environment it is necessary to install a package called python3-venv.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install python3-env
+<p>Now that you know you have Python3 installed, it’s time to create what is called a Python virtual environment. In order to be able to create a virtual environment it is necessary to install a package called python3-venv.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt install python3-env
 </code></pre></div></div>
 <p>What this package does essentially is allow you to create a virtual Python3 environment within a directory of your choice. A virtual environment for Python let’s you work in an isolated or virtual Python environment.</p>
 
@@ -363,47 +363,47 @@
 
 <h3 id="step-2---create-a-python-virtual-environment">Step 2 - Create a Python Virtual Environment</h3>
 
-<p>Next open the lpython folder in a terminal and issue the following command.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 -m venv env
+<p>Open the lpython folder in a terminal session and issue the following command.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 -m venv env
 </code></pre></div></div>
-<p>If no issues occurred you should be able to issue the following command to activate your virtual python environment.</p>
-
 <h3 id="step-3---activate-a-python-virtual-environment">Step 3 - Activate a Python Virtual Environment</h3>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source env/bin/activate
+<p>If no issues have occurred you should be able to issue the following command.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>source env/bin/activate
 </code></pre></div></div>
-<p>This command activates your virtual python environment.  While in the virtual environment you can install additional packages that you know you will need during your programming. For example the following command installs numpy a commonly used library for Data Scientists and Data Analysts.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 -m pip install numpy
+<p>This command activates your virtual python environment.  While in the virtual environment you can install additional packages that you will need during your programming. For example the following command installs numpy a commonly used library for Data Scientists and Data Analysts.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python3 -m pip install numpy
 </code></pre></div></div>
 <h3 id="step-4---installing-pycharm">Step 4 - Installing PyCharm</h3>
 
 <p>Next install PyCharm using the following command.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo snap install pycharm-community --classic
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo snap install pycharm-community --classic
 </code></pre></div></div>
 <p>After you have installed PyCharm go ahead and launch it.  After you have launched PyCharm, rather than create a new project choose open.  When you choose open, navigate to the folder structure you created above or the /home/your username/python/lpython directory.</p>
 
 <p>Now click on the terminal tab at the bottom of the IDE.  Notice that when you click on it you are automatically taken into the virtual environment that you created earlier.</p>
 
 <p>In order to leave the virtual environment type the following command while within the virtual environment.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>deactivate
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>deactivate
 </code></pre></div></div>
 
 <h3 id="step-5---installing-jupyter-notebook">Step 5 - Installing Jupyter Notebook</h3>
 
 <p>If you have successfully completed the above steps creating a virtual environment you can now also install Jupyter and run it in your newly created virtual Python environment.  To install Jupyter Notebook use the following command while within the Python virtual environment.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install jupyter
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install jupyter
 </code></pre></div></div>
 
 <p>To launch Jupyter use the following command from within the virtual environment.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter notebook
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jupyter notebook
 </code></pre></div></div>
 
 <h2 id="summary">Summary</h2>
 
-<p>After completing the above steps you should have a working Python virtual environment with the ability to use PyCharm or Jupyter Notebook for your Python programming.   The advantage of using a virtual environment to install Python libraries is that if you should have an issue with package dependencies, you can always remove or create a new virtual environment. If you have any issues or questions please let me know.</p>
+<p>After completing the above steps you should have a working Python virtual environment with the ability to use PyCharm or Jupyter Notebook for your Python programming.   The advantage of using a virtual environment to install Python libraries is that if you have an issue with the virtual environment, you can always remove, recreate or create a new virtual environment. If you have any issues or questions with this post, please let me know.</p>
 
         
       </section>

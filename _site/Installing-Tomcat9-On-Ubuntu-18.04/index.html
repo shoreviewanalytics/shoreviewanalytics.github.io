@@ -346,18 +346,18 @@
 
 <h2 id="step-1-install-java">Step 1 Install Java</h2>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo apt update
 sudo apt install default-jdk
 </code></pre></div></div>
 
 <p>You can check the version of Java using the following command.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java --version
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java --version
 </code></pre></div></div>
 
 <p>You should see output like the following.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openjdk 11.0.4 2019-07-16
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>openjdk 11.0.4 2019-07-16
 OpenJDK Runtime Environment (build 11.0.4+11-post-Ubuntu-1ubuntu218.04.3)
 OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu218.04.3, mixed mode, sharing)
 </code></pre></div></div>
@@ -368,12 +368,12 @@ OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu218.04.3, mixed mod
 
 <p>First create the Tomcat group.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo groupadd tomcat
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo groupadd tomcat
 </code></pre></div></div>
 
 <p>Now, create a new tomcat user and add it to the newly created tomcat group, setting the -d flag to the home directory of /opt/tomcat (the Tomcat installation directory). Set the -s flag to /bin/false (so nobody can log into the account):</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo useradd -s /bin/false -g tomcat -d /opt/tomcat tomcat
 </code></pre></div></div>
 
 <h2 id="step-3-install-tomcat">Step 3 Install Tomcat</h2>
@@ -384,54 +384,54 @@ OpenJDK 64-Bit Server VM (build 11.0.4+11-post-Ubuntu-1ubuntu218.04.3, mixed mod
 
 <p>Open up terminal window and cd to Downloads directory.</p>
 
-<p><code class="highlighter-rouge">cd Downloads</code></p>
+<p><code class="language-plaintext highlighter-rouge">cd Downloads</code></p>
 
 <p>Next issue the following curl command. Be sure that the curl command includes the most recent version of Tomcat 9.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -O http://mirror.cc.columbia.edu/pub/software/apache/tomcat/tomcat-9/v9.0.24/bin/apache-tomcat-9.0.24.tar.gz
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -O http://mirror.cc.columbia.edu/pub/software/apache/tomcat/tomcat-9/v9.0.24/bin/apache-tomcat-9.0.24.tar.gz
 </code></pre></div></div>
 
 <p>Next create a directory for Tomcat.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkdir /opt/tomcat
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo mkdir /opt/tomcat
 </code></pre></div></div>
 
 <p>Now extract and copy the content of the extracted tar.gz file to /opt/tomcat using the following command.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo tar xzvf apache-tomcat-9*tar.gz -C /opt/tomcat --strip-components=1
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo tar xzvf apache-tomcat-9*tar.gz -C /opt/tomcat --strip-components=1
 </code></pre></div></div>
 
 <p>Next cd into the /opt/tomcat directory.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /opt/tomcat
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd /opt/tomcat
 </code></pre></div></div>
 
 <p>Give tomcat permission to the entire /opt/tomcat directory.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chgrp -R tomcat /opt/tomcat
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chgrp -R tomcat /opt/tomcat
 </code></pre></div></div>
 
 <p>Next give read to the conf directory and all its content and execute access on the directory itself.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chmod -R g+r conf
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chmod -R g+r conf
 sudo chmod g+x conf
 </code></pre></div></div>
 
 <p>Now make the tomcat user the owner of the /webapps, /work, /temp and /logs directories.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chown -R tomcat webapps/ work/ temp/ logs/
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo chown -R tomcat webapps/ work/ temp/ logs/
 </code></pre></div></div>
 
 <h2 id="step-4---setting-up-the-tomcat-service">Step 4 - Setting Up The Tomcat Service</h2>
 
 <p>In order to have tomcat available as a service it is necessary to create a systemd service file.  The service file contains a line that points to the jdk installed in step 1.  To obtain the path to the jdk use the following command.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo update-java-alternatives -l
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo update-java-alternatives -l
 </code></pre></div></div>
 
 <p>You should see output like this.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java-1.11.0-openjdk-amd64      1111       /usr/lib/jvm/java-1.11.0-openjdk-amd64
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>java-1.11.0-openjdk-amd64      1111       /usr/lib/jvm/java-1.11.0-openjdk-amd64
 java-8-oracle                  1081       /usr/lib/jvm/java-8-oracle
 </code></pre></div></div>
 
@@ -439,12 +439,12 @@ java-8-oracle                  1081       /usr/lib/jvm/java-8-oracle
 
 <p>Next create a systemd service file for tomcat.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vi /etc/systemd/system/tomcat.service
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vi /etc/systemd/system/tomcat.service
 </code></pre></div></div>
 
 <p>Insert the following lines into the newly created service file. And make sure that the Environment=JAVA_HOME= points to the location where you have the jdk installed in step 1.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Unit]
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[Unit]
 Description=Apache Tomcat Web Application Container
 After=network.target
 
@@ -473,34 +473,34 @@ WantedBy=multi-user.target
 
 <p>Save and close the tomcat.service file and then reload the systemd daemon.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo systemctl daemon-reload
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo systemctl daemon-reload
 </code></pre></div></div>
 
 <p>Next start tomcat.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo systemctl start tomcat.service
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo systemctl start tomcat.service
 </code></pre></div></div>
 
 <p>Check the status.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo systemctl status tomcat.service
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo systemctl status tomcat.service
 </code></pre></div></div>
 
 <h2 id="step-5---adjust-firewall-and-test">Step 5 - Adjust Firewall and Test</h2>
 
 <p>Tomcat uses port 8080 by default.  To allow port 8080 on a server with ufw enabled, execute the following command.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ufw allow 8080
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ufw allow 8080
 </code></pre></div></div>
 
 <p>To check to see that this rule is active using this command.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ufw status
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo ufw status
 </code></pre></div></div>
 
 <p>You should see output similar to the following.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: active
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Status: active
 
 To                         Action      From
 --                         ------      ----
@@ -516,12 +516,12 @@ To                         Action      From
 
 <p>Open the tomcat-users.xml file.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vi /opt/tomcat/conf/tomcat-users.xml
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vi /opt/tomcat/conf/tomcat-users.xml
 </code></pre></div></div>
 
 <p>Uncomment the lines as shown below.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!--
   &lt;role rolename="tomcat"/&gt;
   &lt;role rolename="role1"/&gt;
   &lt;user username="tomcat" password="&lt;must-be-changed&gt;" roles="tomcat"/&gt;
@@ -532,7 +532,7 @@ To                         Action      From
 
 <p>You should now have the following lines uncommented.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;role rolename="tomcat"/&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;role rolename="tomcat"/&gt;
 &lt;role rolename="role1"/&gt;
 &lt;user username="tomcat" password="&lt;must-be-changed&gt;" roles="tomcat"/&gt;
 &lt;user username="both" password="&lt;must-be-changed&gt;" roles="tomcat,role1"/&gt;
@@ -541,7 +541,7 @@ To                         Action      From
 
 <p>Next change the default lines above to the following three lines.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;role rolename="manager-gui"/&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;role rolename="manager-gui"/&gt;
 &lt;role rolename="admin-gui"/&gt;
 &lt;user username="username goes here!" password="password goes here!" roles="manager-gui,admin-gui"/&gt;
 </code></pre></div></div>
@@ -558,23 +558,23 @@ To                         Action      From
 
 <p>First open the configuration file for the Manager application.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vi /opt/tomcat/webapps/manager/META-INF/context.xml
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vi /opt/tomcat/webapps/manager/META-INF/context.xml
 </code></pre></div></div>
 
 <p>Edit the the following line by adding the IP address of the server to end.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /&gt;
 </code></pre></div></div>
 
 <p>The changed line should look something like the following, where the IP address of your server goes at the end.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1|IP address of your server goes here!" /&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1|IP address of your server goes here!" /&gt;
 </code></pre></div></div>
 <p>Note it is necessary to add the pipe symbol to delimit between the entries of allowed IP addresses.</p>
 
 <p>To access the host manager or manager from any device on your network comment out the following lines.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Valve className="org.apache.catalina.valves.RemoteAddrValve" allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" /&gt;
 </code></pre></div></div>
 
 <p>Next save the file and exit.</p>
@@ -583,7 +583,7 @@ To                         Action      From
 
 <p>First open the configuration file for the Host Manager Application.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vi /opt/tomcat/webapps/host-manager/META-INF/context.xml
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo vi /opt/tomcat/webapps/host-manager/META-INF/context.xml
 </code></pre></div></div>
 
 <p>Complete the same activities as done in Step 7 above for this file.</p>
@@ -594,14 +594,14 @@ To                         Action      From
 
 <p>After all your hard work it’s time to check to see if all is working as expected.  To put the above changes to work it is necessary to restart tomcat.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo systemctl restart tomcat
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo systemctl restart tomcat
 </code></pre></div></div>
 
 <p>Next, close your browser and then relaunch it and then navigate to the Tomcat home page.</p>
 
 <p>http://localhost:8080</p>
 
-<p>or <code class="highlighter-rouge">http://your_servers_ip:8080</code></p>
+<p>or <code class="language-plaintext highlighter-rouge">http://your_servers_ip:8080</code></p>
 
 <p>Click on the button that says “Server Status”.  You should be prompted for the username and password you entered in Step 6.</p>
 

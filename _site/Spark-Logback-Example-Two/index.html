@@ -354,7 +354,7 @@
 <p><strong>Step 1</strong></p>
 
 <p>Clone the following repository to your workstation using the following command.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/shoreviewanalytics/spark-logback-example-two.git
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/shoreviewanalytics/spark-logback-example-two.git
 </code></pre></div></div>
 
 <p><strong>Step 2</strong></p>
@@ -369,7 +369,7 @@
 
 <p>Run the example using dse spark-submit.  Notice that the option –driver-java-options “-Dlogback.configurationFile=/pathtoyour/logback.xml” is no longer in the spark-submit command.  This command is separated into multiple lines for formatting in this post and should be run as a single line in a terminal window.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dse -u username -p password spark-submit
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dse -u username -p password spark-submit
 --class com.java.spark.LoggingSample
 --master dse://?
 /path to your jarfile/LoggingSample.jar
@@ -379,13 +379,13 @@
 
 <p>This is where the fun happens.  Look for the following property in the logback.xml file.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;logger name="org.apache.spark" level="INFO"/&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;logger name="org.apache.spark" level="INFO"/&gt;
 </code></pre></div></div>
 <p>When this property is set to INFO the log will contain DAG information and more details about the job running.</p>
 
 <p>If you set the level to OFF, the output to the log file is significantly reduced, but the explicit logging messages you have added to your code will still be logged.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;logger name="org.apache.spark" level="OFF"/&gt;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> &lt;logger name="org.apache.spark" level="OFF"/&gt;
 </code></pre></div></div>
 
 <p><strong>Summary</strong></p>

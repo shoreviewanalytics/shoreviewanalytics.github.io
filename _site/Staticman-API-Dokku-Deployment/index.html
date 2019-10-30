@@ -394,31 +394,31 @@
 
 <p>Go to the Dokku droplet and create a Dokku application called staticman in all lower case letters.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dokku apps:create staticman
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dokku apps:create staticman
 </code></pre></div></div>
 
 <p><strong>Step 9</strong></p>
 
 <p>Now setup a remote git repository for your Doku server on your workstation, by using the following command.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add dokku dokku@yourserver:staticman
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add dokku dokku@yourserver:staticman
 </code></pre></div></div>
 <p>You can check to see what remote repositories you can push to using this command.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote -v
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote -v
 </code></pre></div></div>
 <p>Push the local branch you created earlier to your remote repository on your Dokku droplet.  Notice you are NOT pushing the master branch that you haven’t updated.</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push dokku local:master
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push dokku local:master
 </code></pre></div></div>
 <p>This is where you find out if you have correctly edited the config.production.json file.  If you are in doubt on whether you have a good format for your config.production.json file use the following command to check it.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>json -f config.production.json  
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>json -f config.production.json  
 </code></pre></div></div>
 
 <p><strong>Step 10</strong></p>
 
 <p>This is where it really gets cool.  You can now push Staticman to your Dokku droplet with the following command assuming you named your local git branch “local”.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push dokku local:master  
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git push dokku local:master  
 </code></pre></div></div>
 
 <p>Now if all goes well you will have pushed your local branch of Staticman to your Dokku server.  If you have your DNS setup correctly you should be able to navigate to your Staticman API deploy by opening up a browser and typing in staticman.yourdomain.com.  For me it’s staticman.shoreviewanalytics.com.</p>
@@ -427,7 +427,7 @@
 
 <p>Now that you have Staticman up and running you need to activate it so it can work with your blog.  To do this as provided in Staticman API documentation navigate to the an address like the following that makes sense for your deployment.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://staticman.yourdomain.com/v2/connect/yourgithubusername/yourgithubpagesblog.github.io  
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>http://staticman.yourdomain.com/v2/connect/yourgithubusername/yourgithubpagesblog.github.io  
 </code></pre></div></div>
 
 <p>If all goes well you should get a response of ‘OK’.  If you don’t there’s something wrong and you’ll need to dig in a bit.  In my case I had to dig in a lot.</p>
@@ -438,19 +438,19 @@
 
 <p>first get it</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	dokku plugin:install https://github.com/dokku/dokku-letsencrypt.git
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	dokku plugin:install https://github.com/dokku/dokku-letsencrypt.git
 </code></pre></div></div>
 <p>set an email address for notifications</p>
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	dokku config:set --no-restart staticman DOKKU_LETSENCRYPT_EMAIL=your email address goes here
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	dokku config:set --no-restart staticman DOKKU_LETSENCRYPT_EMAIL=your email address goes here
 </code></pre></div></div>
 <p>enable it</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	dokku letsencrypt staticman
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	dokku letsencrypt staticman
 </code></pre></div></div>
 
 <p>set up auto-renewal:</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	dokku letsencrypt:cron-job --add
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	dokku letsencrypt:cron-job --add
 </code></pre></div></div>
 
 <p>Well, this post doesn’t include all the details you will need, but if you review the content from the references below and are able to complete the above steps, you should be able to get a working deployment of the Staticman API on a digitalocean Dokku droplet.  If you to try this out and get stuck and want some clarification, guess what, you can use the comments form below to get in touch with me.</p>
