@@ -1,6 +1,6 @@
 ---
 layout: single
-title: 'Installing Tomcat 9 On Ubuntu 18.04'
+title: 'Installing Tomcat 9 on Ubuntu 18.04'
 description: 'This step by step post walks you through installing Tomcat 9 on Ubuntu 18.04. It also explains why may get the 401 Unauthorized error after an install.'
 date: '2019-08-26'
 classes: wide
