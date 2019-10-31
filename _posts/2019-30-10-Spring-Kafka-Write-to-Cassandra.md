@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 'Spring Kafka Write to Cassandra'
-description: 'This post discussses how to use Spring Kafka to create a producer and consumer of JSON messages.  The consumer is able to consume messages and simultaneously write them to a data source.'
+description: 'This post discusses how to use Spring Kafka to create a producer and consumer of JSON messages.  The consumer is able to consume messages and simultaneously write them to a data source.'
 date: '2019-10-30'
 classes: wide
 
@@ -11,7 +11,7 @@ header:
 
 --------------------------------------------
 
-This post discussses how to use Spring Kafka to create a producer and consumer of JSON messages.  The consumer is able to consume messages and simultaneously write them to a data source.   Cassandra is the data source, but the code could be modified to write data to any number of data sources such as MySQL or Postgres.  Some of the instructions below relate specifically to running this application using Kafka and Cassandra as services from [Aiven.io](https://aiven.io/). However, as I developed this example application, I pointed to a local single-node Kafka cluster and a local three node Cassandra cluster so it is very possible to adapt this program to work on premise or a cloud infrastructure.  
+This post discusses how to use Spring Kafka to create a producer and consumer of JSON messages.  The consumer is able to consume messages and simultaneously write them to a data source.   Cassandra is the data source, but the code could be modified to write data to any number of data sources such as MySQL or Postgres.  Some of the instructions below relate specifically to running this application using Kafka and Cassandra as services from [Aiven.io](https://aiven.io/). However, as I developed this example application, I pointed to a local single-node Kafka cluster and a local three node Cassandra cluster so it is very possible to adapt this program to work on premise or a cloud infrastructure.  
 
 # Prerequisites:
 
