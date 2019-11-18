@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 'Getting Started with Python3 and PyCharm on Ubuntu 18.04'
-description: 'This post explains how to create a virtual environment for Python development as well as how to open a Python project folder using PyCharm. As a bonus I have included a step below that explains how to install Jupyter Notebook.'
+description: 'This post explains how to get started with Python3 by creating a virtual environment as well as how to open a Python project folder using PyCharm on Ubuntu 18.04.   It also includes a "bonus" step below that explains how to install Jupyter Notebook to a Python virtual environment.'
 date: '2019-10-29'
 classes: wide
 
@@ -11,16 +11,19 @@ header:
 
 --------------------------------------------
 
-If you are new to Python and haven't yet selected an IDE you might want to have a look at PyCharm. Also if you have done some Java programming and have used Intellij the look and feel of PyCharm is very similar. For this short post I will explain how to create a virtual environment for your Python development as well as how to open a Python project folder using PyCharm.  As a bonus I have included a step below that explains how to install Jupyter Notebook.  
+This post explains how to get started with Python3 by creating a virtual environment as well as how to open a Python project folder using PyCharm on Ubuntu 18.04.   It also includes a "bonus" step below that explains how to install Jupyter Notebook to a Python virtual environment.  
 
-## Recommendation
+## Prerequisites:
 
-As I've worked with Ubuntu I have learned that it is often best to work with a fresh install to a virtual machine. Once you have a fresh copy of Ubuntu 18.04 installed to VirtualBox or another VM platform and updated it, proceed to the following steps. The good news is that Ubuntu 18.04 comes with Python3 version 3.6.8 already installed. 
+1. Fresh install of Ubuntu 18.04 to a virtual machine or bare metal. 
+2. Access to a non-root user account that is a member of the sudo group.   
+
+Okay, with a fresh install of Ubuntu 18.04 let's get started.  The good news is that Ubuntu 18.04 comes with Python3 version 3.6.8 already installed. 
 
 You can check the version if you like with the following command. 
 
 ```
-python3 --version
+$python3 --version
 ```
 You should see the following output.
 
@@ -31,7 +34,7 @@ Python 3.6.8
 
 Now that you know you have Python3 installed, it's time to create what is called a Python virtual environment. In order to be able to create a virtual environment it is necessary to install a package called python3-venv.  
 ```
-sudo apt install python3-env
+$sudo apt install python3-env
 ```
 What this package does essentially is allow you to create a virtual Python3 environment within a directory of your choice. A virtual environment for Python let's you work in an isolated or virtual Python environment.  
 
@@ -41,25 +44,25 @@ Next create a folder where you would like to store your Python programs and crea
 
 Open the lpython folder in a terminal session and issue the following command.
 ```
-python3 -m venv env
+$python3 -m venv env
 ```
 ### Step 3 - Activate a Python Virtual Environment
 
 If no issues have occurred you should be able to issue the following command.
 
 ```
-source env/bin/activate
+$source env/bin/activate
 ```
 This command activates your virtual python environment.  While in the virtual environment you can install additional packages that you will need during your programming. For example the following command installs numpy a commonly used library for Data Scientists and Data Analysts.
 ```
-python3 -m pip install numpy
+$python3 -m pip install numpy
 ```
 ### Step 4 - Installing PyCharm
 
 Next install PyCharm using the following command.
 
 ```
-sudo snap install pycharm-community --classic
+$sudo snap install pycharm-community --classic
 ```
 After you have installed PyCharm go ahead and launch it.  After you have launched PyCharm, rather than create a new project choose open.  When you choose open, navigate to the folder structure you created above or the /home/your username/python/lpython directory.  
 
@@ -67,7 +70,7 @@ Now click on the terminal tab at the bottom of the IDE.  Notice that when you cl
 
 In order to leave the virtual environment type the following command while within the virtual environment. 
 ```
-deactivate
+$deactivate
 ```
 
 ### Step 5 - Installing Jupyter Notebook
@@ -75,13 +78,13 @@ deactivate
 If you have successfully completed the above steps creating a virtual environment you can now also install Jupyter and run it in your newly created virtual Python environment.  To install Jupyter Notebook use the following command while within the Python virtual environment. 
 
 ```
-pip install jupyter
+$pip install jupyter
 ```
 
 To launch Jupyter use the following command from within the virtual environment. 
 
 ```
-jupyter notebook
+$jupyter notebook
 ```
 
 ## Summary
