@@ -131,11 +131,3 @@ df.to_csv('../data/GDP 2018 clean.csv', sep=',',index=False,header=False)
 ## Summary
 
 This is a really simple example of how to use Python to transform and clean a data set.  Rather than spending hours using another tool or technique to modify the originally downloaded data set so it is easily consumed by Tableau or Power BI, you have been able to transform over 15,000 records into a format that is more easily consumed by Tableau or Power BI in less than an hour using Python.  The next step is loading the data into Tableau or Power BI to create a data visualization. 
-
-
-
-
-
-
-
-
