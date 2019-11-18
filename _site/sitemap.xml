@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://localhost:4000/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/</loc>
+<lastmod>2018-02-19T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/</loc>
+<lastmod>2018-04-10T00:00:00-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/Spark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics/</loc>
+<lastmod>2018-10-08T00:00:00-04:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/Spark-Logback-Example-One/</loc>
 <lastmod>2018-10-08T00:00:00-04:00</lastmod>
 </url>
@@ -13,7 +25,7 @@
 <lastmod>2018-10-08T00:00:00-04:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/Installing-Tomcat9-On-Ubuntu-18.04/</loc>
+<loc>http://localhost:4000/Installing-Tomcat9-on-Ubuntu-18.04/</loc>
 <lastmod>2019-08-26T00:00:00-04:00</lastmod>
 </url>
 <url>
@@ -23,6 +35,14 @@
 <url>
 <loc>http://localhost:4000/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04/</loc>
 <lastmod>2019-10-29T00:00:00-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/Spring-Kafka-Write-to-Cassandra/</loc>
+<lastmod>2019-10-30T00:00:00-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/Using-Python-To-Transform-A-Data-Set/</loc>
+<lastmod>2019-11-18T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/about/</loc>
@@ -35,6 +55,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/page2/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page3/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/googlef0fa90c52d6664f6.html</loc>

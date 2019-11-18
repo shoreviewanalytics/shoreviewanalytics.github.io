@@ -1,14 +1,271 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-29T23:25:21-04:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">chad.d’s blog</title><subtitle></subtitle><author><name>CHAD DOWNEY, M.SC. IT</name></author><entry><title type="html">Getting Started with Python3 and PyCharm on Ubuntu 18.04</title><link href="http://localhost:4000/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04/" rel="alternate" type="text/html" title="Getting Started with Python3 and PyCharm on Ubuntu 18.04" /><published>2019-10-29T00:00:00-04:00</published><updated>2019-10-29T00:00:00-04:00</updated><id>http://localhost:4000/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04</id><content type="html" xml:base="http://localhost:4000/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04/">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-11-18T15:57:18-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">chad.d’s blog</title><subtitle></subtitle><author><name>CHAD DOWNEY, M.SC. IT</name></author><entry><title type="html">Using Python To Transform and Clean a Data Set</title><link href="http://localhost:4000/Using-Python-To-Transform-A-Data-Set/" rel="alternate" type="text/html" title="Using Python To Transform and Clean a Data Set" /><published>2019-11-18T00:00:00-05:00</published><updated>2019-11-18T00:00:00-05:00</updated><id>http://localhost:4000/Using-Python-To-Transform-A-Data-Set</id><content type="html" xml:base="http://localhost:4000/Using-Python-To-Transform-A-Data-Set/">&lt;hr /&gt;
 
-&lt;p&gt;If you are new to Python and haven’t yet selected an IDE you might want to have a look at PyCharm. Also if you have done some Java programming and have used Intellij the look and feel of PyCharm is very similar. For this short post I will explain how to create a virtual environment for your Python development as well as how to open a Python project folder using PyCharm.  As a bonus I have included a step below that explains how to install Jupyter Notebook.&lt;/p&gt;
+&lt;p&gt;Often it is necessary to transform a data set from its original format to a format that is easier to work with data visualization software. For this post we demonstrate how to modify a readily available data set that contains GDP data as of 2018 into a data set that is more easily consumed by a data visualization tools such as Power BI or Tableau.&lt;/p&gt;
 
-&lt;h2 id=&quot;recommendation&quot;&gt;Recommendation&lt;/h2&gt;
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites:&lt;/h2&gt;
 
-&lt;p&gt;As I’ve worked with Ubuntu I have learned that it is often best to work with a fresh install to a virtual machine. Once you have a fresh copy of Ubuntu 18.04 installed to VirtualBox or another VM platform and updated it, proceed to the following steps. The good news is that Ubuntu 18.04 comes with Python3 version 3.6.8 already installed.&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Python 3.x is needed and ideally you have a virtual install.&lt;/li&gt;
+  &lt;li&gt;Working install and knowledge of Jupyter Notebook, preferably to a virtual Python environment.&lt;/li&gt;
+  &lt;li&gt;Notepad++, use it to convert a file created on windows to ANSI or UTF-8&lt;/li&gt;
+  &lt;li&gt;Working knowledge of Python loops, lists, dictionaries, Pandas&lt;/li&gt;
+  &lt;li&gt;Ability to install additional Python libraries to virtual Python environment.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;step-1&quot;&gt;Step 1&lt;/h2&gt;
+
+&lt;p&gt;Navigate in your browser to the following web page.&lt;/p&gt;
+
+&lt;p&gt;https://data.worldbank.org/indicator/NY.GDP.MKTP.CD&lt;/p&gt;
+
+&lt;h2 id=&quot;step-2&quot;&gt;Step 2&lt;/h2&gt;
+
+&lt;p&gt;Download the .xls file&lt;/p&gt;
+
+&lt;p&gt;If you open this file you will notice that the data points from 1960 to 2018 are pivoted across the workbook from left to right.  This is fine for reviewing the data but it is not a great format to consume using Tableau or Power BI.  In the steps below we will transform and clean this file so that it is in a format that can be more easily consumed by Tableau or Power BI.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-3&quot;&gt;Step 3&lt;/h2&gt;
+
+&lt;p&gt;Copy the downloaded file to a new name called GDP 2018.xls.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-4&quot;&gt;Step 4&lt;/h2&gt;
+
+&lt;p&gt;Open the file and perform a few clean up tasks.&lt;/p&gt;
+
+&lt;p&gt;a.  Remove the first three rows from the GDP 2018.xls file.  Next remove the two columns called “Indicator Name” and “Indicator Code”.&lt;/p&gt;
+
+&lt;p&gt;b.  Next select all the cells with numeric values, some cells will look like  “1.5343E+11” but this value is not very data visualization friendly. To convert to a regular numeric value select all the cells under the dates from 1960 to 2018 and then right click on the selected cells and choose Format Cells.  Change the data type to number using the default. &lt;br /&gt;
+c.  Once the preliminary clean up is done, copy the content of the excel sheet to a new excel workbook.&lt;br /&gt;
+d.  Select all the data cells that contain numbers and format as a number. 
+d.  Save the new workbook as a .csv file “GDP 2018.csv”.  Note: It if the .csv is created with windows and your data transformation is done using Linux you may need to convert the GDP 2018.csv file from UTF-8 to ANSI.  You can use notepad++ to do the conversion.&lt;br /&gt;
+e.  Open the original data file and copy the Metadata - Countries to a new empty workbook and save the file as a .csv called “GDP 2018 metadata”.  This file will be used to merge with the data in the first .csv called “GDP 2018.csv”.&lt;/p&gt;
+
+&lt;h2 id=&quot;step-5&quot;&gt;Step 5&lt;/h2&gt;
+
+&lt;p&gt;Now it’s time to do the transformation of the data set.  Notice that the data set contains data from left to right with the column headings of 1960 to 2018.  This is great for reviewing data that has been collected but it doesn’t work well with with Tableau or Power BI which expect a data set / model that is dimensional in nature.  A complete discussion of dimensions and facts is outside the scope of the post to learn more see.&lt;/p&gt;
+
+&lt;p&gt;Open Jupyter Notebook and create a new notebook called “GDP 2018”.  Use the following code to connect to your .csv files.&lt;/p&gt;
+
+&lt;p&gt;a. Connect to the GDP 2018.csv&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;opened_file = open('../data/GDP 2018.csv')
+from csv import reader
+read_file = reader(opened_file)
+wb_gdp = list(read_file)
+opened_file.close()
+wb_gdp = wb_gdp[1:]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;b. Connect to the GDP 2018 metadata.csv&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;opened_file = open('../data/GDP 2018 metadata.csv')
+from csv import reader
+read_file = reader(opened_file)
+wb_gdp_md = list(read_file)
+opened_file.close()
+wb_gdp_md = wb_gdp_md[1:]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;c.  Use the following code to loop through each .csv created above and then write a new .csv called “GDP 2018 clean.csv”&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;import pandas as pd
+
+# create a years dictionary to loop through 
+
+years = {1960:2,1961:3,1962:4,1963:5,1964:6,1965:7,1966:8,1967:9,1968:10,1969:11,1970:12,1971:13,1972:14, \
+         1973:15,1974:16,1975:17,1976:18,1977:19,1978:20,1979:21,1980:22,1981:23,1982:24,1983:25,1984:26, \
+         1985:27,1986:28,1987:29,1988:30,1989:31,1990:32,1991:33,1992:34,1993:35,1994:36,1995:37,1996:38,1997:39, \
+         1998:40,1999:41,2000:42,2001:43,2002:44,2003:45,2004:46,2005:47,2006:48,2007:49,2008:50,2009:51,2010:52, \
+         2011:53,2012:54,2013:55,2014:56,2015:55,2016:56,2017:57,2018:58}
+
+records = []
+record = []
+
+for row in wb_gdp:
+    
+    country = row[0]    
+    country = country.replace(&quot;,&quot;,&quot;&quot;)
+    if country == &quot;Gambia The&quot;:
+        country = &quot;Gambia&quot;
+        
+    country_code = row[1] 
+    
+    region = &quot;&quot;
+    income_group = &quot;&quot;
+    
+    # based on the country_code, fetch the region &amp;amp; income group info
+    
+    for code in wb_gdp_md:
+        if code[0] == country_code:
+            region = code[1]
+            income_group = code[2]
+
+
+    
+    for year in years:        
+               
+        #print(country_code+','+country+','+region+','+income_group+','+str(year)+','+str(row[years[year]]))
+        
+        record = [country_code,country,region,income_group,str(year),str(row[years[year]])]
+        if records != &quot;&quot;:
+            records.append(record)
+
+
+      
+df = pd.DataFrame(records)
+
+df.to_csv('../data/GDP 2018 clean.csv', sep=',',index=False,header=False)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;This is a really simple example of how to use Python to transform and clean a data set.  Rather than spending hours using another tool or technique to modify the originally downloaded data set so it is easily consumed by Tableau or Power BI, you have been able to transform over 15,000 records into a format that is more easily consumed by Tableau or Power BI in less than an hour using Python.  The next step is loading the data into Tableau or Power BI to create a data visualization.&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Spring Kafka Write to Cassandra</title><link href="http://localhost:4000/Spring-Kafka-Write-to-Cassandra/" rel="alternate" type="text/html" title="Spring Kafka Write to Cassandra" /><published>2019-10-30T00:00:00-04:00</published><updated>2019-10-30T00:00:00-04:00</updated><id>http://localhost:4000/Spring-Kafka-Write-to-Cassandra</id><content type="html" xml:base="http://localhost:4000/Spring-Kafka-Write-to-Cassandra/">&lt;hr /&gt;
+
+&lt;p&gt;This post discusses how to use Spring Kafka to create a producer and consumer of JSON messages.  The consumer is able to consume messages and simultaneously write them to a data source.   Cassandra is the data source, but the code could be modified to write data to any number of data sources such as MySQL or Postgres.  Some of the instructions below relate specifically to running this application using Kafka and Cassandra as services from &lt;a href=&quot;https://aiven.io/&quot;&gt;Aiven.io&lt;/a&gt;. However, as I developed this example application, I pointed to a local single-node Kafka cluster and a local three node Cassandra cluster so it is very possible to adapt this program to work on premise or a cloud infrastructure.&lt;/p&gt;
+
+&lt;h1 id=&quot;prerequisites&quot;&gt;Prerequisites:&lt;/h1&gt;
+
+&lt;p&gt;In order to run this application, it will be necessary to have a Kafka single or multi-node cluster as well as Cassandra  multi-node cluster with SSL enabled. It is possible to run this application without SSL, but it will be necessary to remove or comment out, the SSL configuration throughout the application and in turn use a Cassandra cluster that is not SSL enabled. The source code uses a .pem file to access a Cassandra cluster using SSL. It also uses a client.truststore and a client.keystore to when accessing an SSL enabled Kafka cluster when connection to Aiven.io Kafka service.&lt;/p&gt;
+
+&lt;p&gt;It will be necessary to recompile the project adding your specific environment values. For example, the dbConnector class has a connect() method where you pass in values specific to your environment such as the IP address of your data source.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up-kafka-ssl&quot;&gt;Setting up Kafka SSL&lt;/h2&gt;
+
+&lt;p&gt;You can use the following commands to create the client.truststore and the client.keystore that allow for a connection to Kafka using SSL. You will be asked to create a password that can be used within the application and later to check messages.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;openssl pkcs12 -export -inkey service.key -in service.cert -out client.keystore.p12 -name service_key
+
+keytool -import -file ca.pem -alias CA -keystore client.truststore.jks
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Use these newly created files by defining a path to them in the ReceiverConfig and SenderConfig classes in the application.&lt;/p&gt;
+
+&lt;h2 id=&quot;setting-up-cassandra&quot;&gt;Setting up Cassandra&lt;/h2&gt;
+
+&lt;h3 id=&quot;step-1&quot;&gt;Step 1&lt;/h3&gt;
+
+&lt;p&gt;Download the CA Certificate which is found on the services home page within the connection information.   Use the downloaded certificate within the application.  For this example, the certificate is located in the /src/main/resources folder and has been renamed to cassandra.pem.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
+
+&lt;p&gt;Login to your Aiven.io Cassandra service using the connection information on the console page. For example, It will be necessary to run this command from a directory that contains the SSL certificate or to provide a path to the certificate.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SSL_CERTFILE=CA Certificate cqlsh --ssl -u avnadmin -p your_password your_host  your_port
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This following command is correct for a production system values minus the password.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SSL_CERTFILE=cassandra.pem cqlsh --ssl -u avnadmin -p password cassandra-23daba12-shoreviewanalytics-d9c3.aivencloud.com 12641
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;step-3&quot;&gt;Step 3&lt;/h3&gt;
+
+&lt;p&gt;After login in step 1, create a KEYSPACE to use when inserting data.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;CREATE KEYSPACE kafka_examples WITH REPLICATION = {'class': 'NetworkTopologyStrategy', 'aiven': 3};
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;kafka-setup&quot;&gt;Kafka Setup&lt;/h2&gt;
+
+&lt;h3 id=&quot;step-1-1&quot;&gt;Step 1&lt;/h3&gt;
+
+&lt;p&gt;Prior to running the application it will be necessary to create a topic called media.  To do this login to the Aiven.io console, click on the topics tab and add a topic with the name media. If running this code against a non-service deployment of Kafka you can run the code as is without creating a topic first.&lt;/p&gt;
+
+&lt;h1 id=&quot;testing&quot;&gt;Testing&lt;/h1&gt;
+
+&lt;p&gt;There are three tests included.  The first two are standard embedded Kafka tests. The third test sends a test message to an embedded Kafka instance using the Media class and is called MediaTest.  The MediaTest can be run with the following command.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mvn -Dtest=MediaTest test
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Please note that the MediaTest will fail if you are pointing the application at an environment that is not available because it is using classes from the application, which means the test will ensure the overall application is working as expected.  For example, because the application expects Cassandra it fails if it is unable to reach a running cluster that is accessible based on the current configuration of the application.&lt;/p&gt;
+
+&lt;h1 id=&quot;compile-and-package&quot;&gt;Compile and Package&lt;/h1&gt;
+
+&lt;p&gt;After completing the above steps you can compile and package the application.  Be sure to review the code and make all the necessary adjustments such as the IP address or hostname of the node you want to connect to for Cassandra. See the cqlSession method in the MediaWriter class.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mvn compile package
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;running-the-application&quot;&gt;Running the Application&lt;/h1&gt;
+
+&lt;h3 id=&quot;step-1----commands&quot;&gt;Step 1  - Commands&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mvn spring-boot:run or java -jar target/oss-kafka-cassandra-spring-0.0.1.jar
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;step-2---send-consume-write-messages&quot;&gt;Step 2 - Send, Consume, Write Messages&lt;/h3&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;curl localhost:8080/media
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;step-3---check-messages&quot;&gt;Step 3 - Check Messages&lt;/h3&gt;
+
+&lt;p&gt;Create a console.properties file with content that contains SSL configuration. For example, you will need the path to client.keystore and client.truststore created earlier as well as passwords.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;security.protocol=SSL
+ssl.endpoint.identification.algorithm=
+ssl.protocol=TLS
+ssl.key.password=
+ssl.keystore.location=/home/kafka/Downloads/kafka.service/client.keystore.p12
+ssl.keystore.password=
+ssl.keystore.type=PKCS12
+ssl.truststore.location=/home/kafka/Downloads/kafka.service/client.truststore.jks
+ssl.truststore.password=
+ssl.truststore.type=JKS
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Use the console.properties file along with following command from a server or workstation where you have Kafka installed.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;kafka-console-consumer.sh --bootstrap-server kafka-3153b09-shoreviewanalytics-d9c3.aivencloud.com:12643 --topic media --consumer.config console.properties --from-beginning
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You should see output similar to the following after running the above command.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{&quot;title&quot;:&quot;Grumpy Cat Outside Playing&quot;,&quot;added_year&quot;:&quot;2015&quot;,&quot;added_date&quot;:&quot;2015-03-01 08:00:00+0000&quot;,&quot;description&quot;:&quot;Grumpy Cat was chewing on the drip irrigation line. New Tshirts at: http://www.tshirtoutlet.com/nsearch.html?query=grumpy+cat.&quot;,&quot;userid&quot;:&quot;c26c353b-a076-457a-a450-e7029eeb0eb6&quot;,&quot;videoid&quot;:&quot;15633b12-af9d-1eb3-a4bd-18a64d16704b&quot;}
+{&quot;title&quot;:&quot;Grumpy Cat: Slow Motion&quot;,&quot;added_year&quot;:&quot;2015&quot;,&quot;added_date&quot;:&quot;2015-02-01 16:00:00+0000&quot;,&quot;description&quot;:&quot;Grumpy Cat - The internet''s grumpiest cat! Grumpy Cat Book: http://amzn.to/10Yd47R Grumpy Cat 2014 Calendar: http://amzn.to/YGK6MB New T-Shirts by ...&quot;,&quot;userid&quot;:&quot;a15379d4-6d88-41bf-a46d-b4cac7707fc7&quot;,&quot;videoid&quot;:&quot;e619d225-59a9-1ed8-b43f-dcf2905788c4&quot;}
+^CProcessed a total of 430 messages
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;step-4---check-records&quot;&gt;Step 4 - Check Records&lt;/h3&gt;
+
+&lt;p&gt;From a server or workstation running Cassandra use the following command replacing the parameters with the values from your services.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;SSL_CERTFILE=ca.pem cqlsh --ssl -u avnadmin -p pqyk78fykq2ojox4 cassandra-23daba12-shoreviewanalytics-d9c3.aivencloud.com 12641
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Next use the following commands to verify that records have been inserted.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;use kafka_examples;
+expand on;
+select * from videos_by_title_year ;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;You should see output similar to the following.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@ Row 100
+
+ title       | Marcus Johns Oscar Red Carpet Recap (2015) - Celebs &amp;amp; Selfies HD
+ added_year  | 2015
+ added_date  | 2015-02-24 00:00:01.000000+0000
+ description | Subscribe to TRAILERS: http://bit.ly/sxaw6h Subscribe to COMING SOON: http://bit.ly/H2vZUn Like us on FACEBOOK: http://goo.gl/dHs73 Follow us on ...
+ user_id     | c96ddac8-ad86-4989-b58e-6303df8c018f
+ video_id    | 0a29f63f-2d6c-10c5-b385-8c55d3dcc2fc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;summary&quot;&gt;Summary&lt;/h1&gt;
+
+&lt;p&gt;As I completed this application a few ideas came to mind.  One is creating an application or that produces new messages.  So, rather than using the .csv file to produce messages there would be a some sort of a producer application that automatically sends or produces messages to Kafka to produce new messages as well as rows for insert.  For example you have an application that listens parses a log file or that is receiving new data.  As that data is received a message produced to Kafka which in turn would be written to Cassandra or another data source essentially providing a bridge between two data sources.  You can find complete code for this post out on &lt;a href=&quot;https://github.com/shoreviewanalytics/oss-kafka-cassandra-spring&quot;&gt;github&lt;/a&gt;.  If you like this example please provide some feedback below and give it a star on github.&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Getting Started with Python3 and PyCharm on Ubuntu 18.04</title><link href="http://localhost:4000/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04/" rel="alternate" type="text/html" title="Getting Started with Python3 and PyCharm on Ubuntu 18.04" /><published>2019-10-29T00:00:00-04:00</published><updated>2019-10-29T00:00:00-04:00</updated><id>http://localhost:4000/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04</id><content type="html" xml:base="http://localhost:4000/Getting-Started-With-Python3-And-PyCharm-On-Ubuntu-18.04/">&lt;hr /&gt;
+
+&lt;p&gt;This post explains how to get started with Python3 by creating a virtual environment as well as how to open a Python project folder using PyCharm on Ubuntu 18.04.   It also includes a “bonus” step below that explains how to install Jupyter Notebook to a Python virtual environment.&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites:&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Fresh install of Ubuntu 18.04 to a virtual machine or bare metal.&lt;/li&gt;
+  &lt;li&gt;Access to a non-root user account that is a member of the sudo group.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Okay, with a fresh install of Ubuntu 18.04 let’s get started.  The good news is that Ubuntu 18.04 comes with Python3 version 3.6.8 already installed.&lt;/p&gt;
 
 &lt;p&gt;You can check the version if you like with the following command.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 --version
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$python3 --version
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;You should see the following output.&lt;/p&gt;
 
@@ -17,7 +274,7 @@
 &lt;h3 id=&quot;step-1---installing-python3-env&quot;&gt;Step 1 - Installing python3-env&lt;/h3&gt;
 
 &lt;p&gt;Now that you know you have Python3 installed, it’s time to create what is called a Python virtual environment. In order to be able to create a virtual environment it is necessary to install a package called python3-venv.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo apt install python3-env
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$sudo apt install python3-env
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;What this package does essentially is allow you to create a virtual Python3 environment within a directory of your choice. A virtual environment for Python let’s you work in an isolated or virtual Python environment.&lt;/p&gt;
 
@@ -26,41 +283,41 @@
 &lt;h3 id=&quot;step-2---create-a-python-virtual-environment&quot;&gt;Step 2 - Create a Python Virtual Environment&lt;/h3&gt;
 
 &lt;p&gt;Open the lpython folder in a terminal session and issue the following command.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 -m venv env
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$python3 -m venv env
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&quot;step-3---activate-a-python-virtual-environment&quot;&gt;Step 3 - Activate a Python Virtual Environment&lt;/h3&gt;
 
 &lt;p&gt;If no issues have occurred you should be able to issue the following command.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;source env/bin/activate
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$source env/bin/activate
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;This command activates your virtual python environment.  While in the virtual environment you can install additional packages that you will need during your programming. For example the following command installs numpy a commonly used library for Data Scientists and Data Analysts.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;python3 -m pip install numpy
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$python3 -m pip install numpy
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&quot;step-4---installing-pycharm&quot;&gt;Step 4 - Installing PyCharm&lt;/h3&gt;
 
 &lt;p&gt;Next install PyCharm using the following command.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo snap install pycharm-community --classic
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$sudo snap install pycharm-community --classic
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;p&gt;After you have installed PyCharm go ahead and launch it.  After you have launched PyCharm, rather than create a new project choose open.  When you choose open, navigate to the folder structure you created above or the /home/your username/python/lpython directory.&lt;/p&gt;
 
 &lt;p&gt;Now click on the terminal tab at the bottom of the IDE.  Notice that when you click on it you are automatically taken into the virtual environment that you created earlier.&lt;/p&gt;
 
 &lt;p&gt;In order to leave the virtual environment type the following command while within the virtual environment.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;deactivate
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$deactivate
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;step-5---installing-jupyter-notebook&quot;&gt;Step 5 - Installing Jupyter Notebook&lt;/h3&gt;
 
 &lt;p&gt;If you have successfully completed the above steps creating a virtual environment you can now also install Jupyter and run it in your newly created virtual Python environment.  To install Jupyter Notebook use the following command while within the Python virtual environment.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip install jupyter
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$pip install jupyter
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;To launch Jupyter use the following command from within the virtual environment.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jupyter notebook
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;$jupyter notebook
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
@@ -118,7 +375,7 @@ rm -R *
 
 &lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
 
-&lt;p&gt;If the initial issue was not being able to register a runner for a pipeline, you should now be able to register a runner for the pipeline.&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Installing Tomcat 9 On Ubuntu 18.04</title><link href="http://localhost:4000/Installing-Tomcat9-On-Ubuntu-18.04/" rel="alternate" type="text/html" title="Installing Tomcat 9 On Ubuntu 18.04" /><published>2019-08-26T00:00:00-04:00</published><updated>2019-08-26T00:00:00-04:00</updated><id>http://localhost:4000/Installing-Tomcat9-On-Ubuntu-18.04</id><content type="html" xml:base="http://localhost:4000/Installing-Tomcat9-On-Ubuntu-18.04/">&lt;hr /&gt;
+&lt;p&gt;If the initial issue was not being able to register a runner for a pipeline, you should now be able to register a runner for the pipeline.&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Installing Tomcat 9 on Ubuntu 18.04</title><link href="http://localhost:4000/Installing-Tomcat9-on-Ubuntu-18.04/" rel="alternate" type="text/html" title="Installing Tomcat 9 on Ubuntu 18.04" /><published>2019-08-26T00:00:00-04:00</published><updated>2019-08-26T00:00:00-04:00</updated><id>http://localhost:4000/Installing-Tomcat9-on-Ubuntu-18.04</id><content type="html" xml:base="http://localhost:4000/Installing-Tomcat9-on-Ubuntu-18.04/">&lt;hr /&gt;
 
 &lt;p&gt;Apache Tomcat® is an open source implementation of Java Servlet, JavaServer Pages, Java Expression Language and Java WebSocket technologies. This post explains how to setup Apache Tomcat® 9 on Ubuntu 18.04.  It also clarifies how to setup security.&lt;/p&gt;
 
@@ -393,7 +650,44 @@ To                         Action      From
 
 &lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
 
-&lt;p&gt;https://www.digitalocean.com/community/tutorials/install-tomcat-9-ubuntu-1804&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Spark Logback Example One</title><link href="http://localhost:4000/Spark-Logback-Example-One/" rel="alternate" type="text/html" title="Spark Logback Example One" /><published>2018-10-08T00:00:00-04:00</published><updated>2018-10-08T00:00:00-04:00</updated><id>http://localhost:4000/Spark-Logback-Example-One</id><content type="html" xml:base="http://localhost:4000/Spark-Logback-Example-One/">&lt;hr /&gt;
+&lt;p&gt;https://www.digitalocean.com/community/tutorials/install-tomcat-9-ubuntu-1804&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Spark Job Specific Logging with Logback and DataStax Enterprise Analytics</title><link href="http://localhost:4000/Spark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics/" rel="alternate" type="text/html" title="Spark Job Specific Logging with Logback and DataStax Enterprise Analytics" /><published>2018-10-08T00:00:00-04:00</published><updated>2018-10-08T00:00:00-04:00</updated><id>http://localhost:4000/Spark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics</id><content type="html" xml:base="http://localhost:4000/Spark-Job-Specific-Logging-with-Logback-and-DataStax-Enterprise-Analytics/">&lt;hr /&gt;
+
+&lt;p&gt;This post takes a look at how use Logback, the successor to Log4j with your spark application to create application specific logging. If you have spent any amount of time with Apache Spark you will notice that there is a ton of logging that goes on, but that logging is usually limited to the master or worker processing that occurs on each node in your cluster.  While this information is important it doesn’t tell you a whole lot about how your specific application is doing.  Also if you have system wide settings for logging of your spark applications you may have to sift through one log for all your applications. The example code allows you to create a log file for each of your spark applications and allows you to control the level of logging.&lt;/p&gt;
+
+&lt;h2 id=&quot;prerequisites&quot;&gt;Prerequisites:&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Spark development environment (This example uses Eclipse) or ability to compile source code to a .jar file with all necessary dependencies.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;An available Spark cluster to run the example (This example uses DataStax Enterprise Analytics Cluster), but could tweak the example code to run on a standard Apache Spark cluster.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;step-1&quot;&gt;Step 1&lt;/h3&gt;
+
+&lt;p&gt;Clone the following repository to your workstation using the following command.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git clone https://github.com/shoreviewanalytics/sparkjobspecificlogging.git
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h3 id=&quot;step-2&quot;&gt;Step 2&lt;/h3&gt;
+
+&lt;p&gt;Launch the project using Eclipse or your favorite IDE and make the necessary adjustments to the code (for example the path to the .csv), then compile and export it to a .jar file.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-3&quot;&gt;Step 3&lt;/h3&gt;
+
+&lt;p&gt;This step is optional if you are not working on a distributed environment. If you are working on a distributed computing environment you can add the .csv to an accessible path to the user running the spark job to each node in your cluster.  Ex. home/username/data a the words.csv file would be place in this location for each node in the cluster.&lt;/p&gt;
+
+&lt;h3 id=&quot;step-4&quot;&gt;Step 4&lt;/h3&gt;
+
+&lt;p&gt;Run the example using a command similar to following command. The exact syntax of this command depends on the platform you are using, the location of your logback.xml file, the location of the .jar file (your spark job) and the configuration of your DataStax / cluster environment.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dse -u username -p password spark-submit --class com.java.spark.LoggingSample --master dse://? --driver-java-options &quot;-Dlogback.configurationFile=/pathtoyour/logback.xml&quot; /path to your jarfile/LoggingSample.jar
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;This example is done in Java, but could have just as easily been using Scala or Python, since the majority of the logging setup is done via spark-submit and the logback.xml file and the code is just a revamp of the word count application. As you review the code you will see there are logging statements for transformations and RDDs. The most important part of this example is Step 4 where you can explicitly reference a logback.xml file in the spark-submit.  What this does is allow you to configure logging for the job you are running, by explicitly setting the log file directory and the level of logging for the log file.  There’s also an experimental class (SysStreamsLogger) included in this example (which I did not write, but did amend for the purpose of the example).  The SysStreamsLogger.java class allows you to capture additional information from the console to add to the log file as the spark job is running.  Entries in the log file will have the logger name of SysStreamLogger.java when information is captured from the console and redirected by this class to the log file. Another important part of this example is the ability to change the various logging levels (see the end of the logback.xml file included in this example).  These settings allow you to have more granular control of logging, so you can have a very concise log possibly for production or a very verbose log possibly for development or troubleshooting.&lt;/p&gt;
+
+&lt;p&gt;In closing there are tons of features available with logback and this example is just scratches the surface. You can find detailed information on the logback features on the project’s &lt;a href=&quot;&amp;quot;https://logback.qos.ch/&amp;quot;&quot;&gt;website&lt;/a&gt;.  You can find more information about DataStax Enterprise Analytics &lt;a href=&quot;&amp;quot;https://www.datastax.com/products/datastax-enterprise-analytics&amp;quot;&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">Spark Logback Example One</title><link href="http://localhost:4000/Spark-Logback-Example-One/" rel="alternate" type="text/html" title="Spark Logback Example One" /><published>2018-10-08T00:00:00-04:00</published><updated>2018-10-08T00:00:00-04:00</updated><id>http://localhost:4000/Spark-Logback-Example-One</id><content type="html" xml:base="http://localhost:4000/Spark-Logback-Example-One/">&lt;hr /&gt;
 
 &lt;p&gt;This post takes a look at how use Logback, the successor to Log4j with your spark application to create application specific logging. If you have spent any amount of time with Apache Spark you will notice that there is a ton of logging that goes on, but that logging is usually limited to what spark as an application is doing so there’s lot’s of logging about spark master or worker processing and what the executors are doing. While this information is important it doesn’t tell you a whole lot about how your specific application is doing across your cluster. With logging setup specifically for the spark job running, you can obtain granular information about how it is running on the spark cluster and detailed  &lt;a href=&quot;https://stackoverflow.com/questions/25836316/how-dag-works-under-the-covers-in-rdd&quot;&gt;DAG&lt;/a&gt; information as well.  In addition, if there are system wide settings for logging of spark applications you can have just one log for all your applications.  This example shows how to create a log file for each spark job and how to use verbose logging for development and then turn it down for production to only log what you really need to log, like errors and basic feedback.&lt;/p&gt;
 
@@ -632,4 +926,86 @@ This is where the fun happens.  Look for the following property in the logback.x
 
 &lt;p&gt;&lt;a href=&quot;https://mademistakes.com/articles/improving-jekyll-static-comments/&quot; title=&quot;Improving static comments with Jekyll &amp;amp; Staticman&quot;&gt;Improving static comments with Jekyll &amp;amp; Staticman&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://dokku.viewdocs.io/dokku~v0.12.13/deployment/application-deployment/&quot; title=&quot;Deploying to Dokku&quot;&gt;Deploying to Dokku&lt;/a&gt;&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry></feed>
+&lt;p&gt;&lt;a href=&quot;http://dokku.viewdocs.io/dokku~v0.12.13/deployment/application-deployment/&quot; title=&quot;Deploying to Dokku&quot;&gt;Deploying to Dokku&lt;/a&gt;&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry><entry><title type="html">How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer</title><link href="http://localhost:4000/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/" rel="alternate" type="text/html" title="How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer" /><published>2018-04-10T00:00:00-04:00</published><updated>2018-04-10T00:00:00-04:00</updated><id>http://localhost:4000/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer</id><content type="html" xml:base="http://localhost:4000/How-To-Become-A-Data-Analyst-Data-Scientist-or-Data-Engineer/">&lt;hr /&gt;
+
+&lt;p&gt;For this post I want to discuss how to work towards becoming a
+Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer, which
+for brevity I will refer to as “The Big 4”.  When I look at the number of job
+postings for “The Big 4” on employment web sites as of writing this post it is
+astonishing. All you have to do is go to LinkedIn or another job site and do a
+search for “Data Analyst” in the United States and you will see several pages of
+openings and that’s just for one of “The Big 4”.&lt;/p&gt;
+
+&lt;p&gt;Related to “The Big 4” are specialized roles in Natural Language Processing (NLP) and AI techniques, but I believe these are just variants of say a Machine Learning Engineer role or Data Scientist role, so I don’t mention NLP or AI as separate roles. As of writing this post when I do a search on Linkedin for NLP it returns Data Science positions. Well, the fact that there are many openings with the job title of
+“Data Analyst” or “Data Scientist” is great, but what if you haven’t held a job as a “Data Analyst” or “Data Scientist” or any of “The Big 4”?&lt;/p&gt;
+
+&lt;h2 id=&quot;ready-set-go&quot;&gt;Ready, Set, Go!&lt;/h2&gt;
+
+&lt;p&gt;So, where does one start if you are interested in working as one of “The Big 4”?
+I took the advice of well-known professionals in the field, those who have
+written books or teach “The Big 4”. I also reviewed several blogs of those who
+work as one of “The Big 4”, where they share their work and thoughts. I have
+enrolled in two different online curriculums one is &lt;a href=&quot;https://www.coursera.org/&quot;&gt;Coursera&lt;/a&gt;, where I am taking a
+Machine Learning course. The other is called &lt;a href=&quot;https://www.dataquest.io&quot;&gt;Dataquest.io&lt;/a&gt;, which provides paths
+for students who are interested becoming a Data Scientist, Data Analyst or Data
+Engineer. I am also considering an online Master’s degree in Data Science.&lt;/p&gt;
+
+&lt;p&gt;As you begin exploration into “The Big 4”, you will realize that there is some
+overlap and often you will see in job postings that suffer from I call the “bundle complex” where a given job posting bundles what could possibly be 1 or 2 FTE’s into a position description, but
+this is the subject of a future post.&lt;/p&gt;
+
+&lt;p&gt;For now, to show how these roles overlap,
+consider the image below a data plotting exercise from my Data Analyst / Data
+Scientist track on Dataquest.io. The example, comes from a section on “Improving
+Plot Aesthetics” in the “Storytelling Through Data Visualization” course.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/sample-graph.png&quot; alt=&quot;Simple Graph&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;To create the graph above, I used standard tools of a Data Analyst or Data
+Scientist, which in this case are the Python libraries pandas, matplotlib.pyplot
+using IPython.&lt;/p&gt;
+
+&lt;p&gt;The good thing is that much of the software used in “The Big 4”
+is open source and very accessible. For example, &lt;a href=&quot;https://www.anaconda.com/&quot;&gt;Anaconda&lt;/a&gt;  a software platform, which integrates many different tools for Data Analysts or Data Scientists such as IPython or Jupyter Notebook. Additionally, there are complete Data Science platforms available as
+well as Big Data Platforms that integrate “The Big 4” tools.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-mathematics-journey&quot;&gt;The Mathematics Journey&lt;/h2&gt;
+
+&lt;p&gt;One thing that has become clear early on in my Journey into “The Big 4” is the 
+need to brush up on statistics, linear algebra, vector mathematics and some calculus.  If you
+plan to become a Machine Learning Engineer or Data Scientist it is important to know how to solve basic equations, but you won’t need to compute partial derivatives necessarily.  However, if you are a mathematical wizard and can apply what you know to the formulas used within the field, it doesn’t hurt either. As I continue my journey with “The Big 4”, I am realizing that rather than solving equations manually it is more important to understand which model 
+to apply and the proper way to apply it, in order to produce the best results.&lt;/p&gt;
+
+&lt;p&gt;The Machine Learning class that I am currently taking on Coursera does include a fair amount of mathematical formulas, but these formulas themselves are rarely used to manually produce a result.  Instead, the formulas are translated to a more practical format to be used in a programming language.    As an example, here is a formula used in my machine learning course in week 6 of the class.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/formula.png&quot; alt=&quot;Cost Function&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This formula represents what is called a cost function and it is helping to calculate the errors on training data and cross validation data in a process to plot a learning curve, which is helpful in debugging a machine learning algorithm.  The good thing is during the class you translate this formula numerous times into a vectorized equivalent within the Octave programming environment.  Yay, for Octave!  As you continue your journey you will discover that many different programming languages such as Python or R have what are called mathematical libraries that provide translations of machine learning formulas.  While the language is different, the implementaion is usually optimized.&lt;/p&gt;
+
+&lt;h2 id=&quot;do-i-need-a-degree-in-data-science-or-data-analysis&quot;&gt;Do I need a Degree in Data Science or Data Analysis?&lt;/h2&gt;
+
+&lt;p&gt;You might be asking yourself if you should go back to college to obtain a Master’s Degree in Data Science? That’s a good question, which is not easily answered. The answer to this question is that it really depends on where you are in your career and whether you have a STEM degree.  In my
+case, I had not done any statistics since college, but I do hold a Master’s degree in Information Technology and have many years of experience working with data driven applications and recently held the role of Analytics Consultant, which provided valuable experience in data analysis and data visualization with exposure to some data science methods.  My most recent role more than likely served as catalyst to my journey to become one of “The Big 4”.&lt;/p&gt;
+
+&lt;p&gt;While doing my research, I found an &lt;a href=&quot;https://www.forbes.com/sites/metabrown/2017/10/31/read-this-before-you-pay-for-that-masters-in-data-science-program/2/#3b691f8850d5&quot;&gt;article&lt;/a&gt;  on Forbes written by an expert in the field that says you may want to rethink getting your degree in Data Science, meaning you may not have to obtain one of these degrees, in order to pursue “The Big 4”. The article suggests that you review or take a basic statistics course to become familiar with some of the methods that are used in “The Big 4” roles to determine if you even like it or to show you that you can learn the techniques without actually enrolling in Data Science program. Indeed, this appears to be true, because there are many online resources that provide more than enough to get started. However, this doesn’t mean that I won’t pursue a Master’s degree in Data Science to expand my horizons, it just means I am carefully considering if it is the right thing for me to do.  I’m thankful that I read this article since I did end up downloading a free e-book on statistics. By the way, the book is called “&lt;a href=&quot;https://openstax.org/details/introductory-statistics&quot;&gt;Introductory Statistics&lt;/a&gt; “ and it has a very nice introduction to Linear Regression.&lt;/p&gt;
+
+&lt;h2 id=&quot;create-your-blog&quot;&gt;Create your Blog!&lt;/h2&gt;
+
+&lt;p&gt;I found that it is recommended and, in some cases, required for employment purposes or education programs that you create a blog or create blog posts if you are planning to pursue “The Big 4”. For example, an employer that I recently
+interviewed with that provides a Big Data platform stated that as an employee you are expected to contribute to the company blog and can also use the time spent blogging as part of your utilization.&lt;/p&gt;
+
+&lt;p&gt;I’ve also seen programs that teach “The Big 4” require you to blog as you progress through the program. While you do not have
+to create a blog, for me it works, because I like blogging and can use Github Pages to host my blog and essentially, the same platform to post code samples worthy of sharing, helping me to stay organized.&lt;/p&gt;
+
+&lt;p&gt;If you haven’t created a blog yet, be sure to check out my &lt;a href=&quot;https://shoreviewanalytics.github.io/Create-Jekyll-Blog-with-Minimal-Mistakes-theme-on-Ubuntu-16.04/&quot;&gt;tutorial&lt;/a&gt;  on how to build a blog using Jeckyll and Github Pages. It will 
+take some effort to get through it, but after completing it, you will have very nice professional looking blog, that is relatively easy to maintain.&lt;/p&gt;
+
+&lt;h2 id=&quot;summary&quot;&gt;Summary&lt;/h2&gt;
+
+&lt;p&gt;After enrolling in online curriculums above, I realized that many of the tools used in “The Big 4” are readily available on a platform that I’m already using for a day to day workstation, which is Ubuntu Linux. While you do not have to
+use Linux to become one of “The Big 4”, you might be surprised to learn that most if not all of the tools used for these careers are readily available on the Linux platform. This is especially great if you are like me and enjoy working on
+an open source platform. Either way hopefully you are doing something that you enjoy.&lt;/p&gt;
+
+&lt;p&gt;To be perfectly honest, working toward becoming one of “The Big 4” is not necessarily an easy journey.  If becoming one of “The Big 4” was easy, then anyone or everyone would be doing it.&lt;/p&gt;
+
+&lt;p&gt;If you are considering a career change, have a great deal of experience with data systems (DBA, Data Modeling, OO Programming, SQL etc.) and have done some data visualization or quantitative reporting, and want to take your skill set and use it to become one of “The Big 4”, you can get there a variety of ways and as it turns out it doesn’t have to necessarily be expensive either. You can probably get there without having a great deal of experience in data systems or programing, but the Journey may take a bit longer. For example, if you have not done any programming it may be pretty hard to pick up Python as used in my Data Analyst / Data Science track with Dataquest.io. The good is that they have a complete introduction to Python as a part of their Data Analyst or Data Scientist tracks and there are other online training sites such as &lt;a href=&quot;https://www.datacamp.com/&quot;&gt;DataCamp&lt;/a&gt; that provide similar training with some free tutorials for Python or R.&lt;/p&gt;</content><author><name>CHAD DOWNEY, M.SC. IT</name></author><summary type="html"></summary></entry></feed>

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: 'Using Python To Transform and Clean a Data Set'
-description: 'This post discusses how to use Python to transform and clean a data set into a data set that more easily consumed by Tableau or Power BI.  
+description: 'This post discusses how to use Python to transform and clean a data set into a data set that more easily consumed by Tableau or Power BI.' 
 date: '2019-11-18'
 classes: wide
 
@@ -9,7 +9,7 @@ header:
   overlay_image: /assets/images/abstract.jpg
 ---
 
-
+--------------------------------------------
 
 Often it is necessary to transform a data set from its original format to a format that is easier to work with data visualization software. For this post we demonstrate how to modify a readily available data set that contains GDP data as of 2018 into a data set that is more easily consumed by a data visualization tools such as Power BI or Tableau. 
 
