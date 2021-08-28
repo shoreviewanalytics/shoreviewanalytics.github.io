@@ -5,8 +5,6 @@ description: 'This post discusses how to use Python to transform and clean a dat
 date: '2019-11-18'
 classes: wide
 
-header:  
-  overlay_image: /assets/images/abstract.jpg
 ---
 
 --------------------------------------------

@@ -5,8 +5,6 @@ description: 'This step by step post walks you through installing Tomcat 9 on Ub
 date: '2019-08-26'
 classes: wide
 
-header:  
-  overlay_image: /assets/images/abstract.jpg
 ---
 
 --------------------------------------------

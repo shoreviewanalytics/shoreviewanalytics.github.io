@@ -5,8 +5,6 @@ description: 'This post discusses how to use Spring Kafka to create a producer a
 date: '2019-10-30'
 classes: wide
 
-header:  
-  overlay_image: /assets/images/abstract.jpg
 ---
 
 --------------------------------------------

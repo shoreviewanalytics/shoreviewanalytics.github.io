@@ -4,8 +4,7 @@ title: "How to become a Data Scientist, Data Analyst, Data Engineer or Machine L
 layout: single
 classes: wide
 
-header:  
-  overlay_image: /assets/images/abstract.jpg
+
 ---
 
 --------------------------------------------

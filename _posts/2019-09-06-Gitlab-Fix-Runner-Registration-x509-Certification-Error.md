@@ -5,8 +5,6 @@ description: 'This step by step post walks you through how to fix the x509 Certi
 date: '2019-09-06'
 classes: wide
 
-header:  
-  overlay_image: /assets/images/abstract.jpg
 ---
 
 --------------------------------------------

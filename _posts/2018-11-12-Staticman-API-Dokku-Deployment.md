@@ -4,8 +4,6 @@ title: "Staticman API Dokku Deployment"
 layout: single
 classes: wide
 
-header:  
-  overlay_image: /assets/images/abstract.jpg
 ---
 
 --------------------------------------------

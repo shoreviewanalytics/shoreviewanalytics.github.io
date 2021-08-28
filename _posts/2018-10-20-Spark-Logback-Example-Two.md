@@ -4,8 +4,6 @@ title: "Spark Logback Example Two"
 layout: single
 classes: wide
 
-header:  
-  overlay_image: /assets/images/abstract.jpg
 ---
 
 --------------------------------------------

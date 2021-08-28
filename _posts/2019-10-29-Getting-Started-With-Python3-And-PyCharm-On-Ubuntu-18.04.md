@@ -5,8 +5,6 @@ description: 'This post explains how to get started with Python3 by creating a v
 date: '2019-10-29'
 classes: wide
 
-header:  
-  overlay_image: /assets/images/abstract.jpg
 ---
 
 --------------------------------------------
