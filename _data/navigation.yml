@@ -1,4 +1,7 @@
 # main links
 main:
+  - title: "Home"
+    url: https://shoreviewanalytics.github.io
   - title: "GitHub Repo"
     url: https://github.com/shoreviewanalytics  
+  
