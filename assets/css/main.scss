@@ -4,6 +4,11 @@
 
 @charset "utf-8";
 
+
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
+
 .site-title::before
 {
 content: url("/assets/images/logo.png");
@@ -12,9 +17,4 @@ position: top;
 width: 32px;
 top: 32px;
 }
-
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
-@import "minimal-mistakes"; // main partials
-
-
 
