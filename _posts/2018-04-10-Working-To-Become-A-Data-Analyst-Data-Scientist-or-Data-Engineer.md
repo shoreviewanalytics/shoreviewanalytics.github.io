@@ -1,6 +1,6 @@
 ---
 date: "2018-04-10"
-title: "How to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer"
+title: "Working to become a Data Scientist, Data Analyst, Data Engineer or Machine Learning Engineer"
 layout: single
 classes: wide
 
