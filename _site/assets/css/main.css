@@ -1,4 +1,4 @@
-.page__footer{color:#fff !important}.page__footer-follow .social-icons .svg-inline--fa{color:inherit}/*!
+.site-title::before{content:url("/assets/images/logo.png");display:inline-block;position:top;width:32px;top:32px}.page__footer{color:#fff !important}.page__footer-follow .social-icons .svg-inline--fa{color:inherit}/*!
  * Minimal Mistakes Jekyll Theme 4.16.6 by Michael Rose
  * Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
  * Licensed under MIT (https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE)

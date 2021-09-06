@@ -4,7 +4,17 @@
 
 @charset "utf-8";
 
+.site-title::before
+{
+content: url("/assets/images/logo.png");
+display: inline-block;
+position: top;
+width: 32px;
+top: 32px;
+}
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
 
 

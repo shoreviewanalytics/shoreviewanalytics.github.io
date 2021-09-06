@@ -13,7 +13,8 @@ minimal_mistakes_skin    : "air" #"default" , "air", "aqua", "contrast", "dark",
 
 # Site Settings
 locale                   : "en-US"
-title                    : "shoreviewanalytics.github.io"
+title                    : ""
+logo                     : "/assets/images/writing.png"
 title_separator          : "-"
 name                     : "shoreviewanalytics"
 description              : ""
