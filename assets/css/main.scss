@@ -2,14 +2,6 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-.site-title::before
-{
-content: url("/assets/images/logo.png");
-display: inline-block;
-position: top;
-width: 32px;
-top: 32px;
-}
 @charset "utf-8";
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
