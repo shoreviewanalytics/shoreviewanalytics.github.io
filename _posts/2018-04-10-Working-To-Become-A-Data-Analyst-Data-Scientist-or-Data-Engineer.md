@@ -46,7 +46,7 @@ The Machine Learning class that I am currently taking on Coursera does include a
 ![Cost Function]({{ "/assets/images/formula.png" | absolute_url }})
 
 
-This formula represents what is called a cost function and it is helping to calculate the errors on training data and cross validation data in a process to plot a learning curve, which is helpful in debugging a machine learning algorithm.  The good thing is during the class you translate this formula numerous times into a vectorized equivalent within the Octave programming environment.  Yay, for Octave!  As you continue your journey you will discover that many different programming languages such as Python or R have what are called mathematical libraries that provide translations of machine learning formulas.  While the language is different, the implementaion is usually optimized.   
+This formula represents what is called a cost function and it is helping to calculate the errors on training data and cross validation data in a process to plot a learning curve, which is helpful in debugging a machine learning algorithm.  The good thing is during the class you translate this formula numerous times into a vectorized equivalent within the [Octave](https://www.gnu.org/software/octave/ "Octave")  programming environment.  Yay, for Octave!  As you continue your journey you will discover that many different programming languages such as Python or R have what are called mathematical libraries that provide translations of machine learning formulas.  While the language is different, the implementaion is usually optimized.   
 
 Do I need a Degree in Data Science or Data Analysis?
 ----------------------------------------------------
